@@ -1,0 +1,22 @@
+{
+    "language": {
+        "english": {
+            "navbarItem": [
+                "About IMI",
+                "News",
+                "Gallery",
+                "Events",
+                "Register"
+            ]
+        },
+        "indonesia": {
+            "navbarItem": [
+                "Tentang IMI",
+                "Berita",
+                "Galeri",
+                "Acara",
+                "Pendaftaran"
+            ]
+        }
+    }
+}
