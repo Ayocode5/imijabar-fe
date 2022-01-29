@@ -71,6 +71,12 @@ body {
     width: 100%;
 }
 
+.wrap_welcome-text {
+    background-color: #F4F4F9;
+    border-top: 1px solid rgba(38, 56, 64, 0.5);
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+    ;
+}
 
 .jumbotron_carousel {
     width: 100%;
@@ -181,7 +187,7 @@ body {
     Start Style Berita Acara
  */
 .berita-acara {
-    margin: 60px 8px;
+    margin: 0px 8px;
 }
 
 .title-berita-acara {
@@ -382,12 +388,12 @@ body {
 }
 
 .image_border_right {
-    border-right: 2px solid rgba(38, 56, 64, 0.5);
+    border-right: 1px solid rgba(38, 56, 64, 0.5);
     ;
 }
 
 .image_border_left {
-    border-left: 2px solid rgba(38, 56, 64, 0.5);
+    border-left: 1px solid rgba(38, 56, 64, 0.5);
 }
 
 /* 
@@ -901,7 +907,8 @@ body {
     }
 
     .welcome_text {
-        padding: 80px 0 0 100px;
+        padding: 80px 0 0px 100px;
+        height: 260px;
         max-height: 260px;
     }
 
@@ -913,7 +920,7 @@ body {
     }
 
     .jumbotron_carousel .carousel-inner .carousel-item img {
-        height: 550px;
+        height: 601px;
     }
 
     .jumbotron_carousel .carousel-item .carousel-caption h2 {
@@ -939,7 +946,7 @@ body {
     }
 
     .berita-acara {
-        margin: 60px 90px;
+        margin: 0px 90px;
     }
 
     .content-berita {
@@ -1039,10 +1046,8 @@ body {
     }
 
     .wrap_background_imi {
-        border-top: 2px solid rgba(38, 56, 64, 0.5);
-        border-bottom: 2px solid rgba(38, 56, 64, 0.5);
-
-        box-sizing: border-box;
+        border-top: 1px solid rgba(38, 56, 64, 0.5);
+        border-bottom: 1px solid rgba(38, 56, 64, 0.5);
     }
 
     /* 
