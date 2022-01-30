@@ -384,8 +384,12 @@ body {
 }
 
 .wrap_background_imi {
-    border: none;
+    border-top: 1px solid rgba(38, 56, 64, 0.5);
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+
 }
+
+
 
 .image_border_right {
     border-right: 1px solid rgba(38, 56, 64, 0.5);
@@ -612,65 +616,6 @@ body {
 }
 
 /* footer */
-
-/* Start Visi Misi */
-.visimisi-content {
-    margin: 0px 100px;
-}
-
-.visimisi-title {
-    font-family: 'Barlow', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #263840;
-}
-
-.visimisi-outline {
-    font-family: 'Barlow', sans-serif;
-    font-size: 72px;
-    font-weight: bold;
-    -webkit-text-stroke: 2px #263840;
-    -webkit-text-fill-color: white;
-    margin-top: 30px;
-}
-
-.visimisi-jabar {
-    font-family: 'Barlow', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    color: #263840;
-    padding-bottom: 7px;
-    padding-left: 10px;
-}
-
-.visimisi-arrow {
-    width: 80px;
-    height: 16px;
-    margin: 0px 20px;
-}
-
-.visimisi-img {
-    height: 500px;
-}
-
-.visimisi-detail {
-    font-family: 'Barlow', sans-serif;
-    font-size: 24px;
-    font-weight: medium;
-    color: #263840;
-    margin-bottom: 10px;
-    margin-left: 60px;
-}
-
-/* .border_visi {
-    background-color: #5996ec;
-    padding: 1px;
-    margin-bottom: 30px;
-    width: 80%;
-} */
-
-/* End Visi Misi */
-
 
 
 /* Tablet Style */
@@ -908,7 +853,7 @@ body {
 
     .welcome_text {
         padding: 80px 0 0px 100px;
-        height: 260px;
+        height: 259px;
         max-height: 260px;
     }
 
@@ -1043,11 +988,6 @@ body {
 
     #tentangIMI {
         font-size: 24px;
-    }
-
-    .wrap_background_imi {
-        border-top: 1px solid rgba(38, 56, 64, 0.5);
-        border-bottom: 1px solid rgba(38, 56, 64, 0.5);
     }
 
     /* 
