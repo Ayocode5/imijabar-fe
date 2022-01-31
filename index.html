@@ -162,7 +162,7 @@
 
   <main>
     <!-- START BERITA & EVENT -->
-    <section class="py-5" style="background-color: #FBFBFB">
+    <section class="py-5 border-bottom" style="background-color: #FBFBFB">
       <div class="d-flex flex-wrap berita-acara">
         <div class="col-lg-8 col-12">
           <h1 class="title-berita-acara">Berita</h1>
@@ -350,7 +350,8 @@
     </section>
     <!-- END BERITA & EVENT -->
 
-    <section id="tentangIMI" class="pb-5">
+    <!-- START TENTANG IMI -->
+    <section id="tentangIMI" class="pb-5 border-bottom">
       <div class="row mx-lg-5 no-gutters wrap_tentangImi">
         <div class="col-12 col-lg-6 slide_tentangImi1">
           <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
@@ -370,7 +371,8 @@
             <p>Optimization to Execellence.</p>
             <p class="signature_text">IMI Jawa Barat</p>
             <img class="position-absolute" src="./assets/img/line_blue.svg" alt="line_blue">
-            <p class="selengkapnya_tentangImi">Selengkapnya</p>
+            <a class="selengkapnya_tentangImi" href="/about.html">Selengkapnya →</a>
+
           </div>
         </div>
       </div>
@@ -403,11 +405,13 @@
       </div> -->
 
     </section>
+    <!-- END TENTANG IMI -->
 
-    <section style="background-color: #FBFBFB;" id="strukturPengurus">
+    <!-- START KEPENGURUSAN -->
+    <section class="border-bottom" style="background-color: #FBFBFB;" id="strukturPengurus">
       <div class="container-fluid py-5">
         <div class="head_strukturPengurus mb-5">
-          <h2>Struktur Kepengurusan</h2>
+          <h2>Kepengurusan</h2>
           <div class="border_heading_strukturPengurus mb-4"></div>
           <div class="d-flex flex-wrap justify-content-between">
             <p>Periode xxxx - xxxx </p>
@@ -418,9 +422,10 @@
         </div>
         <div class="carousel slide multi-item-carousel" id="theCarousel">
           <div class="carousel-inner row w-100 mx-auto">
+
+            <!-- Orang 1 -->
             <div class="carousel-item active col-md-3">
               <div class="overlay_struktur_pengurus"></div>
-
               <img src="./assets/img/person1.png" class="img-fluid mx-auto d-block">
               <div class="text_profile_pengurus">
                 <h3>Jhon Doe</h3>
@@ -431,6 +436,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Orang 2 -->
             <div class="carousel-item col-md-3">
               <div class="overlay_struktur_pengurus"></div>
               <img src="./assets/img/person2.png" class="img-fluid mx-auto d-block">
@@ -443,6 +450,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Orang 3 -->
             <div class="carousel-item col-md-3">
               <div class="overlay_struktur_pengurus"></div>
               <img src="./assets/img/person3.png" class="img-fluid mx-auto d-block">
@@ -455,6 +464,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Orang 4 -->
             <div class="carousel-item col-md-3">
               <div class="overlay_struktur_pengurus"></div>
               <img src="./assets/img/person4.png" class="img-fluid mx-auto d-block">
@@ -467,6 +478,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Orang 5 -->
             <div class="carousel-item col-md-3">
               <div class="overlay_struktur_pengurus"></div>
               <img src="./assets/img/person5.png" class="img-fluid mx-auto d-block">
@@ -479,6 +492,8 @@
                 </div>
               </div>
             </div>
+
+            <!-- Orang 6 -->
             <div class="carousel-item col-md-3">
               <div class="overlay_struktur_pengurus"></div>
               <img src="./assets/img/person6.png" class="img-fluid mx-auto d-block">
@@ -504,9 +519,11 @@
         </div>
       </div>
     </section>
+    <!-- END KEPENGURUSAN -->
 
+    <!-- START NEWSLETTER -->
     <section id="newsletter">
-      <div class="row mx-lg-5 mt-5  no-gutters wrap_newsletter">
+      <div class="row mx-lg-5 no-gutters wrap_newsletter">
         <div class="col-lg-8 col-12 order-2 order-lg-1 mx-auto my-auto">
           <h3 class="w-lg-75">Berlangganan Buletin Kami &mdash; <span>untuk menerima berita, artikel, masukan dan solusi
               otomotif
@@ -524,58 +541,71 @@
         </div>
       </div>
     </section>
+    <!-- END NEWSLETTER -->
   </main>
 
-  <footer>
-    <div class="footer-content card">
-      <img src="./assets/img/footer-batik.png" alt="background-img" class="footer-background card-img">
-      <div class="row card-img-overlay" style="margin: 0px;">
-        <div class="col-lg-4 col-12" style="padding: 0px;">
-          <div class="row d-flex align-items-center" style="margin: 0px;">
-            <img src="./assets/img/logoIMIJabar.svg" alt="logo" class="footer-logo">
-            <div class="ml-auto">
-              <p class="title-ttd">Optimization to Execellence.</p>
-              <p class="paraf-ttd d-flex justify-content-end" style="margin-bottom: -8px;">IMI Jawa Barat</p>
-              <div class="border_ttd"></div>
+  <footer class="position-relative">
+    <div class="container-fluid content_footer">
+
+      <div class="row my-auto justify-content-md-between h-100">
+        <div class="col-12 col-lg-5  mb-3 mb-lg-0 align-self-center">
+          <div class="row">
+            <div class="col-12 col-sm-3">
+              <img class="d-block mb-4 logo_footer" src="./assets/img/logo_footer.svg" alt="logo imi jawa barat">
+            </div>
+            <div class="footer_ttd col-12 col-sm-9 text-sm-right text-center position-relative">
+              <p>Optimization to Execellence.</p>
+              <p class="text_ttd_footer">IMI Jawa Barat</p>
+              <img class="position-absolute line_border" src="./assets/img/line_blue.svg" alt="line blue">
             </div>
           </div>
-          <div class="row icon-footer-row">
-            <a href="#"><img src="./assets/img/icon-globe.png" alt="icon-web" class="icon-footer"></a>
-            <a href="#"><img src="./assets/img/icon-fb.png" alt="icon-web" class="icon-footer"></a>
-            <a href="#"><img src="./assets/img/icon-ig.png" alt="icon-web" class="icon-footer"></a>
+          <div class="row">
+            <div class="col sosial_media_footer">
+              <img class="mr-3" src="./assets/img/icon_globe_web.svg" alt="web imi jabar">
+              <img class="mr-3" src="./assets/img/icon_facebook.svg" alt="facebook imi jabar">
+              <img class="mr-3" src="./assets/img/icon_instagram.svg" alt="instagram imi jabar">
+            </div>
           </div>
         </div>
-        <div class="col-lg-1 "></div>
-        <div class="col-lg-3 col-12 middle-footer" style="padding: 0px;">
-          <div class="office-footer">
-            <h1 class="title-footer">Kantor Pusat</h1>
-            <p class="sub-footer">Jl. Batununggal Indah Raya No.81, Batununggal, Kec. Bandung Kidul, Kota Bandung, Jawa
-              Barat 40267</p>
+        <div class="col-1"></div>
+        <div class="col-12 col-lg-3">
+          <div class="address_footer">
+            <h4 style="font-weight: 700;">Kantor Pusat</h4>
+            <p style="font-weight: 500;">Jl. Batununggal Indah Raya No.81, Batununggal, Kec. Bandung Kidul, Kota
+              Bandung, Jawa Barat 40267</p>
           </div>
-          <div class="contact-footer">
-            <h1 class="title-footer">Hubungi Kami</h1>
-            <p class="sub-footer" style="margin-bottom: 10px;">email@imijabar.org.id</p>
-            <p class="sub-footer">0821-2222-3333</p>
+          <div class="contact_footer">
+            <h4 style="font-weight: 700;">Hubungi Kami</h4>
+            <p style="font-weight: 500;">email@imijabar.org.id<br />0821-2222-3333</p>
           </div>
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-12 right-footer" style="padding: 0px;">
-          <div class="about-footer">
-            <h1 class="title-footer">IMI Jabar</h1>
-            <li><a href="#" class="sub-footer">Tentang IMI Jabar</a></li>
-            <li><a href="#" class="sub-footer">Berita</a></li>
-            <li><a href="#" class="sub-footer">Galeri</a></li>
-            <li><a href="#" class="sub-footer">Acara</a></li>
-            <li><a href="#" class="sub-footer">Pendaftaran</a></li>
-          </div>
+        <div class="col-1"></div>
+        <div class="col-12 col-lg-2">
+          <h4 style="font-weight: 700;">IMI Jabar</h4>
+          <ul style="font-weight: 500;" class="sitemap_footer">
+            <li><a href="#">Tentang IMI Jabar</a></li>
+            <li><a href="#">Berita</a></li>
+            <li><a href="#">Galeri</a></li>
+            <li><a href="#">Acara</a></li>
+            <li><a href="#">Pendaftaran</a></li>
+          </ul>
+
         </div>
       </div>
+
     </div>
-    <div class="d-flex justify-content-center align-items-center">
-      <p class="footer-credit">© Copyright 2022 IMI Jawa Barat | Web Developed by Rumah Koding X Ayocode.id | All Right
+
+    </div>
+    <img class="position-absolute background_footer" src="./assets/img/background_footer.png" alt="background footer">
+  </footer>
+
+  <div class="credit">
+    <div class="container text-center p-3 wrap_credit">
+      <p class="my-auto">© Copyright 2022 IMI Jawa Barat | Web Developed by Rumah Koding X Ayocode.id | All Right
         Reserved</p>
     </div>
-  </footer>
+  </div>
+
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->

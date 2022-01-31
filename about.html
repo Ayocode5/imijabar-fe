@@ -1,601 +1,598 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="id">
 
 <head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
-    integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
-    rel="stylesheet">
-  <link rel="stylesheet" href="./assets/css/style.css">
-
-  <title>Hello, world!</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/about.css">
+    <title>Hello, world!</title>
 </head>
 
 <body>
-  <!-- START NAVBAR -->
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container-fluid mx-lg-5">
-      <a class="navbar-brand" href="index.html">
-        <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
-      </a>
-      <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText"
-        aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarText">
-        <ul class="navbar-nav mr-auto navbar_list">
-          <li class="nav-item mr-lg-3">
-            <a class="nav-link" href="about.html">Tentang IMI<span class="sr-only">(current)</span></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-lg-3" href="#">Berita</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-lg-3" href="#">Galeri</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link mr-lg-3" href="#">Acara</a>
-          </li>
-          <li class="nav-item dropdown mr-lg-3">
-            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
-              aria-haspopup="true" aria-expanded="false">
-              Pendaftaran
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="margin: -9px 0;" class="container-fluid mx-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
             </a>
-            <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">KIS</a>
-              <a class="dropdown-item" href="#">KTA</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>
-        </ul>
-        <ul class="navbar-nav ml-auto navbar_list">
-          <li class="nav-item mr-lg-3">
-            <input type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG" data-style="ios"
-              data-onstyle="primary" data-offstyle="danger">
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link mr-lg-3">
-              <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="icon contact telephone">
-              0857-XXXX-XXXX
-            </a>
-          </li>
-          <li class="nav-item">
-            <a href="#" class="nav-link mr-lg-3">
-              <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="icon contact email">
-
-            </a>
-          </li>
-        </ul>
-
-
-      </div>
-    </div>
-  </nav>
-  <!-- END NAVBAR -->
-
-  <section>
-    <div class="row no-gutters">
-      <div class="col-12 col-lg-5 order-2 order-lg-1">
-        <div class="row no-gutters">
-          <div class="row col-6 col-lg-12 no-gutters">
-            <img class="jumbotron_logo position-absolute" src="./assets/img/logoImiJumbotron.svg" alt="Logo IMI">
-            <img class="jumbotron_batik" src="./assets/img/jumbotron-batik.png" alt="jumbotron-batik">
-          </div>
-          <div class="row col-6 col-lg-12 no-gutters row-cols-1">
-            <div class="welcome_text">
-              <h1>Selamat Datang,</h1>
-              <p id="typed"></p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-7 order-1 order-lg-2">
-        <div id="demo" class="carousel slide carousel-fade jumbotron_carousel" data-ride="carousel">
-          <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-          </ul>
-          <div class="carousel-inner">
-            <div class="carousel-item active">
-              <div class="overlay_jumbotron">
-
-              </div>
-              <img src="./assets/img/jumbotron-img.png" alt="Los Angeles" width="100%" height="600">
-              <div class="carousel-caption">
-                <p class="date_author">23 Januari 2022 | Admin</p>
-                <h2>Ford Mustang Shelby GT 500 1967</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id in orci. Id eu
-                  ullamcorper aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis. Cras ipsum et
-                  blandit auctor.</p>
-                <button type="button" class="btn btn-outline-light btn_show_jumbotron">Show More</button>
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="overlay_jumbotron">
-
-              </div>
-              <img src="./assets/img/jumbotron-img2.png" alt="Chicago" width="100%" height="600">
-              <div style="text-align: right;" class="carousel-caption">
-                <p>23 Januari 2022 | Admin</p>
-                <h2>Ford Mustang Shelby GT 500 1967</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id in orci. Id eu
-                  ullamcorper aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis. Cras ipsum et
-                  blandit auctor.</p>
-                <button type="button" class="btn btn-outline-light">Show More</button>
-
-              </div>
-            </div>
-            <div class="carousel-item">
-              <div class="overlay_jumbotron">
-
-              </div>
-              <img src="./assets/img/jumbotron-img.png" alt="New York" width="100%" height="600">
-              <div class="carousel-caption">
-                <p>23 Januari 2022 | Admin</p>
-                <h2>Ford Mustang Shelby GT 500 1967</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id in orci. Id eu
-                  ullamcorper aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis. Cras ipsum et
-                  blandit auctor.</p>
-                <button type="button" class="btn btn-outline-light">Show More</button>
-
-              </div>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-          </a>
-          <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-
-  <main>
-    <!-- START BERITA & EVENT -->
-    <section>
-      <div class="d-flex flex-wrap berita-acara">
-        <div class="col-lg-8 col-12">
-          <h1 class="title-berita-acara">Berita</h1>
-          <div class="border_title"></div>
-          <!-- BERITA 1 -->
-          <div class="content-berita mb-3 mb-md-2">
-            <div class="row">
-              <div class="col-12 col-md-8 order-2 order-md-1 my-auto">
-                <p class="tanggal-berita">23 Januari 2022 | Admin</p>
-                <h1 class="title-berita">Ford Mustang Shelby<br>GT 500 1967</h1>
-                <p class="subtitle-berita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id
-                  in
-                  orci. Id eu ullamcorper
-                  aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis.
-                  <img src="./assets/img/icon-arrow-right.png" alt="icon arrow" style="width: 16px; height: 16px;">
-                </p>
-              </div>
-              <div class="col-12 col-md-4 order-1 order-md-2 my-auto">
-                <div class="img-wrap">
-                  <img class="cover-berita" src="./assets/img/jumbotron-img.png" alt="cover berita">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- BERITA 2 -->
-          <div class="content-berita mb-3 mb-md-2">
-            <div class="row">
-              <div class="col-12 col-md-8 order-2 order-md-1 my-auto">
-                <p class="tanggal-berita">23 Januari 2022 | Admin</p>
-                <h1 class="title-berita">Ford Mustang Shelby<br>GT 500 1967</h1>
-                <p class="subtitle-berita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id
-                  in
-                  orci. Id eu ullamcorper
-                  aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis.
-                  <img src="./assets/img/icon-arrow-right.png" alt="icon arrow" style="width: 16px; height: 16px;">
-                </p>
-              </div>
-              <div class="col-12 col-md-4 order-1 order-md-2 my-auto">
-                <div class="img-wrap">
-                  <img class="cover-berita" src="./assets/img/jumbotron-img.png" alt="cover berita">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- BERITA 3 -->
-          <div class="content-berita mb-3 mb-md-2">
-            <div class="row">
-              <div class="col-12 col-md-8 order-2 order-md-1 my-auto">
-                <p class="tanggal-berita">23 Januari 2022 | Admin</p>
-                <h1 class="title-berita">Ford Mustang Shelby<br>GT 500 1967</h1>
-                <p class="subtitle-berita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id
-                  in
-                  orci. Id eu ullamcorper
-                  aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis.
-                  <img src="./assets/img/icon-arrow-right.png" alt="icon arrow" style="width: 16px; height: 16px;">
-                </p>
-              </div>
-              <div class="col-12 col-md-4 order-1 order-md-2 my-auto">
-                <div class="img-wrap">
-                  <img class="cover-berita" src="./assets/img/jumbotron-img.png" alt="cover berita">
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- BERITA 4 -->
-          <div class="content-berita mb-3 mb-md-2">
-            <div class="row">
-              <div class="col-12 col-md-8 order-2 order-md-1 my-auto">
-                <p class="tanggal-berita">23 Januari 2022 | Admin</p>
-                <h1 class="title-berita">Ford Mustang Shelby<br>GT 500 1967</h1>
-                <p class="subtitle-berita">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sit egestas enim id
-                  in
-                  orci. Id eu ullamcorper
-                  aliquet platea pretium. Id commodo nisl accumsan, viverra enim sit mattis.
-                  <img src="./assets/img/icon-arrow-right.png" alt="icon arrow" style="width: 16px; height: 16px;">
-                </p>
-              </div>
-              <div class="col-12 col-md-4 order-1 order-md-2 my-auto">
-                <div class="img-wrap">
-                  <img class="cover-berita" src="./assets/img/jumbotron-img.png" alt="cover berita">
-                </div>
-              </div>
-            </div>
-          </div>
-          <button type="button" class="btn mt-4 btn-outline-dark d-block mx-auto">Show More</button>
-        </div>
-        <div class="col-lg-4">
-          <h1 class="title-berita-acara">Jadwal Acara</h1>
-          <div class="border_acara"></div>
-          <div class="dropdown">
-            <button class="btn select_category btn-secondary dropdown-toggle btn_switch_category_event" type="button"
-              id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Roda Empat
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="dropdown-menu event-category" aria-labelledby="dropdownMenuButton">
-              <li class="list-dropdown"><a class="dropdown-item">Roda Dua</a></li>
-              <li class="list-dropdown"><a class="dropdown-item">Roda Empat</a></li>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto navbar_list">
+                    <li class="nav-item mr-lg-3">
+                        <a class="nav-link" href="about.html">Tentang IMI<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Acara</a>
+                    </li>
+                    <li class="nav-item dropdown mr-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pendaftaran
+                        </a>
+                        <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">KIS</a>
+                            <a class="dropdown-item" href="#">KTA</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto navbar_list">
+                    <li class="nav-item mr-lg-3">
+                        <input type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG"
+                            data-style="ios" data-onstyle="primary" data-offstyle="danger">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-lg-3">
+                            <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="icon contact telephone">
+                            0857-XXXX-XXXX
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-lg-3">
+                            <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="icon contact email">
+
+                        </a>
+                    </li>
+                </ul>
+
+
             </div>
-          </div>
-          <div class="accordion" id="accordionExample">
-            <div class="card item_event">
-              <div class="card-header content-event" id="headingOne">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-2" style="margin-right: 16px;">
-                    <h3 class="tgl-event">25</h1>
-                  </div>
-                  <div style="border-right: 1px solid #5996EC;" class="col-5 p-0">
-                    <p class="month-event m-0">Januari 2022</p>
-                    <h3 class="loc-event">Bandung Jabar</h1>
-                  </div>
-                  <div class="col-3 p-2">
-                    <h3 class="name-event">Kejurnas Rally Time 2021</h1>
-                  </div>
-                  <div style="cursor: pointer;" class="col-1" data-toggle="collapse" data-target="#collapseOne"
-                    aria-expanded="true" aria-controls="collapseOne">
-                    <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
-                  </div>
-                </div>
-              </div>
-              <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                <div class="card-body">
-                  <div class="col">
-                    <h1 class="title-event">
-                      Cabang Olahraga
-                    </h1>
-                    <p class="detail-event">
-                      Slalom A | Drifting | Sprint Rally | Drag Race | Balap Mobil ITCC | Time Rally
-                    </p>
-                  </div>
-                  <div class="col">
-                    <h1 class="title-event">
-                      Info Pendaftaran
-                    </h1>
-                    <p class="detail-event">
-                      Robert Alfonso: 0857-XXXX-XXXX atau<br>Link: bit.ly/kejurnas2022
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="card item_event">
-              <div class="card-header content-event" id="headingTwo">
-                <div class="row align-items-center justify-content-center">
-                  <div class="col-2" style="margin-right: 16px;">
-                    <h3 class="tgl-event">25</h1>
-                  </div>
-                  <div style="border-right: 1px solid #5996EC;" class="col-5 p-0">
-                    <p class="month-event m-0">Januari 2022</p>
-                    <h3 class="loc-event">Bandung Jabar</h1>
-                  </div>
-                  <div class="col-3 p-2">
-                    <h3 class="name-event">Kejurnas Rally Time 2021</h1>
-                  </div>
-                  <div style="cursor: pointer;" class="col-1" data-toggle="collapse" data-target="#collapseTwo"
-                    aria-expanded="true" aria-controls="collapseTwo">
-                    <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
-                  </div>
-                </div>
-              </div>
-              <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
-                <div class="card-body">
-                  <div class="col">
-                    <h1 class="title-event">
-                      Cabang Olahraga
-                    </h1>
-                    <p class="detail-event">
-                      Slalom A | Drifting | Sprint Rally | Drag Race | Balap Mobil ITCC | Time Rally
-                    </p>
-                  </div>
-                  <div class="col">
-                    <h1 class="title-event">
-                      Info Pendaftaran
-                    </h1>
-                    <p class="detail-event">
-                      Robert Alfonso: 0857-XXXX-XXXX atau<br>Link: bit.ly/kejurnas2022
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
-      </div>
-      </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BREADCRUMB -->
+    <section id="breadcumb">
+        <div class="container my-5">
+            <div class="row">
+                <a href="index.html">
+                    <img src="./assets/img/icon-arrow-back.png" alt="back icon"
+                        style="width: 24px; height: 24px; margin-right: 20px;">
+                </a>
+                <a href="index.html" style="color: #000; text-decoration: none;">
+                    <p style="margin-right: 5px;">Home/</p>
+                </a>
+                <p style="font-weight: bold;">Tentang Imi</p>
+            </div>
+
+        </div>
     </section>
-    <!-- END BERITA & EVENT -->
+    <!-- END BREADCRUMB -->
 
-    <section id="tentangIMI" class="pb-5 mb-5">
-      <div class="row mx-lg-5 mt-5 no-gutters wrap_tentangImi">
-        <div class="col-12 col-lg-6 slide_tentangImi1">
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            IMI Jawa Barat merupakan organisasi yang bergerak di bidang otomotif dan beraffiliasi langsung dengan PP
-            IMI. IMI Jawa Barat dibentuk pada 19 Desember 1989. Di awal pembentukan IMI Jawa Barat di pimpin oleh H
-            MADJOERI yang juga aktif sebagai Kepaa DLLAJR Jawa Barat.
-          </p>`
-          <p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            Berdirinya IMI Jawa Barat di prakarsai oleh klub mobil Volkswagen Club Bandung dan Speed Driver, yang pada
-            selanjutnya bersama-sama membentuk suatu Steering Committe untuk merumuskan perubahan dari IMJB (Ikatan
-            Motor Jawa Barat) yang sudah ada untuk menjadi IMI Jawa Barat.
-          </p>
+    <!-- START VISI MISI -->
+    <section>
+        <div class="container">
+            <!-- <div class="row d-flex align-items-center" style="margin: 0px;">
+                <h1 class="visimisi-title">Visi</h1>
+                <img src="./assets/img/dot-arrow.svg" alt="dot arrow" class="visimisi-arrow">
+                <h1 class="visimisi-title">Misi</h1>
+            </div> -->
+            <div class="row mt-5">
+                <div class="col-12 col-lg-7 order-2 order-lg-1 align-items-center d-flex">
+                    <div>
+                        <div class="d-inline">
+
+                        </div>
+                        <h2 class="visimisi-outline">VISI <span class="visimisi-jabar">IMI JAWA
+                                BARAT</span></h2>
+                        <!-- <div class="border_visi"></div> -->
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                    </div>
+                </div>
+                <div class="align-items-center d-flex col-12 col-lg-5 order-1">
+                    <img src="./assets/img/visi-img.png" alt="visimisi img" class="img-fluid">
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="align-items-center d-flex col-12 col-lg-5 order-2 order-lg-1">
+                    <img src="./assets/img/misi-img.png" alt="visimisi img" class="img-fluid">
+                </div>
+                <div class="col-12 col-lg-7 order-2 align-items-center justify-content-end d-flex">
+                    <div>
+                        <div class="d-inline">
+
+                        </div>
+                        <h2 class="visimisi-jabar text-right">
+                            IMI JAWA BARAT
+                            <span class="visimisi-outline">
+                                MISI
+                            </span>
+                        </h2>
+
+                        <!-- <div class="border_visi"></div> -->
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                        <p class="visimisi-detail">Lectus felis egestas pellentesque id nullam non velit sed id.</p>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="col-12 col-lg-6 ml-auto my-auto signature_imijabar position-relative">
-          <p class="position-relative"><span class="position-absolute">“</span></p>
-          <div class="position-relative slide_tentangImi2">
-            <p>Optimization to Execellence.</p>
-            <p class="signature_text">IMI Jawa Barat</p>
-            <img class="position-absolute" src="./assets/img/line_blue.svg" alt="line_blue">
-            <p class="selengkapnya_tentangImi">Selengkapnya</p>
-          </div>
-        </div>
-      </div>
-
-      <!-- <div class="border-top border-bottom py-3">
-        <div class="d-flex flex-wrap align-items-center  justify-content-center">
-          <div class="px-lg-3 wrap_background_imi">
-            <img class="img-fluid" src="./assets/img/background_IMI1.png" alt="">
-          </div>
-          <div class="px-lg-3 wrap_background_imi">
-            <img class="img-fluid" src="./assets/img/background_IMI2.png" alt="">
-          </div>
-          <div class="px-lg-3 wrap_background_imi">
-            <img class="img-fluid" src=" ./assets/img/background_IMI3.png" alt="">
-          </div>
-          <div class="px-lg-3">
-            <img class="img-fluid" src="./assets/img/background_IMI4.png" alt="">
-          </div>
-        </div>
-      </div> -->
-      <div class="container-fluid">
-        <div class="row wrap_background_imi pt-3 pb-3 justify-content-center align-items-center">
-          <img class="col-2 img-fluid image_border_right" src="./assets/img/background_IMI1.png" alt="">
-
-          <img class="col-4 img-fluid image_border_right" src="./assets/img/background_IMI2.png" alt="">
-
-          <img class="col-4 img-fluid" src="./assets/img/background_IMI3.png" alt="">
-
-          <img class="col-2 img-fluid image_border_left" src="./assets/img/background_IMI4.png" alt="">
-
-
-        </div>
-      </div>
-
     </section>
+    <!-- END VISI MISI -->
 
+    <!-- START SEJARAH -->
+    <section>
+        <div class="container sejarah-content my-5">
+            <div class="row pt-5">
+                <div class="col-12 col-lg-6 order-2 order-lg-1">
+                    <h2 class="sejarah-title">
+                        Sejarah Perjalanan IMI<br>Jawa Barat
+                    </h2>
+                    <p class="sejarah-text">
+                        <span class="sejarah-text-bold"> Masa Awal Pembentukan - </span> Di awal pembentukan IMI Jawa
+                        Barat bernama Ikatan Motor
+                        Jawa Barat
+                        (IMJB) kemudian mulailah dirumuskan pembentukan IMI Jawa Barat dengan membentuk steering
+                        committee yang diprakarsai oleh dua klub mobil yakni Volkswagen Club Bandung, dan Speed Driver.
+                        Setelah rapat pertama yang dihadiri beberapa petinggi klub otomotif Jawa Barat, ditetapkanlah 19
+                        Desember 1989 sebagai hari lahir IMI Jawa Barat dan menetapkan H MADJOERI sebagai pimpinan.
+                    </p>
+                </div>
+                <div class="col-12 col-lg-6 order-1 order-lg-2">
+                    <img src="./assets/img/sejarah-img.png" alt="sejarah img" class="sejarah-img mt-5">
+                </div>
+            </div>
+            <img src="./assets/img/sejarah-arrow-down.png" alt="arrow down" class="sejarah-arrow">
+            <div class="row">
+                <div class="col-12 col-lg-5">
+                    <p class="sejarah-text">
+                        <span class="sejarah-text-bold"> Periode 1989 - 1992 - </span> Dibawah kepemimpinan H MADJOERI
+                        beserta jajaran kepengurusan IMI Jawa Barat mulai bahu-membahu menegakan eksistensi pertama IMI
+                        Jawa Barat. Seluruh aktifitas otomotif di Jawa Barat menjadi berinduk ke IMI Jawa Barat, mudah
+                        bagi IMI Jawa Barat untuk menarik simpatik dan citra dari masyarakat Jawa Barat. Pada tahun 1992
+                        IMI Jawa Barat untuk pertama kalinya menggelar Malam Prestasi Atlit Otomotif Jawa Barat di
+                        Gedung Pramuka (JL. Westu Kencana), berbagai aktivitas otomotif lainnya pun turut serta diadakan
+                        secara rutin pada periode ini seperti Wisata Rally dan Slalom Test. Sejarah juga mecatat Road
+                        Race pertama kalinya diadakan oleh Turtle Speed di JL. Diponegoro (Gedung Sate).
+                    </p>
+                </div>
+                <div class="col-12 col-lg-2 d-flex justify-content-center">
+                    <img src="./assets/img/sejarah-arrow-right.png" alt="arrow right" class="sejarah-arrow2">
+                </div>
+                <div class="col-12 col-lg-5">
+                    <p class="sejarah-text">
+                        <span class="sejarah-text-bold"> Periode 1992 - 1996 - </span> Masih dibawah kepemimpinan H.
+                        MADJOERI dan beberapa pengurus baru, IMI Jawa Barat mulai menghadapi banyak tantangan terutama
+                        di bidang Balap Motor, dan Rally Mobil yang menjadi tren kala itu sehingga menjadi kurang
+                        terkendali akibat dari banyak nya Radio Anak Muda Bandung yang mengadakan event dengan
+                        menambahkan peraturan pelengkap lomba masing-masing. Berangkat dari hal tersebut PP IMI mulai
+                        mengemas peraturan Drag Race yang lebih mengikat dan harus dipatuhi oleh para partisipan dan
+                        penyelenggara.
+                    </p>
+                </div>
+            </div>
+            <div class="showmore-btn">
+                <div class="accordion" id="accordionShowMore">
+                    <div class="card" style="border: none;">
+                        <div id="collapseHistory" class="collapse" aria-labelledby="showMoreHistory"
+                            data-parent="#accordionShowMore">
+                            <div class="card-body p-0">
+                                <div class="row d-flex justify-content-end mr-md-2">
+                                    <img src="./assets/img/sejarah-arrow-down.png" alt="arrow down"
+                                        class="sejarah-arrow">
+                                </div>
+                                <div class="row">
+
+                                    <div class="col-12 col-lg-5 order-3 order-lg-1">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 2000 - 2004 - </span> Di periode
+                                            ke-4 ini IMI Jawa Barat dipimpin oleh H. Doddy Heryadi ex ketua harian IMI
+                                            Jawa Barat periode sebelumnya. Pada periode ini bidang wisata menjadi bagian
+                                            dari fokus IMI Jawa Barat setelah olahraga roda 2 dan 4. Jambore yang
+                                            digelar IMI Jawa Barat pada periode ini menjadi hal yang paling ditunggu
+                                            oleh ribuan masyarakat Kota Bandung, saat itu hanya IMI Jawa Barat yang
+                                            mengadakan Jambore IMI, dan pada periode ini juga anggota IMI Jawa Barat
+                                            sudah mencapai 200 anggota.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 order-2 d-flex justify-content-center">
+                                        <img src="./assets/img/sejarah-arrow-right.png" alt="arrow right"
+                                            class="sejarah-arrow2" style="transform: rotateY(180deg);">
+                                    </div>
+                                    <div class="col-12 col-lg-5 order-1 order-lg-3">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 1996 - 2000 - </span> Pada periode
+                                            ini IMI Jawa Barat dipimpin oleh Drs H UKMAN SUTARYAN dan pada periode ini
+                                            pula IMI Jawa Barat dihadapkan oleh beberapa Kejuaraan Nasional Rally dan
+                                            Slalom. Meskipun di era ini sempat terjadi krisis moneter, namun itu tidak
+                                            menggoyahkan langkah pengurus dan semua klub untuk tetap solid dalam
+                                            membangun eksistensi otomotif Jawa Barat. Di periode ini juga IMI Jawa Barat
+                                            mulai menjadi contoh bagi pengda-pengda IMI daerah lain dalam mengelola
+                                            organisasi.
+                                        </p>
+                                    </div>
+                                </div>
+                                <img src="./assets/img/sejarah-arrow-down.png" alt="arrow down" class="sejarah-arrow">
+                                <div class="row">
+                                    <div class="col-12 col-lg-5">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 2004 - 2008 - </span> IMI Jawa
+                                            Barat memasuki era baru dalam periode ini, sosok pemimpin muda Mantan atlit
+                                            Motocross dan Gokart Nasional Oke Daradjat Junjunan terpilih menjadi Ketua
+                                            Pengprov IMI Jawa Barat. Susunan kepengurusan yang fresh dan memiliki
+                                            semangat tinggi mewarnai periode ini. Puncak nya IMI Jawa Barat dinobatkan
+                                            sebagai Pengprov terbaik di periode ini, serta rangkaian prestasi yang
+                                            diraih pada tahun-tahun berikutnya 2005, 2006, 2007, dan 2008
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 d-flex justify-content-center">
+                                        <img src="./assets/img/sejarah-arrow-right.png" alt="arrow right"
+                                            class="sejarah-arrow2">
+                                    </div>
+                                    <div class="col-12 col-lg-5">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 2008 - 2012 - </span> Oke Darajat
+                                            Junjunan kembali terpilih menjadi pemimpin IMI Jawa Barat, meskipun ada
+                                            beberapa rintangan dari sektor wisata pada periode ini, tidak menyurutkan
+                                            IMI Jawa Barat untuk mengulangi kesuksesan periode sebelumnya bahkan
+                                            prestasi yang didapatkan juga meningkat secara signifikan jumlahnya, seperti
+                                            terpilihnya IMI Jawa Barat sebagai tuan rumah Jambore nasional otomotif di
+                                            Pangandaran, serta turut menyumbangkan 2 emas dan juara umum cabang olahraga
+                                            bermotor PON Ke-18 2012 di Riau, predikat pengprov terbaik ke-3 pun turut
+                                            disabet pada tahun 2009, dan tebaik ke-2 pada tahun 2010 dan 2011, IMI Jawa
+                                            Barat pun ditunjuk sebagai tuan rumah penyelenggaraan BK PON XVIII Riau 2012
+                                            di sirkuit Sentul.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="row d-flex justify-content-end mr-md-2">
+                                    <img src="./assets/img/sejarah-arrow-down.png" alt="arrow down"
+                                        class="sejarah-arrow">
+                                </div>
+                                <div class="row">
+                                    <div class="col-12 col-lg-5 order-3 order-lg-1">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 2016 - 2020 - </span> Pada periode
+                                            ini IMI Jawa Barat dipimpin oleh H. Fachrul Sarman, di periode ini juga IMI
+                                            Jawa Barat menggelar perhelatan IMI Award 2016 sebagai bentuk penghormatan
+                                            IMI Jawa Barat kepada pahlawan-pahlawan otomotif Jawa Barat, sekaligus
+                                            sebagai ajang pelantikan kepengerusan IMI Jawa Barat periode 2016 - 2020.
+                                        </p>
+                                    </div>
+                                    <div class="col-12 col-lg-2 order-2 d-flex justify-content-center">
+                                        <img src="./assets/img/sejarah-arrow-right.png" alt="arrow right"
+                                            class="sejarah-arrow2" style="transform: rotateY(180deg);">
+                                    </div>
+                                    <div class="col-12 col-lg-5 order-1 order-lg-3">
+                                        <p class="sejarah-text">
+                                            <span class="sejarah-text-bold"> Periode 2012 - 2016 - </span> Di periode
+                                            selanjutnya IMI Jawa Barat kembali dipimpin oleh tokoh muda otomotif Jawa
+                                            Barat yakni, Rio Teguh Pribadi, di periode ini IMI Jawa Barat mampu
+                                            mempertahankan prestasi sebelumnya yakni menjadi juara umum cabor balap
+                                            motor pada gelaran PON Jabar 2016, pada periode ini juga IMI Jawa Barat
+                                            telah mencapai lebih dari 300 klub yang terbanyak pada masanya, gelar
+                                            sebagai Pengprov terbaik pun turut dipertahankan yakni ditahun 2013 - 2014,
+                                            kemudian terbaik ke-2 ditahun 2015, dan ke-3 ditahun 2016.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header" id="showMoreHistory" style="background-color: #fff;">
+                            <h2 class="mb-0 d-flex justify-content-center">
+                                <button class="btn btn-link" type="button" data-toggle="collapse"
+                                    data-target="#collapseHistory" aria-expanded="true" aria-controls="collapseHistory">
+                                    Tampilkan Lebih Banyak
+
+                                    <img src="./assets/img/icon-arrow-down.svg" alt="arrow down" class="showmore-icon">
+                                </button>
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SEJARAH -->
+
+    <!-- START GALERI -->
+    <section>
+        <div class="wrap_background_imi py-3">
+            <div class="d-flex justify-content-between">
+                <div class="image_border_right px-2 px-lg-4">
+                    <img class="img-fluid mx-auto" src="./assets/img/background_IMI1.png" alt="">
+                </div>
+                <div class="image_border_right px-2 px-lg-4">
+                    <img class="img-fluid mx-auto" src="./assets/img/background_IMI2.png" alt=""></div>
+                <div class="image_border_right px-2 px-lg-4">
+                    <img class="img-fluid mx-auto" src="./assets/img/background_IMI3.png" alt="">
+                </div>
+                <div class="px-2 px-lg-4">
+                    <img class="img-fluid mx-auto" src="./assets/img/background_IMI4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END GALERI -->
+
+    <!-- START KEPENGURUSAN -->
     <section id="strukturPengurus">
-      <div class="container-fluid">
-        <div class="head_strukturPengurus mb-5">
-          <h2>Struktur Kepengurusan</h2>
-          <div class="border_heading_strukturPengurus mb-4"></div>
-          <div class="d-flex flex-wrap justify-content-between">
-            <p>Periode xxxx - xxxx </p>
-            <a style="background-color: #F8F8F8; color: #263840;"
-              class="px-3 py-2 mt-2 mt-md-1 link_selengkapnya_struktur_pengurus" href="#">Selengkapnya
-              <span>→</span></a>
-          </div>
-        </div>
-        <div class="carousel slide multi-item-carousel" id="theCarousel">
-          <div class="carousel-inner row w-100 mx-auto">
-            <div class="carousel-item active col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person1.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
+        <div class="container-fluid mt-5">
+            <div class="head_strukturPengurus mb-5">
+                <h2>Kepengurusan</h2>
+                <div class="border_heading_strukturPengurus mb-4"></div>
+                <div class="d-flex flex-wrap justify-content-between">
+                    <p>Periode xxxx - xxxx </p>
+                    <a style="background-color: #F8F8F8; color: #263840;"
+                        class="px-3 py-2 mt-2 mt-md-1 link_selengkapnya_struktur_pengurus" href="#">Selengkapnya
+                        <span>→</span></a>
                 </div>
-              </div>
             </div>
-            <div class="carousel-item col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person2.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person3.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person4.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person5.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
-                </div>
-              </div>
-            </div>
-            <div class="carousel-item col-md-3">
-              <div class="overlay_struktur_pengurus"></div>
-              <img src="./assets/img/person6.png" class="img-fluid mx-auto d-block">
-              <div class="text_profile_pengurus">
-                <h3>Jhon Doe</h3>
-                <p>Ketua Umum</p>
-                <div class="d-inline">
-                  <img class="mr-3" src="./assets/img/instagram.svg" alt="">
-                  <img src="./assets/img/facebook.svg" alt="">
-                </div>
-              </div>
-            </div>
+            <div class="carousel slide multi-item-carousel" id="theCarousel">
+                <div class="carousel-inner row w-100 mx-auto">
+                    <div class="carousel-item active col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person1.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person2.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person3.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person4.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person5.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item col-md-3">
+                        <div class="overlay_struktur_pengurus"></div>
+                        <img src="./assets/img/person6.png" class="img-fluid mx-auto d-block">
+                        <div class="text_profile_pengurus">
+                            <h3>Jhon Doe</h3>
+                            <p>Ketua Umum</p>
+                            <div class="d-inline">
+                                <img class="mr-3" src="./assets/img/instagram.svg" alt="">
+                                <img src="./assets/img/facebook.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
 
-          </div>
-          <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
+                </div>
+                <a class="carousel-control-prev" href="#theCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#theCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+            <div class="struktur-download-content">
+                <h3 class="struktur-download-title">Struktur Lengkap Keorganisasian IMI Jawa Barat, silahkan unduh
+                    disini :</h3>
+                <button type="button" class="btn btn-light btn-outline-dark text-center button_download_file"><img
+                        class="mr-3" src="./assets/img/pdf-icon.png" alt=""> Download
+                    File</button>
+
+            </div>
         </div>
-      </div>
     </section>
+    <!-- END KEPENGURUSAN -->
 
-    <section id="newsletter">
-      <div class="row mx-lg-5 mt-5  no-gutters wrap_newsletter">
-        <div class="col-lg-8 col-12 order-2 order-lg-1 mx-auto my-auto">
-          <h3 class="w-lg-75">Berlangganan Buletin Kami &mdash; <span>untuk menerima berita, artikel, masukan dan solusi
-              otomotif
-              terbaik dari IMI Jawa Barat</span></h3>
+    <!-- START ANGGARAN -->
+    <section>
+        <div id="accordion">
+            <div class="card my_card mb-3">
+                <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link card-title" data-toggle="collapse" data-target="#collapseOne"
+                            aria-expanded="true" aria-controls="collapseOne" style="padding: 0px;">
+                            Anggaran Rumah Tangga IMI Jawa Barat
+                        </button>
+                    </h5>
+                </div>
 
-          <input placeholder="example@gmail.com" class="input_newsletter" type="text">
-          <img class="button_newsletter" src="./assets/img/send_button.svg" alt="sendButton">
-          <p class="my-3 attention_newsletter">*Dengan berlangganan berarti anda setuju untuk kami mengirimkan anda
-            berita-berita terbaru
-            yang terkait
-            dengan bidang otomotif kapan saja ke email yang anda masukan.</p>
-        </div>
-        <div class="col-lg-4 col-12 order-1 order-lg-2">
-          <img class="mx-auto d-block postMailIcon" src="./assets/img/mailPos.svg" alt="mail pos">
-        </div>
-      </div>
-    </section>
-  </main>
+                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                        Anggaran Rumah Tangga IMI Jawa Barat periode 2021 - 2025, silahkan unduh disini :
+                        <br />
+                        <button type="button"
+                            class="btn btn-light btn-outline-dark text-center button_download_file mt-2"><img
+                                class="mr-3" src="./assets/img/pdf-icon.png" alt=""> Download
+                            File</button>
 
-  <footer>
-    <div class="footer-content card">
-      <img src="./assets/img/footer-batik.png" alt="background-img" class="footer-background card-img">
-      <div class="row card-img-overlay" style="margin: 0px;">
-        <div class="col-lg-4 col-12" style="padding: 0px;">
-          <div class="row d-flex align-items-center" style="margin: 0px;">
-            <img src="./assets/img/logoIMIJabar.svg" alt="logo" class="footer-logo">
-            <div class="ml-auto">
-              <p class="title-ttd">Optimization to Execellence.</p>
-              <p class="paraf-ttd d-flex justify-content-end" style="margin-bottom: -8px;">IMI Jawa Barat</p>
-              <div class="border_ttd"></div>
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="row icon-footer-row">
-            <a href="#"><img src="./assets/img/icon-globe.png" alt="icon-web" class="icon-footer"></a>
-            <a href="#"><img src="./assets/img/icon-fb.png" alt="icon-web" class="icon-footer"></a>
-            <a href="#"><img src="./assets/img/icon-ig.png" alt="icon-web" class="icon-footer"></a>
-          </div>
+            <div class="card my_card">
+                <div class="card-header" id="headingTwo">
+                    <h5 class="mb-0">
+                        <button class="btn btn-link collapsed card-title" data-toggle="collapse"
+                            data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo"
+                            style="padding: 0px;">
+                            Anggaran Dasar IMI Jawa Barat
+                        </button>
+                    </h5>
+                </div>
+                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+                    <div class="card-body">
+                        Anggaran Dasar IMI Jawa Barat periode 2021 - 2025, silahkan unduh disini :
+                        <br />
+                        <button type="button"
+                            class="btn btn-light btn-outline-dark text-center button_download_file mt-2"><img
+                                class="mr-3" src="./assets/img/pdf-icon.png" alt=""> Download
+                            File</button>
+
+                    </div>
+                </div>
+            </div>
+
         </div>
-        <div class="col-lg-1 "></div>
-        <div class="col-lg-3 col-12 middle-footer" style="padding: 0px;">
-          <div class="office-footer">
-            <h1 class="title-footer">Kantor Pusat</h1>
-            <p class="sub-footer">Jl. Batununggal Indah Raya No.81, Batununggal, Kec. Bandung Kidul, Kota Bandung, Jawa
-              Barat 40267</p>
-          </div>
-          <div class="contact-footer">
-            <h1 class="title-footer">Hubungi Kami</h1>
-            <p class="sub-footer" style="margin-bottom: 10px;">email@imijabar.org.id</p>
-            <p class="sub-footer">0821-2222-3333</p>
-          </div>
+    </section>
+    <!-- END ANGGARAN -->
+
+    <footer class="position-relative">
+        <div class="container-fluid content_footer">
+
+            <div class="row my-auto justify-content-md-between h-100">
+                <div class="col-12 col-lg-5  mb-3 mb-lg-0 align-self-center">
+                    <div class="row">
+                        <div class="col-12 col-sm-3">
+                            <img class="d-block mb-4 logo_footer" src="./assets/img/logo_footer.svg"
+                                alt="logo imi jawa barat">
+                        </div>
+                        <div class="footer_ttd col-12 col-sm-9 text-sm-right text-center position-relative">
+                            <p>Optimization to Execellence.</p>
+                            <p class="text_ttd_footer">IMI Jawa Barat</p>
+                            <img class="position-absolute line_border" src="./assets/img/line_blue.svg" alt="line blue">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col sosial_media_footer">
+                            <img class="mr-3" src="./assets/img/icon_globe_web.svg" alt="web imi jabar">
+                            <img class="mr-3" src="./assets/img/icon_facebook.svg" alt="facebook imi jabar">
+                            <img class="mr-3" src="./assets/img/icon_instagram.svg" alt="instagram imi jabar">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-12 col-lg-3">
+                    <div class="address_footer">
+                        <h4 style="font-weight: 700;">Kantor Pusat</h4>
+                        <p style="font-weight: 500;">Jl. Batununggal Indah Raya No.81, Batununggal, Kec. Bandung Kidul,
+                            Kota
+                            Bandung, Jawa Barat 40267</p>
+                    </div>
+                    <div class="contact_footer">
+                        <h4 style="font-weight: 700;">Hubungi Kami</h4>
+                        <p style="font-weight: 500;">email@imijabar.org.id<br />0821-2222-3333</p>
+                    </div>
+                </div>
+                <div class="col-1"></div>
+                <div class="col-12 col-lg-2">
+                    <h4 style="font-weight: 700;">IMI Jabar</h4>
+                    <ul style="font-weight: 500;" class="sitemap_footer">
+                        <li><a href="#">Tentang IMI Jabar</a></li>
+                        <li><a href="#">Berita</a></li>
+                        <li><a href="#">Galeri</a></li>
+                        <li><a href="#">Acara</a></li>
+                        <li><a href="#">Pendaftaran</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
         </div>
-        <div class="col-lg-1"></div>
-        <div class="col-lg-3 col-12 right-footer" style="padding: 0px;">
-          <div class="about-footer">
-            <h1 class="title-footer">IMI Jabar</h1>
-            <li><a href="#" class="sub-footer">Tentang IMI Jabar</a></li>
-            <li><a href="#" class="sub-footer">Berita</a></li>
-            <li><a href="#" class="sub-footer">Galeri</a></li>
-            <li><a href="#" class="sub-footer">Acara</a></li>
-            <li><a href="#" class="sub-footer">Pendaftaran</a></li>
-          </div>
+
         </div>
-      </div>
+        <img class="position-absolute background_footer" src="./assets/img/background_footer.png"
+            alt="background footer">
+    </footer>
+
+    <div class="credit">
+        <div class="container text-center p-3 wrap_credit">
+            <p class="my-auto">© Copyright 2022 IMI Jawa Barat | Web Developed by Rumah Koding X Ayocode.id | All Right
+                Reserved</p>
+        </div>
     </div>
-    <div class="d-flex justify-content-center align-items-center">
-      <p class="footer-credit">© Copyright 2022 IMI Jawa Barat | Web Developed by Rumah Koding X Ayocode.id | All Right
-        Reserved</p>
-    </div>
-  </footer>
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
-    integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
-  </script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
-    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
-  </script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
-    integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
-  </script>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
 
-  <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-  <!-- <script src="typewriter.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
 
-  <script src="./assets/js/DOM.js"></script>
+    <script src="./assets/js/DOM.js"></script>
 </body>
 
 </html>
