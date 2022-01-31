@@ -205,14 +205,14 @@ body {
     background-color: #5996ec;
     padding: 2px;
     margin-bottom: 35px;
-    width: 19%;
+    width: 65px;
 }
 
 .border_acara {
     background-color: #5996ec;
     padding: 2px;
     margin-bottom: 35px;
-    width: 73%;
+    width: 150px;
 }
 
 .title-berita-acara {
@@ -712,6 +712,13 @@ footer {
         font-size: 32px;
     }
 
+    .border_title {
+        width: 80px;
+    }
+
+    .border_acara {
+        width: 180px;
+    }
 
     /* 
         End Style Berita Acara
@@ -942,6 +949,14 @@ footer {
 
     .berita-acara {
         margin: 0px 90px;
+    }
+
+    .border_title {
+        width: 130px;
+    }
+
+    .border_acara {
+        width: 290px;
     }
 
     .content-berita {
