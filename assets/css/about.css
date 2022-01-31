@@ -184,6 +184,14 @@ nav {
     margin: 16px auto;
 }
 
+.sejarah-arrow4 {
+    display: block;
+    width: 28px;
+    height: 28px;
+    margin: 16px auto;
+    transform: rotate(90deg);
+}
+
 .wrap_background_imi {
     margin: 0 auto;
     width: 100%;
@@ -581,7 +589,7 @@ footer {
 
 }
 
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 992px) {
 
     #breadcumb {
         padding: 0 5%;
@@ -652,7 +660,12 @@ footer {
         height: 38px;
         margin: 50px 0px;
         transform: rotate(0deg);
+    }
 
+    .sejarah-arrow4 {
+        width: 38px;
+        height: 38px;
+        transform: rotate(180deg);
     }
 
     .showmore-text {
