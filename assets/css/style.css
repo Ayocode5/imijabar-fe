@@ -430,7 +430,7 @@ body {
 
 #strukturPengurus .border_heading_strukturPengurus {
     padding: 2px;
-    width: 40%;
+    width: 155px;
     background-color: #5996EC;
 }
 
@@ -747,6 +747,10 @@ footer {
 
     #strukturPengurus .head_strukturPengurus h2 {
         font-size: 48px;
+    }
+
+    #strukturPengurus .border_heading_strukturPengurus {
+        width: 310px;
     }
 
     .multi-item-carousel .carousel-inner .carousel-item {
