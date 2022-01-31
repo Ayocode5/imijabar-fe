@@ -16,6 +16,10 @@ body {
 /* 
     Start Navbar
 */
+nav {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+
+}
 
 .toggle.ios,
 .toggle-on.ios,
@@ -37,14 +41,31 @@ body {
     End Navbar
 */
 
-/* 
-    Start Breadcrumb
-*/
-/* 
-    End Breadcrumb
-*/
+#breadcumb {
+    padding: 0 8px;
+    background-color: #F4F4F9;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
 
 /* Start Visi Misi */
+#visi_misi {
+    background-color: #F8F8F8;
+    padding: 0 8px;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
+
+.wrap_visi_misi {
+    width: 100%;
+    margin: 0 auto;
+    border-left: 1px solid rgba(38, 56, 64, 0.5);
+    border-right: 1px solid rgba(38, 56, 64, 0.5);
+    padding: 50px 8px;
+}
+
+.misi_section {
+    margin-top: 50px;
+}
+
 .visimisi-content {
     margin: 0px 100px;
 }
@@ -108,6 +129,20 @@ body {
 
 /* End Visi Misi */
 
+/* Start sejarah imi style */
+#sejarah {
+    background-color: #FBFBFB;
+    padding: 0 8px;
+}
+
+.wrap_sejarah_imi {
+    margin: 0 auto;
+    width: 100%;
+    border-left: 1px solid rgba(38, 56, 64, 0.5);
+    border-right: 1px solid rgba(38, 56, 64, 0.5);
+    padding: 50px 8px;
+}
+
 .sejarah-title {
     font-family: 'Barlow', sans-serif;
     font-weight: bolder;
@@ -150,9 +185,11 @@ body {
 }
 
 .wrap_background_imi {
+    margin: 0 auto;
+    width: 100%;
+    background-color: #fbfbfbfb;
     border-top: 1px solid rgba(38, 56, 64, 0.5);
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-
 }
 
 .image_border_right {
@@ -164,18 +201,42 @@ body {
     border-left: 1px solid rgba(38, 56, 64, 0.5);
 }
 
-.showmore-text {
+.showmore_history {
+    color: #263840;
     font-family: 'Barlow', sans-serif;
     font-weight: medium;
     font-size: 16px;
 }
 
+.showmore_history:hover {
+    color: #263840;
+    text-decoration: none;
+}
+
+.showmore_history:active {
+    color: #263840;
+    text-decoration: none;
+}
+
+/* End sejarah imi style */
+
+
 /* 
     Start Style Struktur Pengurus
 */
+.wrap_struktur_pengurus {
+    width: 100%;
+    margin: 0 auto;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
 
 .struktur-download-content {
     margin: 0 6% !important;
+}
+
+#strukturPengurus {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
 }
 
 #strukturPengurus .head_strukturPengurus {
@@ -187,9 +248,9 @@ body {
     font-size: 24px;
 }
 
-#strukturPengurus .border_heading_strukturPengurus {
+.border_heading_strukturPengurus {
     padding: 2px;
-    width: 24%;
+    width: 155px;
     background-color: #5996EC;
 }
 
@@ -281,20 +342,28 @@ body {
     font-size: 16px;
 }
 
-
-
 /* 
     End Style Struktur Pengurus
 */
 
 /* Start Style Anggaran */
-#accordion {
-    margin: 0 6% !important;
+.wrap_anggaran {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .my_card {
     background-color: #fff;
     border: none;
+}
+
+.art_imi {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+    padding: 16px 7% !important;
+}
+
+.ad_imi {
+    padding: 16px 7% !important;
 }
 
 .card-title {
@@ -314,7 +383,8 @@ body {
 /* End Style Anggaran */
 
 
-/* footer
+/* 
+    footer  
  */
 footer {
     padding: 48px 0;
@@ -387,8 +457,11 @@ footer {
     }
 }
 
+/* end credit */
 
 @media screen and (min-width: 768px) {
+
+
     .sejarah-img {
         width: 100%;
     }
@@ -396,6 +469,9 @@ footer {
     /* 
         Start Struktur Pengurus style
     */
+    .border_heading_strukturPengurus {
+        width: 310px;
+    }
 
     #strukturPengurus .head_strukturPengurus h2 {
         font-size: 48px;
@@ -484,11 +560,6 @@ footer {
         font-size: 26px;
     }
 
-    .struktur-download-title {
-        font-size: 24px;
-    }
-
-
     /* start footer style */
 
     .content_footer {
@@ -498,8 +569,6 @@ footer {
     .logo_footer {
         margin: 0 0;
     }
-
-
 
     /* end footer style */
 
@@ -513,6 +582,19 @@ footer {
 }
 
 @media screen and (min-width: 968px) {
+
+    #breadcumb {
+        padding: 0 5%;
+    }
+
+    #visi_misi {
+        padding: 0 3.5%;
+    }
+
+    .wrap_visi_misi {
+        padding: 50px 4%;
+    }
+
     .visimisi-outline {
         font-size: 72px;
         -webkit-text-stroke: 2px #263840;
@@ -532,6 +614,16 @@ footer {
         margin-left: 60px;
         font-size: 20px;
         margin-top: 20px;
+    }
+
+    /* Start sejarah style */
+    #sejarah {
+        padding: 0 3.5%;
+    }
+
+    .wrap_sejarah_imi {
+        padding: 50px 4%;
+
     }
 
     .sejarah-title {
@@ -563,9 +655,6 @@ footer {
 
     }
 
-
-
-
     .showmore-text {
         font-size: 24px;
     }
@@ -577,7 +666,33 @@ footer {
     }
 
     /* End Sejarah */
+    .wrap_struktur_pengurus {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
 
 
 
+}
+
+@media screen and (min-width: 2300px) {
+    .wrap_background_imi {
+        max-width: 2300px;
+    }
+
+    .wrap_visi_misi {
+        max-width: 2300px;
+    }
+
+    .wrap_sejarah_imi {
+        max-width: 2300px;
+    }
+
+    .wrap_struktur_pengurus {
+        max-width: 2300px;
+    }
+
+    .wrap_anggaran {
+        max-width: 2300px;
+    }
 }
