@@ -413,6 +413,11 @@ main {
 /* 
     Start Style Struktur Pengurus
 */
+#strukturPengurus {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+    background-color: #FBFBFB;
+}
+
 #strukturPengurus .head_strukturPengurus {
     padding: 0 6%;
 }
