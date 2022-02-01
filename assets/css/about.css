@@ -394,7 +394,7 @@ nav {
 
 
 /* 
-    footer  
+    start style footer  
  */
 footer {
     padding: 48px 0;
@@ -447,7 +447,7 @@ footer {
 
 }
 
-/* end footer */
+/* end style footer */
 
 
 /* credit */
@@ -685,7 +685,6 @@ footer {
         padding-top: 100px;
         padding-bottom: 100px;
     }
-
 
 
 }
