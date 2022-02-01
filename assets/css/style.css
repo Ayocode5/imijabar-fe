@@ -184,7 +184,7 @@ main {
 
 /* 
     Start Style Berita Acara
- */
+*/
 .berita-acara {
     margin: 0px 8px;
 }
@@ -501,14 +501,18 @@ main {
 
 }
 
+.carousel_control_img_prev,
+.carousel_control_img_next {
+    width: 24px;
+}
 
-.multi-item-carousel .carousel-control-prev-icon,
+/* .multi-item-carousel .carousel-control-prev-icon,
 .multi-item-carousel .carousel-control-next-icon {
     outline: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 100%, 100%;
     border-radius: 50%;
-}
+} */
 
 /* 
     End Style Struktur Pengurus
@@ -826,6 +830,11 @@ footer {
         right: -5%;
     }
 
+    .carousel_control_img_prev,
+    .carousel_control_img_next {
+        width: 28px;
+    }
+
     /* 
         End Struktur Pengurus style
     */
@@ -1055,7 +1064,13 @@ footer {
         End TentangIMI Style
     */
 
+    /* Style kepengurusan */
+    .carousel_control_img_prev,
+    .carousel_control_img_next {
+        width: 40px;
+    }
 
+    /* End style kepengurusan */
     /* 
         Start Newsletter Style
     */

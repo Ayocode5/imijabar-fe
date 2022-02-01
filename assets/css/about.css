@@ -246,7 +246,7 @@ nav {
 
 #strukturPengurus {
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-    background-color: #FBFBFB;
+    background-color: #F4F4F9;
 }
 
 #strukturPengurus .head_strukturPengurus {
@@ -333,13 +333,18 @@ nav {
 }
 
 
-.multi-item-carousel .carousel-control-prev-icon,
+.carousel_control_img_prev,
+.carousel_control_img_next {
+    width: 24px;
+}
+
+/* .multi-item-carousel .carousel-control-prev-icon,
 .multi-item-carousel .carousel-control-next-icon {
     outline: rgba(0, 0, 0, 0);
     background-color: rgba(0, 0, 0, 0.3);
     background-size: 100%, 100%;
     border-radius: 50%;
-}
+} */
 
 .struktur-download-content {
     padding-top: 50px;
@@ -447,7 +452,7 @@ footer {
 
 }
 
-/* end style footer */
+/* end footer */
 
 
 /* credit */
@@ -559,6 +564,11 @@ footer {
 
     .multi-item-carousel .carousel-control-next {
         right: -5%;
+    }
+
+    .carousel_control_img_prev,
+    .carousel_control_img_next {
+        width: 28px;
     }
 
     /* 
@@ -684,6 +694,12 @@ footer {
     .wrap_struktur_pengurus {
         padding-top: 100px;
         padding-bottom: 100px;
+    }
+
+
+    .carousel_control_img_prev,
+    .carousel_control_img_next {
+        width: 40px;
     }
 
 
