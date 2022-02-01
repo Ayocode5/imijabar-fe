@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/css/bootstrap4-toggle.min.css"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="./assets/css/detail-berita.css">
+    <title>Detail - Berita</title>
+</head>
+
+<body>
+    <!-- START NAVBAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div style="margin: -9px 0;" class="container-fluid mx-lg-5">
+            <a class="navbar-brand" href="index.html">
+                <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
+            </a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText"
+                aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarText">
+                <ul class="navbar-nav mr-auto navbar_list">
+                    <li class="nav-item mr-lg-3">
+                        <a class="nav-link" href="about.html">Tentang IMI<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Berita</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Galeri</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mr-lg-3" href="#">Acara</a>
+                    </li>
+                    <li class="nav-item dropdown mr-lg-3">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Pendaftaran
+                        </a>
+                        <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="#">KIS</a>
+                            <a class="dropdown-item" href="#">KTA</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto navbar_list">
+                    <li class="nav-item mr-lg-3">
+                        <input type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG"
+                            data-style="ios" data-onstyle="primary" data-offstyle="danger">
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-lg-3">
+                            <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="icon contact telephone">
+                            0857-XXXX-XXXX
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link mr-lg-3">
+                            <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="icon contact email">
+
+                        </a>
+                    </li>
+                </ul>
+
+
+            </div>
+        </div>
+    </nav>
+    <!-- END NAVBAR -->
+
+    <!-- START BREADCRUMB -->
+    <section id="breadcumb">
+        <div class="container-fluid wrap_breadcumb py-3">
+            <div class="d-flex align-items-center">
+                <a href="index.html">
+                    <img src="./assets/img/icon-arrow-back.png" alt="back icon"
+                        style="width: 24px; height: 24px; margin-right: 20px;">
+                </a>
+                <a class="mr-2" href="index.html" style="color: #000; text-decoration: none;">Home
+                </a>
+                <a href="/about.html" style="color: #000; text-decoration: none;">/ Berita /
+                </a>
+                <a href="/about.html" style="color: #000; text-decoration: none; font-weight: 700;"> Judul Berita
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- END BREADCRUMB -->
+
+    <header id="header_detail_berita">
+        <img class="img-fluid featured_image" src="./assets/img/jumbotron-img.png" alt="featured image">
+        <div class="wrap_header_detail_berita my-md-5">
+            <div class="content_header_detail_berita py-2 py-md-3">
+                <div class="kategori_detail_berita">
+                    <p>Roda Dua</p>
+                </div>
+                <div class="title_detail_berita">
+                    <h1>Ford Mustang Shelby GT 500 1967</h1>
+                </div>
+                <div class="d-flex flex-wrap justify-content-between author_date_detail_berita">
+                    <p>Admin</p>
+                    <p>30 Januari 2022</p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main id="content_description_detail">
+        <div class="container-fluid wrap_content_description_detail">
+            <div class="row">
+                <div class="col-12 col-md-2 order-2 order-md-1">
+                    <div class="d-flex flex-row justify-content-between justify-content-md-end flex-md-column ">
+                        <p style="font-weight: 700;" class="ml-md-auto d-block text-md-right my-auto">Shares</p>
+
+                        <div class="share_sosmed d-flex flex-row flex-md-column align-content-center">
+                            <a class="mt-2 mb-2 ml-md-auto" href="#"> <img src="./assets/img/share_facebook.svg"
+                                    alt="share to facebook"></a>
+
+                            <a class="mt-2 mb-2 ml-md-auto" href="#"> <img src="./assets/img/share_instagram.svg"
+                                    alt="share to instagram"></a>
+
+                            <a class="mt-2 mb-2 ml-md-auto" href="#"> <img src="./assets/img/share_whatsapp.svg"
+                                    alt="share to share_whatsapp"></a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-8 order-1 order-md-2 description_detail">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean malesuada donec consequat luctus.
+                        Eget a, placerat eu laoreet sagittis blandit ornare dictumst. Orci vel commodo, faucibus non
+                        consectetur dis condimentum tortor. Cursus eu sapien arcu, in volutpat, eu vitae eget egestas.
+                    </p>
+                    <p>Felis, lectus convallis posuere pellentesque turpis posuere viverra amet, massa. Amet hac arcu
+                        augue cursus accumsan, eget pellentesque tincidunt vulputate. Aliquet lectus dolor nec enim
+                        enim. Ornare lacus, quam scelerisque donec morbi amet scelerisque at. Vitae sed dui tellus
+                        turpis lectus molestie risus sed ligula. Nec dignissim mollis tellus, nisi. Sagittis placerat
+                        sagittis est nunc nec. Blandit lacus, ut in in amet, vitae varius. Fermentum lacus nulla ac
+                        purus viverra in. Diam ut a nibh pellentesque nec nunc. </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facilisis nulla urna non fringilla.
+                        Viverra sit imperdiet nulla volutpat accumsan metus malesuada pharetra. Sem etiam pretium risus
+                        sagittis vel at in id elit. Scelerisque ultricies sem sit congue ante. Cursus pellentesque
+                        ullamcorper sed duis dolor pharetra. Et ullamcorper sit lectus pharetra adipiscing ullamcorper
+                        egestas urna. Ut pharetra, nibh consequat vivamus nullam. Nulla mollis facilisi non, mauris quam
+                        blandit. Leo est consequat id ut sed id arcu nisi. Dui sollicitudin proin sagittis praesent
+                        ultricies auctor. Sem et pellentesque tincidunt amet lorem. Sed tempus, pretium viverra nibh
+                        euismod ac pretium nisl. Dolor elementum vitae, nunc leo elementum. Viverra ut ac sed convallis.
+                        Viverra lectus est magna sapien, elementum sit hendrerit. Molestie auctor maecenas id varius
+                        ornare. Commodo egestas rhoncus leo ornare ut vel. Purus imperdiet vestibulum pulvinar molestie
+                        proin morbi sed interdum nulla. In quam maecenas nisl, quam scelerisque et. Diam nunc, nulla
+                        eget et ultrices. Nulla amet bibendum neque, cras vel risus, urna, et viverra. Ultricies varius
+                        elit nunc morbi vestibulum neque faucibus neque. Aliquet aliquam sollicitudin commodo imperdiet
+                        aliquam lobortis. Volutpat porttitor diam a dis lobortis. Egestas adipiscing vestibulum libero
+                        morbi tortor. Nisi egestas mattis at ultrices dui. Convallis quam mauris purus, nec elit justo
+                        eget. Nisl urna, sodales dolor pretium habitasse. Sed blandit sed consectetur facilisi purus
+                        pellentesque vitae tempor. Convallis quam mauris purus, nec elit justo eget. Nisl urna, sodales
+                        dolor pretium habitasse. Sed blandit sed consectetur facilisi purus pellentesque vitae.</p>
+                </div>
+                <div class="col-12 col-md-2 order-3"></div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+
+    <script src="https://cdn.jsdelivr.net/gh/gitbrent/bootstrap4-toggle@3.6.1/js/bootstrap4-toggle.min.js"></script>
+
+    <script src="./assets/js/DOM.js"></script>
+</body>
+
+</html>

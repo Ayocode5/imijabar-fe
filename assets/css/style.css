@@ -16,6 +16,10 @@ body {
 /* 
     Start Navbar
 */
+nav {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+
+}
 
 .toggle.ios,
 .toggle-on.ios,

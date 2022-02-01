@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+
+/* 
+    font-family: 'Barlow', sans-serif;  
+    font-family: 'Tinos', serif;
+    font-family: 'Zeyada', cursive;
+*/
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* 
+    Start Navbar
+*/
+nav {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
+
+.toggle.ios,
+.toggle-on.ios,
+.toggle-off.ios {
+    border-radius: 20rem;
+}
+
+.toggle.ios .toggle-handle {
+    border-radius: 20rem;
+}
+
+.nav-item {
+    font-family: 'Barlow', sans-serif;
+    font-weight: 600;
+    font-size: 1em;
+}
+
+/* 
+    End Navbar
+*/
+
+
+#breadcumb {
+    padding: 0 8px;
+    background-color: #F4F4F9;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
+
+.featured_image {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.wrap_header_detail_berita {
+    margin: 0 3%;
+}
+
+#header_detail_berita .content_header_detail_berita {
+    border-bottom: 1px solid black;
+    line-height: unset;
+}
+
+.content_header_detail_berita .kategori_detail_berita p {
+    font-weight: 500;
+    font-size: 1em;
+    color: rgba(38, 56, 64, 0.5);
+}
+
+.content_header_detail_berita .title_detail_berita h1 {
+    font-size: 1.8em;
+    font-weight: 700;
+    color: #263840;
+    font-family: 'Tinos', serif;
+}
+
+.content_header_detail_berita .author_date_detail_berita {
+    font-weight: 500;
+    font-size: 1em;
+    color: #263840;
+}
+
+
+/*  */
+#content_description_detail {}
+
+.wrap_content_description_detail {}
+
+.share_sosmed {
+    margin-right: 4px;
+}
+
+.share_sosmed img {
+    margin-right: 16px;
+    width: 22px;
+    height: 22px;
+    max-width: 44px;
+    max-height: 44px;
+}
+
+.description_detail {
+    padding: 0 3%;
+    text-align: justify;
+}
+
+/*  */
+@media screen and (min-width: 768px) {
+
+    .featured_image {
+        height: 533px;
+        width: 100%;
+        object-fit: cover;
+    }
+
+
+    .wrap_header_detail_berita {
+        margin: 0 50px;
+    }
+
+    #header_detail_berita .content_header_detail_berita {
+        line-height: 64px;
+    }
+
+    .content_header_detail_berita .kategori_detail_berita p {
+        font-size: 24px;
+    }
+
+    .content_header_detail_berita .title_detail_berita h1 {
+        font-size: 48px;
+    }
+
+    .content_header_detail_berita .author_date_detail_berita {
+        font-size: 24px;
+    }
+
+    .description_detail {
+        padding: 0 32px;
+        text-align: justify;
+    }
+
+    .share_sosmed img {
+        margin-right: 0px;
+        width: 44px;
+        height: 44px;
+    }
+
+
+}
+
+@media screen and (min-width: 992px) {
+
+    #breadcumb {
+        padding: 0 5%;
+    }
+
+    .wrap_header_detail_berita {
+        margin: 0 100px;
+    }
+
+    #header_detail_berita .content_header_detail_berita {
+        padding: 0 16%;
+    }
+
+    .description_detail {
+        padding: 0 55px;
+        text-align: justify;
+    }
+
+}
