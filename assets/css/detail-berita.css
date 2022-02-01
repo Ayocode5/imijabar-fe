@@ -49,6 +49,11 @@ nav {
 
 /* End Breadcumb */
 
+#main_content_detail_berita {
+    width: 100%;
+    margin: 0 auto;
+}
+
 /* 
     Start style Detail Berita 
 */
@@ -56,6 +61,11 @@ nav {
     height: 300px;
     width: 100%;
     object-fit: cover;
+}
+
+#header_detail_berita {
+    width: 100%;
+    margin: 0 auto;
 }
 
 .wrap_header_detail_berita {
@@ -397,4 +407,15 @@ footer {
     }
 
     /* End style berita serupa  */
+}
+
+@media screen and (min-width: 2300px) {
+
+    #header_detail_berita {
+        max-width: 2300px;
+    }
+
+    #main_content_detail_berita {
+        max-width: 2300px;
+    }
 }

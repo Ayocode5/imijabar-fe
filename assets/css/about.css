@@ -245,6 +245,8 @@ nav {
 
 
 #strukturPengurus {
+    width: 100%;
+    margin: 0 auto;
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
     background-color: #F4F4F9;
 }
@@ -718,7 +720,7 @@ footer {
         max-width: 2300px;
     }
 
-    .wrap_struktur_pengurus {
+    #strukturPengurus {
         max-width: 2300px;
     }
 
