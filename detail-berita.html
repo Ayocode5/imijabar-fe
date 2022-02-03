@@ -56,18 +56,29 @@
                 </ul>
                 <ul class="navbar-nav ml-auto navbar_list">
                     <li class="nav-item mr-lg-3">
-                        <input type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG"
-                            data-style="ios" data-onstyle="primary" data-offstyle="danger">
+                        <!-- <input class="btn_change_language" type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG"
+              data-style="ios" data-onstyle="primary" data-offstyle="danger"> -->
+                        <div class="switch_language">
+                            <input type="checkbox" class="checkbox_switch_language" id="chk" />
+                            <label class="label_switch_language" for="chk">
+                                <div class="ball"></div>
+                                <div class="flags">
+                                    <img class="ball_us flag" src="./assets/img/flag-us.svg" alt="us flag">
+                                    <img class="ball_id flag" src="./assets/img/flag-indonesia.svg" alt="us flag">
+                                </div>
+                                <!-- <div class="ball"></div> -->
+                            </label>
+                        </div>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link mr-lg-3">
-                            <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="icon contact telephone">
+                            <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="contact">
                             0857-XXXX-XXXX
                         </a>
                     </li>
                     <li class="nav-item">
                         <a href="#" class="nav-link mr-lg-3">
-                            <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="icon contact email">
+                            <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="contact email">
 
                         </a>
                     </li>

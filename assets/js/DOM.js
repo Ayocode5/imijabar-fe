@@ -1,68 +1,75 @@
-// const navbarListsElement = document.querySelector('.navbar_list');
-// const dataReload = document.querySelectorAll("[data-reload]");
+const navbarListsElement = document.querySelectorAll('.nav-link');
+const buttonChangeLanguage = document.querySelector('.checkbox_switch_language');
 
-// function getAPI() {
-//     const promise = new Promise((resolve, reject) => {
-//         fetch('http://localhost:4000/language')
-//             .then(result => result.json())
-//             .then(resultData => resolve(resultData), (err) => {
-//                 reject(err)
-//             });
-//     })
-//     return promise;
-// }
+console.log(buttonChangeLanguage)
+console.log(navbarListsElement)
 
-// if (window.location.hash) {
-//     if (window.location.hash === "#en") {
-//         getAPI().then(result => {
-//             navbarListsElement.innerHTML = '';
-//             result.english.navbarItem.forEach(element => {
-//                 navbarListsElement.innerHTML += `<li class="nav-item mr-lg-3 active">
-//                 <a class="nav-link" href="#">${element}<span class="sr-only">(current)</span></a>
-//                 </li>`
-//             });
-//         })
-//     }
-// }
+buttonChangeLanguage.addEventListener('click', () => {
+    if (buttonChangeLanguage.checked) {
+        console.log('to us');
+        getAPI().then(result => {
+            console.log(result.english.navbarItem)
 
-// dataReload.forEach((item, i) => {
-//     item.addEventListener('click', () => {
-//         getAPI().then(result => {
-//             console.log(result.english)
-//             navbarListsElement.innerHTML = '';
-//             result.english.navbarItem.forEach(element => {
-//                 navbarListsElement.innerHTML += `<li class="nav-item mr-lg-3 active">
-//                         <a class="nav-link" href="#">${element}<span class="sr-only">(current)</span></a>
-//                         </li>`
-//             });
-//         })
-//     })
-// })
+            for (let i = 0; i < navbarListsElement.length; i++) {
+                for (let j = 0; j < result.english.navbarItem.length; j++) {
+                    if (i === j) {
+                        navbarListsElement[i].textContent = result.english.navbarItem[j]
+                    }
+                }
+            }
 
-// $('#recipeCarousel').carousel({
-//     interval: 2000
-// })
+        })
+    } else {
+        console.log('not checked');
+        getAPI().then(result => {
+            console.log(result.indonesia.navbarItem)
 
-// $('.carousel .carousel-item').each(function () {
-//     var next = $(this).next();
-//     if (!next.length) {
-//         next = $(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
+            for (let i = 0; i < navbarListsElement.length; i++) {
+                for (let j = 0; j < result.indonesia.navbarItem.length; j++) {
+                    if (i === j) {
+                        navbarListsElement[i].textContent = result.indonesia.navbarItem[j]
+                    }
+                }
+            }
 
-//     for (var i = 0; i < 2; i++) {
-//         next = next.next();
-//         if (!next.length) {
-//             next = $(this).siblings(':first');
-//         }
+        })
+    }
+})
 
-//         next.children(':first-child').clone().appendTo($(this));
-//     }
-// });
 
-// Developed at agap2
-// Based on:
-// http://www.codeply.com/go/s3I9ivCBYH/multi-carousel-single-slide-bootstrap-4
+function getAPI() {
+    const promise = new Promise((resolve, reject) => {
+        fetch('http://localhost:4000/language')
+            .then(result => result.json())
+            .then(resultData => resolve(resultData), (err) => {
+                reject(err)
+            });
+    })
+    return promise;
+}
+
+
+$('#recipeCarousel').carousel({
+    interval: 2000
+})
+
+$('.carousel .carousel-item').each(function () {
+    var next = $(this).next();
+    if (!next.length) {
+        next = $(this).siblings(':first');
+    }
+    next.children(':first-child').clone().appendTo($(this));
+
+    for (var i = 0; i < 2; i++) {
+        next = next.next();
+        if (!next.length) {
+            next = $(this).siblings(':first');
+        }
+
+        next.children(':first-child').clone().appendTo($(this));
+    }
+});
+
 
 $(function () {
 
