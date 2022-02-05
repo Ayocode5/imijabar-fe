@@ -674,13 +674,20 @@ footer {
 
 @media screen and (min-width: 992px) {
 
+    /* start navbar style */
     .switch_language {
         margin-top: 5px;
     }
 
+    /* End navbar style */
+
+
+    /* Start breadcumb style */
     #breadcumb {
         padding: 0 5%;
     }
+
+    /* end breadcumb style */
 
     #visi_misi {
         padding: 0 3.5%;
