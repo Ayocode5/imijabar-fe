@@ -261,7 +261,9 @@ nav {
 }
 
 .location_events_list {
-    border-right: 1px solid rgba(38, 56, 64, 0.5);
+    padding-bottom: 16px;
+    margin-bottom: 16px;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
     padding-left: 0;
 }
 
@@ -326,7 +328,7 @@ nav {
 
 .card_events_list_detail {
     border-top: 1px solid rgba(38, 56, 64, 0.5);
-    padding: 24px;
+    padding: 20px;
 }
 
 .wrap_list_events .card .card-body .author_date_list_events {
@@ -502,6 +504,14 @@ footer {
 
     .wrap_list_events .card .card-body .card-title {
         font-size: 20px;
+    }
+
+    .location_events_list {
+        padding-bottom: 0px;
+        margin-bottom: 0px;
+        border-bottom: none;
+        border-right: 1px solid rgba(38, 56, 64, 0.5);
+        padding-left: 0;
     }
 
     /* Content List Berita */

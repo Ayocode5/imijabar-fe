@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
-
+@import url(./reusable-css/navbar.css);
+@import url(./reusable-css/kepengurusan.css);
+@import url(./reusable-css/footer.css);
 /* 
     font-family: 'Barlow', sans-serif;  
     font-family: 'Tinos', serif;
@@ -12,104 +14,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
-/* 
-    Start Navbar
-*/
-nav {
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-
-}
-
-.toggle.ios,
-.toggle-on.ios,
-.toggle-off.ios {
-    border-radius: 20rem;
-}
-
-.toggle.ios .toggle-handle {
-    border-radius: 20rem;
-}
-
-.nav-item {
-    font-family: 'Barlow', sans-serif;
-    font-weight: 600;
-    font-size: 1em;
-}
-
-.switch_language {
-    margin-top: 0;
-}
-
-.flags {
-    display: flex;
-    justify-content: center;
-    gap: 2px;
-}
-
-.flags .flag {
-    margin-top: 1px;
-    height: 22px;
-    width: 20px;
-}
-
-.checkbox_switch_language {
-    opacity: 0;
-    position: absolute;
-    margin: 0 auto;
-}
-
-.label_switch_language {
-    background-color: rgb(255, 255, 255);
-    border: 1px solid #DEDEDE;
-    box-sizing: border-box;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
-    border-radius: 50px;
-    cursor: pointer;
-    padding: 0 5px;
-    position: relative;
-    height: 26px;
-    width: 50px;
-    transform: scale(1.3);
-}
-
-.label_switch_language .ball {
-    background-color: rgb(255, 255, 255);
-    z-index: 99;
-    border-radius: 50%;
-    position: absolute;
-    top: 1px;
-    left: 2px;
-    height: 22px;
-    width: 22px;
-    transform: translateX(0px);
-    transition: transform 0.2s linear;
-    line-height: 20px;
-    text-align: center;
-
-}
-
-.label_switch_language .ball::before {
-    content: "ID";
-    text-align: center;
-    font-size: 10px;
-    transition: all 0.3s ease-in-out;
-}
-
-.checkbox_switch_language:checked+.label_switch_language .ball {
-    transform: translateX(22px);
-}
-
-.checkbox_switch_language:checked+.label_switch_language .ball::before {
-    content: "US";
-    text-align: center;
-    font-size: 10px;
-}
-
-/* 
-    End Navbar
-*/
-
 
 /* 
     Start Jumbotron 
@@ -244,8 +148,6 @@ nav {
     End Jumbotron 
 */
 
-
-
 main {
     width: 100%;
     margin: 0 auto;
@@ -262,6 +164,13 @@ main {
     font-size: 24px;
     font-weight: bold;
     padding-bottom: 3px;
+}
+
+.subtitle-berita {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .border_title {
@@ -291,6 +200,10 @@ main {
     font-weight: 700;
     font-size: 1.5em;
     font-family: 'Tinos', serif;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .content-berita {
@@ -380,6 +293,12 @@ main {
     font-weight: bold;
 }
 
+.name-event {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
 
 .title-event {
     font-size: 25px;
@@ -391,11 +310,25 @@ main {
     font-weight: medium;
 }
 
+.btn_show_more_berita_landing {
+    background-color: transparent;
+    padding: 7px 24px;
+    border-radius: 5px;
+    transition: all 0.5s ease-in-out;
+}
 
+.btn_show_more_berita_landing:hover,
+.btn_show_more_berita_landing:focus,
+.btn_show_more_berita_landing:active {
+    background-color: #FFCE51;
+    outline: none;
+    border: none;
+    transform: translate(0, -5px);
+}
 
 /* 
     End Style Berita Acara
- */
+*/
 
 
 /* 
@@ -453,6 +386,13 @@ main {
     text-decoration: none;
 }
 
+.slide_tentangImi1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
 .slide_tentangImi2 {
     margin-top: 16px;
 }
@@ -462,8 +402,6 @@ main {
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
 
 }
-
-
 
 .image_border_right {
     border-right: 1px solid rgba(38, 56, 64, 0.5);
@@ -478,114 +416,6 @@ main {
     END STYLE TENTANG
 */
 
-
-/* 
-    Start Style Struktur Pengurus
-*/
-#strukturPengurus {
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-    background-color: #FBFBFB;
-}
-
-#strukturPengurus .head_strukturPengurus {
-    padding: 0 6%;
-}
-
-#strukturPengurus .head_strukturPengurus h2 {
-    font-weight: 700;
-    font-size: 24px;
-}
-
-#strukturPengurus .border_heading_strukturPengurus {
-    padding: 2px;
-    width: 155px;
-    background-color: #5996EC;
-}
-
-.link_selengkapnya_struktur_pengurus span {
-    color: #0078C1;
-    font-size: 20px;
-    display: inline-block;
-    transform: translate(0, 0);
-    transition: all 0.5s ease-in-out;
-}
-
-.link_selengkapnya_struktur_pengurus:hover span {
-    transform: translate(8px, 0);
-}
-
-
-
-.multi-item-carousel {
-    margin: 0 4% !important;
-}
-
-.multi-item-carousel .carousel-item>img {
-    object-fit: cover;
-}
-
-.multi-item-carousel .carousel-item:hover .text_profile_pengurus {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.multi-item-carousel .carousel-item:hover .overlay_struktur_pengurus {
-    opacity: 1;
-}
-
-.overlay_struktur_pengurus {
-    background: rgba(0, 0, 0, 0.7);
-    left: 0;
-    right: 0;
-    opacity: 0;
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
-    position: absolute;
-    transition: all 0.5s ease-in-out;
-}
-
-.text_profile_pengurus {
-    opacity: 0;
-    width: 100%;
-    transform: translate(0, 200px);
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-    position: absolute;
-    margin: 0 auto;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
-}
-
-.multi-item-carousel .carousel-control-prev {
-    width: 10.1%;
-}
-
-.multi-item-carousel .carousel-control-next {
-    width: 10.1%;
-
-}
-
-.carousel_control_img_prev,
-.carousel_control_img_next {
-    width: 24px;
-}
-
-/* .multi-item-carousel .carousel-control-prev-icon,
-.multi-item-carousel .carousel-control-next-icon {
-    outline: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 100%, 100%;
-    border-radius: 50%;
-} */
-
-/* 
-    End Style Struktur Pengurus
-*/
 
 /* 
     Start Style Newsletter
@@ -641,79 +471,6 @@ main {
 */
 
 
-
-/* footer
- */
-footer {
-    padding: 48px 0;
-}
-
-.content_footer {
-    padding: 0 5%;
-    height: 100%;
-    z-index: 5;
-}
-
-.logo_footer {
-    margin: 0 auto;
-}
-
-.footer_ttd p {
-    font-family: 'Tinos', serif;
-    font-size: 24px;
-}
-
-.footer_ttd .text_ttd_footer {
-    font-family: 'Zeyada', cursive;
-}
-
-.line_border {
-    width: 50%;
-    right: 0;
-    left: 0;
-    margin: 0 auto;
-    bottom: 20px;
-}
-
-.background_footer {
-    object-fit: cover;
-    height: 100%;
-    top: 0;
-    width: 100%;
-    z-index: -1;
-}
-
-.sitemap_footer {
-    list-style-type: none;
-    padding: 0;
-}
-
-.sitemap_footer li a {
-    color: #000000;
-    text-decoration: none;
-
-
-}
-
-/* end footer */
-
-
-/* credit */
-.credit {
-    background-color: #F4F4F9;
-    font-weight: 700;
-    font-size: 12px;
-}
-
-@media screen and (min-width: 576px) {
-    .line_border {
-        width: 50%;
-        right: 15px;
-        left: unset;
-        bottom: 20px;
-        margin: unset;
-    }
-}
 
 /* Tablet Style */
 @media screen and (min-width: 768px) {
@@ -812,102 +569,6 @@ footer {
         End TentangIMI style
     */
 
-
-    /* 
-        Start Struktur Pengurus style
-    */
-
-    #strukturPengurus .head_strukturPengurus h2 {
-        font-size: 48px;
-    }
-
-    #strukturPengurus .border_heading_strukturPengurus {
-        width: 310px;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item {
-        margin-right: inherit;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item {
-        display: block;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
-        transition: none;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item-next,
-    .multi-item-carousel .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-
-    .multi-item-carousel .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    .multi-item-carousel .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-control-prev {
-        left: -5%;
-    }
-
-    .multi-item-carousel .carousel-control-next {
-        right: -5%;
-    }
-
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 28px;
-    }
-
-    /* 
-        End Struktur Pengurus style
-    */
-
     /* 
         Start Newsletter style
     */
@@ -951,31 +612,10 @@ footer {
         End Newsletter style
     */
 
-    /* start footer style */
 
-    .content_footer {
-        padding: 0 8%;
-    }
-
-    .logo_footer {
-        margin: 0 0;
-    }
-
-    /* end footer style */
-
-    /* start credit style */
-    .credit {
-        font-size: 16px;
-    }
-
-    /* end credit style */
 }
 
 @media screen and (min-width: 992px) {
-
-    .switch_language {
-        margin-top: 5px;
-    }
 
     /* 
         Start Jumbotron Style
@@ -1072,7 +712,6 @@ footer {
     }
 
 
-
     .tgl-event {
         color: #fff;
         font-size: 24px;
@@ -1137,13 +776,7 @@ footer {
         End TentangIMI Style
     */
 
-    /* Style kepengurusan */
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 40px;
-    }
 
-    /* End style kepengurusan */
     /* 
         Start Newsletter Style
     */
