@@ -1,0 +1,15 @@
+#breadcumb {
+    padding: 0 8px;
+    background-color: #F4F4F9;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Start breadcumb style */
+    #breadcumb {
+        padding: 0 5%;
+    }
+
+    /* end breadcumb style */
+}
