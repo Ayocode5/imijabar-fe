@@ -179,11 +179,19 @@ body {
     border-left: 1px solid rgba(38, 56, 64, 0.5);
 }
 
+
 .showmore_history {
     color: #263840;
     font-family: 'Barlow', sans-serif;
     font-weight: medium;
     font-size: 16px;
+}
+
+.showmore-btn .collapsing {
+    -webkit-transition-duration: 1s;
+    transition-duration: 1s;
+    -webkit-transition-timing-function: ease-in-out;
+    transition-timing-function: ease-in-out;
 }
 
 .showmore_history:hover {
@@ -194,6 +202,42 @@ body {
 .showmore_history:active {
     color: #263840;
     text-decoration: none;
+}
+
+.show_more_tentang_imi {
+    opacity: 0;
+    margin: 0 auto;
+    position: absolute;
+}
+
+.label_show_more_history .text_show_more_tentang_imi {
+    text-align: center;
+}
+
+.label_show_more_history .text_show_more_tentang_imi::before {
+    content: "Tampilkan Lebih Banyak";
+    transition: all 1s ease-in-out;
+    font-size: 16px;
+}
+
+.label_show_more_history {
+    gap: 4px;
+    padding: 8px 8px;
+}
+
+.show_more_tentang_imi:checked+.label_show_more_history .text_show_more_tentang_imi::before {
+    content: "Tampilkan Lebih Sedikit";
+}
+
+.showmore-icon {
+    transition: all 1s ease-in-out;
+    width: 16px;
+    height: 16px;
+    margin-left: 20px;
+}
+
+.show_more_tentang_imi:checked+.label_show_more_history .showmore-icon {
+    transform: rotate(180deg);
 }
 
 /* End sejarah imi style */
@@ -352,11 +396,6 @@ body {
         font-size: 24px;
     }
 
-    .showmore-icon {
-        width: 16px;
-        height: 16px;
-        margin-left: 20px;
-    }
 
     /* End Sejarah */
     .wrap_struktur_pengurus {

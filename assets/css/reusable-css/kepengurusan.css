@@ -34,75 +34,66 @@
 }
 
 .multi-item-carousel {
-    margin: 0 4% !important;
+    padding: 0 6%;
 }
 
-.multi-item-carousel .carousel-item>img {
-    object-fit: cover;
+.multi-item-carousel .owl-carousel .item img {
+    width: 100%;
 }
 
-.multi-item-carousel .carousel-item:hover .text_profile_pengurus {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.multi-item-carousel .carousel-item:hover .overlay_struktur_pengurus {
+.overlay_multiple_item_carousel:hover {
     opacity: 1;
 }
 
-.overlay_struktur_pengurus {
-    background: rgba(0, 0, 0, 0.7);
+.overlay_multiple_item_carousel {
+    opacity: 0;
+    transition: all 0.9s ease-in-out;
+    color: #F4F4F9;
+    z-index: 9;
     left: 0;
     right: 0;
-    opacity: 0;
-    width: 90%;
+    width: 100%;
     margin: 0 auto;
     height: 100%;
-    position: absolute;
-    transition: all 0.5s ease-in-out;
+    background: rgba(38, 56, 64, 0.5);
 }
 
-.text_profile_pengurus {
-    opacity: 0;
-    width: 100%;
-    transform: translate(0, 200px);
-    transition: all 0.5s ease-in-out;
-    text-align: center;
-    position: absolute;
+.content_overlay_multiple_item_carousel {
     margin: 0 auto;
-    bottom: 10%;
     left: 0;
     right: 0;
-    z-index: 20;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    bottom: 0;
+    position: absolute;
+    text-align: center;
+    line-height: 18px;
 }
 
-.multi-item-carousel .carousel-control-prev {
-    width: 10.1%;
+.sossial_media_multiple_carousel {
+    gap: 16px;
 }
 
-.multi-item-carousel .carousel-control-next {
-    width: 10.1%;
-
+.name_text_overlay {
+    font-size: 24px;
+    font-weight: 700;
 }
 
-.carousel_control_img_prev,
-.carousel_control_img_next {
-    width: 24px;
+.role_text_overlay {
+    font-weight: 500;
 }
 
-/* .multi-item-carousel .carousel-control-prev-icon,
-.multi-item-carousel .carousel-control-next-icon {
-    outline: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 100%, 100%;
-    border-radius: 50%;
-} */
+.multi-item-carousel .owl-prev {
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    left: -5%;
+}
 
-/* 
-    End Style Struktur Pengurus
-*/
+.multi-item-carousel .owl-next {
+    height: 100px;
+    position: absolute;
+    top: 35%;
+    right: -5%;
+}
 
 @media screen and (min-width: 768px) {
 
@@ -119,98 +110,6 @@
         width: 310px;
     }
 
-    .multi-item-carousel .carousel-inner .carousel-item {
-        margin-right: inherit;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item {
-        display: block;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
-        transition: none;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item-next,
-    .multi-item-carousel .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-
-    .multi-item-carousel .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    .multi-item-carousel .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-control-prev {
-        left: -5%;
-    }
-
-    .multi-item-carousel .carousel-control-next {
-        right: -5%;
-    }
-
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 28px;
-    }
-
-    /* 
-        End Struktur Pengurus style
-    */
-
 }
 
-@media screen and (min-width: 992px) {
-
-    /* Style kepengurusan */
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 40px;
-    }
-
-    /* End style kepengurusan */
-}
+@media screen and (min-width: 992px) {}

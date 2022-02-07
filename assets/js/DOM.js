@@ -1,3 +1,31 @@
+$('.owl-carousel').owlCarousel({
+    loop: true,
+    margin: 20,
+    dots: false,
+    // navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
+    navText: ["<img src='./assets/img/arrow-left-carousel.svg'>", "<img src='./assets/img/arrow-right-carousel.svg'>"],
+
+    responsive: {
+        0: {
+            items: 1,
+            nav: false,
+            dots: true
+        },
+        568: {
+            items: 2,
+            nav: false
+        },
+        768: {
+            items: 3,
+            nav: true
+        },
+        992: {
+            items: 4,
+            nav: true,
+        }
+    }
+})
+
 const navbarListsElement = document.querySelectorAll('.nav-link');
 const buttonChangeLanguage = document.querySelector('.checkbox_switch_language');
 
