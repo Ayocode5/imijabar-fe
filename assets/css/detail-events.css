@@ -133,111 +133,27 @@ body {
     font-weight: 700;
 }
 
-/* 
-    Start Style Struktur Pengurus
-*/
-#strukturPengurus {
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-    background-color: #FBFBFB;
-}
-
-#strukturPengurus .head_strukturPengurus {
+/* Start style Carousel Cabang Olahraga */
+.multiple_item_carousel_cabor {
     padding: 0 6%;
+
 }
 
-#strukturPengurus .head_strukturPengurus h2 {
-    font-weight: 700;
-    font-size: 24px;
-}
-
-#strukturPengurus .border_heading_strukturPengurus {
-    padding: 2px;
-    width: 155px;
-    background-color: #5996EC;
-}
-
-.link_selengkapnya_struktur_pengurus span {
-    color: #0078C1;
-    font-size: 20px;
-    display: inline-block;
-    transform: translate(0, 0);
-    transition: all 0.5s ease-in-out;
-}
-
-.link_selengkapnya_struktur_pengurus:hover span {
-    transform: translate(8px, 0);
-}
-
-.multi-item-carousel {
-    margin: 0 4% !important;
-}
-
-.multi-item-carousel .carousel-item>img {
-    object-fit: cover;
-}
-
-.multi-item-carousel .carousel-item:hover .text_profile_pengurus {
-    opacity: 1;
-    transform: translate(0, 0);
-}
-
-.multi-item-carousel .carousel-item:hover .overlay_struktur_pengurus {
-    opacity: 1;
-}
-
-.overlay_struktur_pengurus {
-    background: rgba(0, 0, 0, 0.7);
-    left: 0;
-    right: 0;
-    opacity: 0;
-    width: 90%;
-    margin: 0 auto;
-    height: 100%;
+.multiple_item_carousel_cabor .owl-prev {
+    height: 100px;
     position: absolute;
-    transition: all 0.5s ease-in-out;
+    top: 35%;
+    left: -5%;
 }
 
-.text_profile_pengurus {
-    opacity: 0;
-    width: 100%;
-    transform: translate(0, 200px);
-    transition: all 0.5s ease-in-out;
-    text-align: center;
+.multiple_item_carousel_cabor .owl-next {
+    height: 100px;
     position: absolute;
-    margin: 0 auto;
-    bottom: 10%;
-    left: 0;
-    right: 0;
-    z-index: 20;
-    color: white;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .6);
+    top: 35%;
+    right: -5%;
 }
 
-.multi-item-carousel .carousel-control-prev {
-    width: 10.1%;
-}
-
-.multi-item-carousel .carousel-control-next {
-    width: 10.1%;
-
-}
-
-.carousel_control_img_prev,
-.carousel_control_img_next {
-    width: 24px;
-}
-
-/* .multi-item-carousel .carousel-control-prev-icon,
-.multi-item-carousel .carousel-control-next-icon {
-    outline: rgba(0, 0, 0, 0);
-    background-color: rgba(0, 0, 0, 0.3);
-    background-size: 100%, 100%;
-    border-radius: 50%;
-} */
-
-/* 
-    End Style Struktur Pengurus
-*/
+/* End style Carousel Cabang Olahraga */
 
 .btn_daftar_event {
     padding: 8px 24px;
@@ -257,6 +173,10 @@ body {
 
 
 /* sponsor */
+.wrap_sponsor_event h2 {
+    font-size: 20px;
+}
+
 .sponsor_event {
     background-color: #E5E5E5;
 }
@@ -267,6 +187,44 @@ body {
 
 /* sponsor */
 /* End style main content detail event */
+
+.text_surat_rekomendasi button {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.text_surat_rekomendasi button:hover,
+.text_surat_rekomendasi button:focus {
+    color: #000000;
+    text-decoration: none;
+
+}
+
+.wrap_surat_rekomendasi .card .card-header {
+    padding: 24px 6%;
+}
+
+.wrap_surat_rekomendasi .card .card-header img {
+    width: 22px;
+}
+
+.wrap_surat_rekomendasi .card .card-header[aria-expanded="false"] img {
+    transform: rotate(0deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.wrap_surat_rekomendasi .card .card-header[aria-expanded="true"] img {
+    transform: rotate(180deg);
+    transition: transform 0.5s ease-in-out;
+}
+
+.wrap_surat_rekomendasi .card .card-body {
+    padding: 24px 8%;
+    font-weight: 500;
+    font-size: 16px;
+}
 
 
 @media screen and (min-width: 768px) {
@@ -310,108 +268,29 @@ body {
         font-size: 48px;
     }
 
-    /* 
-        Start Struktur Pengurus style
-    */
-
-    #strukturPengurus .head_strukturPengurus h2 {
-        font-size: 48px;
-    }
-
-    #strukturPengurus .border_heading_strukturPengurus {
-        width: 310px;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item {
-        margin-right: inherit;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item {
-        display: block;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left),
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-inner .carousel-item.active:not(.carousel-item-right):not(.carousel-item-left)+.carousel-item+.carousel-item+.carousel-item {
-        transition: none;
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item.active+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: absolute;
-        top: 0;
-        right: -25%;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-inner .carousel-item-next,
-    .multi-item-carousel .carousel-inner .carousel-item-prev {
-        position: relative;
-        transform: translate3d(0, 0, 0);
-    }
-
-
-    .multi-item-carousel .carousel-inner .carousel-item-prev.carousel-item-right {
-        position: absolute;
-        top: 0;
-        left: 0;
-        z-index: -1;
-        display: block;
-        visibility: visible;
-    }
-
-
-    .multi-item-carousel .active.carousel-item-left+.carousel-item-next.carousel-item-left,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-next.carousel-item-left+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(-100%, 0, 0);
-        visibility: visible;
-    }
-
-    .multi-item-carousel .active.carousel-item-right+.carousel-item-prev.carousel-item-right,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item,
-    .multi-item-carousel .carousel-item-prev.carousel-item-right+.carousel-item+.carousel-item+.carousel-item+.carousel-item {
-        position: relative;
-        transform: translate3d(100%, 0, 0);
-        display: block;
-        visibility: visible;
-    }
-
-    .multi-item-carousel .carousel-control-prev {
-        left: -5%;
-    }
-
-    .multi-item-carousel .carousel-control-next {
-        right: -5%;
-    }
-
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 28px;
-    }
-
-    /* 
-        End Struktur Pengurus style
-    */
-
     /* sponsor */
+    .wrap_sponsor_event h2 {
+        font-size: 28px;
+    }
+
     .logo_sponsor_event {
         padding: 0 20px;
     }
 
     /* sponsor */
     /* End style main detail events */
+
+    .wrap_surat_rekomendasi .card .card-header img {
+        width: 28px;
+    }
+
+    .text_surat_rekomendasi button {
+        font-size: 28px;
+    }
+
+    .wrap_surat_rekomendasi .card .card-body {
+        font-size: 20px;
+    }
 
 }
 
@@ -455,22 +334,30 @@ body {
         padding: 0 100px;
     }
 
-    /* Style kepengurusan */
-    .carousel_control_img_prev,
-    .carousel_control_img_next {
-        width: 40px;
-    }
-
-    /* End style kepengurusan */
-
-
     /* sponsor */
     .logo_sponsor_event {
         padding: 0 50px;
     }
 
+    .wrap_sponsor_event h2 {
+        font-size: 36px;
+    }
+
     /* sponsor */
     /* Start style main detail event */
+
+
+    .wrap_surat_rekomendasi .card .card-header img {
+        width: 32px;
+    }
+
+    .text_surat_rekomendasi button {
+        font-size: 36px;
+    }
+
+    .wrap_surat_rekomendasi .card .card-body {
+        font-size: 24px;
+    }
 }
 
 @media screen and (min-width: 2300px) {
