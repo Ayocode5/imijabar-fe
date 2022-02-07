@@ -142,6 +142,11 @@ body {
     font-family: 'Tinos', serif;
     font-weight: 700;
     text-decoration: underline;
+
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 .short_desc_berita_serupa {
