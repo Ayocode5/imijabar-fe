@@ -34,6 +34,13 @@ body {
     font-weight: 700;
 }
 
+.border_head_title {
+    border-bottom: 3px solid hsl(215, 79%, 64%);
+    width: 260px;
+    margin: 0 auto;
+    margin-top: -4px;
+}
+
 .head_pendaftaran_kta p {
     text-align: center;
     margin: 0 0;
@@ -96,6 +103,10 @@ body {
         font-size: 32px;
     }
 
+    .border_head_title {
+        width: 300px;
+    }
+
     .feature_image_pendaftaran_kta img {
         width: 90%;
     }
@@ -133,6 +144,9 @@ body {
         font-size: 64px;
     }
 
+    .border_head_title {
+        width: 595px;
+    }
 
     .feature_image_pendaftaran_kta img {
         width: 85%;
