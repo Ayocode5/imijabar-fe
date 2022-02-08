@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url(./reusable-css/navbar.css);
+@import url(./reusable-css/breadcumb.css);
+@import url(./reusable-css/footer.css);
+/* 
+    font-family: 'Barlow', sans-serif;  
+    font-family: 'Tinos', serif;
+    font-family: 'Zeyada', cursive;
+*/
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Head List Berita */
+#header_page_pendaftaran_kis {
+    background-color: #F8F8F8;
+    padding: 40px 0;
+    border-bottom: 1px solid rgba(185, 216, 230, 0.5);
+}
+
+.head_pendaftaran_kis {
+    padding: 0px 0 10px 0;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.head_pendaftaran_kis h1 {
+    font-family: 'Tinos', serif;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.head_pendaftaran_kis p {
+    text-align: center;
+    margin: 0 0;
+    font-size: 1em;
+}
+
+.feature_image_pendaftaran_kis img {
+    width: 60%;
+}
+
+.fitur_pengembangan_regis_kis {
+    margin-top: 16px;
+    text-align: center;
+    padding: 0 8%;
+    font-weight: 500;
+}
+
+.daftar_kis_individu button {
+    background-color: transparent;
+    border: 2px solid #263840;
+    margin: 0 auto;
+    display: block;
+    padding: 8px 16px;
+    border-radius: 5px;
+    font-weight: 500;
+    outline: none;
+    transition: all 0.6s ease-in-out;
+}
+
+.daftar_kis_individu button:hover,
+.daftar_kis_individu button:focus,
+.daftar_kis_individu button:active {
+    background-color: #FFCE51;
+    transform: translate(0, -10px);
+    border: none;
+}
+
+/* end Head List Berita */
+
+
+#persyaratan_resgis_kis {
+    background-color: #F4F4F9;
+}
+
+.wrap_persyaratan_resgis_kis {
+    padding: 0 0;
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+}
+
+.wrap_persyaratan_resgis_kis .list_persyaratan_regis_kis {
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+    list-style-type: decimal;
+}
+
+.title_persyaratan_regis_kis h2 {
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#tatacara_resgis_kis {
+    background-color: #f8f8f8;
+}
+
+.list_tatacara_pendaftaran_kis {
+    list-style-type: decimal;
+    padding: 0 30px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.note_tatacara_pendaftaran {
+    list-style-type: none;
+    text-align: justify;
+    margin: 0;
+    padding: 0 30px;
+    font-weight: 500;
+}
+
+@media screen and (min-width: 768px) {
+
+    /* Head List Berita */
+    .head_pendaftaran_kis {
+        padding: 40px 0 20px 0;
+    }
+
+    .head_pendaftaran_kis p {
+        max-width: 400px;
+        margin: 0 auto;
+        word-wrap: break-word;
+        font-size: 1.2em;
+    }
+
+    .head_pendaftaran_kis h1 {
+        font-size: 32px;
+    }
+
+    .feature_image_pendaftaran_kis img {
+        width: 50%;
+    }
+
+    .fitur_pengembangan_regis_kis {
+        margin-top: 24px;
+        padding: 0 16%;
+    }
+
+    /* end Head List Berita */
+
+    .wrap_persyaratan_resgis_kis {
+        padding: 0 3%;
+    }
+
+    .title_persyaratan_regis_kis h2 {
+        font-size: 28px;
+    }
+
+    .note_tatacara_pendaftaran {
+        list-style-type: disc;
+    }
+}
+
+
+@media screen and (min-width: 992px) {
+
+    /* Head List Berita */
+    .head_pendaftaran_kis {
+        padding: 99px 0 40px 0;
+    }
+
+    .head_pendaftaran_kis p {
+        max-width: 500px;
+        font-size: 24px;
+    }
+
+    .head_pendaftaran_kis h1 {
+        font-size: 64px;
+    }
+
+    .feature_image_pendaftaran_kis img {
+        width: 30%;
+    }
+
+    .fitur_pengembangan_regis_kis {
+        margin-top: 32px;
+        padding: 0 30%;
+    }
+
+    /* end Head List Berita */
+
+    .wrap_persyaratan_resgis_kis {
+        padding: 0 6.3%;
+    }
+
+    .wrap_persyaratan_resgis_kis .list_persyaratan_regis_kis {
+        font-size: 24px;
+        padding: 0 40px;
+    }
+
+    .list_tatacara_pendaftaran_kis {
+        font-size: 24px;
+        padding: 0 40px;
+        font-weight: 500;
+    }
+
+    .title_persyaratan_regis_kis h2 {
+        font-size: 48px;
+    }
+
+    .note_tatacara_pendaftaran {
+        font-size: 24px;
+        padding: 0 40px;
+
+    }
+}

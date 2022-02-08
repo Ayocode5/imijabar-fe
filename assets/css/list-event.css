@@ -205,13 +205,14 @@ body {
 .wrap_list_events .card .header_card_image img {
     object-fit: cover;
     max-height: 200px;
+    min-height: 130px;
     border-radius: 5px 5px 0 0;
 }
 
-.wrap_list_events .card .header_card_image .label_header_card_image {
+/* .wrap_list_events .card .header_card_image .label_header_card_image {
     background-color: #FFCE51;
     border-radius: 0 0 5px 5px;
-}
+} */
 
 .wrap_list_events .card .card-body {
     padding: 0;
@@ -278,6 +279,54 @@ body {
 /* Content List Berita */
 
 /* End Content List Berita */
+.feature_image_event_list {
+    position: relative;
+    z-index: 90;
+}
+
+.ribbon_wrapper {
+    width: 150px;
+    height: 100%;
+    overflow: hidden;
+    position: absolute;
+    top: 0px;
+    left: -1.5px;
+}
+
+
+
+.ribbon_wrapper .ribbon_category_event {
+    margin-bottom: 10px;
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    position: relative;
+    padding: 0px 0;
+    top: 5px;
+    left: -43px;
+    width: 190px;
+    background-color: #263840;
+    color: rgba(248, 248, 248, 0.5);
+}
+
+.ribbon_wrapper .ribbon_category_event:nth-child(1) {
+    color: #333;
+    text-align: center;
+    -webkit-transform: rotate(320deg);
+    -moz-transform: rotate(320deg);
+    -ms-transform: rotate(320deg);
+    -o-transform: rotate(320deg);
+    position: relative;
+    padding: 0px 0;
+    top: 17px;
+    left: -60px;
+    width: 190px;
+    background-color: #FFCE51;
+    color: rgba(38, 56, 64, 0.5);
+}
 
 @media screen and (min-width: 768px) {
 
@@ -358,6 +407,8 @@ body {
 
 
     /* Content List Berita */
+
+
 }
 
 @media screen and (min-width: 992px) {
