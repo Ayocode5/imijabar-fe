@@ -18,6 +18,7 @@ body {
 
 /* Head List Berita */
 #header_page_list_events {
+    margin: 0 auto;
     background-color: #F8F8F8;
     padding: 40px 0;
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
@@ -151,6 +152,7 @@ body {
 
 #main_content_list_events {
     background-color: #F8F8F8;
+    margin: 0 auto;
 }
 
 .wrap_content_list_events {
@@ -493,4 +495,14 @@ body {
 
     /* Content List Berita */
 
+}
+
+@media screen and (min-width: 2300px) {
+    #header_page_list_events {
+        max-width: 2300px;
+    }
+
+    #main_content_list_events {
+        max-width: 2300px;
+    }
 }

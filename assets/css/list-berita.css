@@ -17,6 +17,7 @@ body {
 
 /* Head List Berita */
 #header_page_list_berita {
+    margin: 0 auto;
     background-color: #F8F8F8;
     padding: 40px 0;
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
@@ -145,6 +146,9 @@ body {
 
 /* Head List Berita */
 
+#main_content_list_berita {
+    margin: 0 auto;
+}
 
 /* Content List Berita */
 
@@ -394,4 +398,14 @@ body {
 
     /* Content List Berita */
 
+}
+
+@media screen and (min-width: 2300px) {
+    #header_page_list_berita {
+        max-width: 2300px;
+    }
+
+    #main_content_list_berita {
+        max-width: 2300px;
+    }
 }

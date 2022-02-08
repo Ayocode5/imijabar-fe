@@ -17,6 +17,7 @@ body {
 
 /* Head List Berita */
 #header_page_pendaftaran_kis {
+    margin: 0 auto;
     background-color: #F8F8F8;
     padding: 40px 0;
     border-bottom: 1px solid rgba(185, 216, 230, 0.5);
@@ -80,6 +81,9 @@ body {
 
 /* end Head List Berita */
 
+#main_registrasi_kis_individu {
+    margin: 0 auto;
+}
 
 #persyaratan_resgis_kis {
     background-color: #F4F4F9;
@@ -222,5 +226,15 @@ body {
         font-size: 24px;
         padding: 0 40px;
 
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    #header_page_pendaftaran_kis {
+        max-width: 2300px;
+    }
+
+    #main_registrasi_kis_individu {
+        max-width: 2300px;
     }
 }

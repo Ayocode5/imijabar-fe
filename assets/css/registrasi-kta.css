@@ -17,6 +17,7 @@ body {
 
 /* Head List Berita */
 #header_page_pendaftaran_kta {
+    margin: 0 auto;
     background-color: #F8F8F8;
     padding: 40px 0;
     border-bottom: 1px solid rgba(185, 216, 230, 0.5);
@@ -168,5 +169,15 @@ body {
 
     .note_tatacara_pendaftaran {
         font-size: 24px;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    #header_page_pendaftaran_kta {
+        max-width: 2300px;
+    }
+
+    #main_content_registrasi_kta {
+        max-width: 2300px;
     }
 }
