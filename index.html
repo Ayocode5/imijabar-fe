@@ -286,16 +286,18 @@
           <div class="dropdown">
             <button class="btn select_category btn-secondary dropdown-toggle btn_switch_category_event" type="button"
               id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              Roda Empat
+              Semua
             </button>
             <div class="dropdown-menu event-category" aria-labelledby="dropdownMenuButton">
-              <li class="list-dropdown"><a class="dropdown-item">Roda Dua</a></li>
-              <li class="list-dropdown"><a class="dropdown-item">Roda Empat</a></li>
+              <li class="list-dropdown"><a filters="roda-empat,roda-dua" class="dropdown-item">Semua</a></li>
+              <li class="list-dropdown"><a filters="roda-dua" class="dropdown-item">Roda Dua</a></li>
+              <li class="list-dropdown"><a filters="roda-empat" class="dropdown-item">Roda Empat</a></li>
             </div>
           </div>
-          <div class="accordion" id="accordionExample">
-            <div style="cursor: pointer;" class="card item_event" data-toggle="collapse" data-target="#collapseOne"
-              aria-expanded="true" aria-controls="collapseOne">
+          <div class="accordion events_wrapper" id="accordionExample">
+
+            <div style="cursor: pointer;" class="card item_event" categories="roda-dua" data-toggle="collapse"
+              data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
               <div class="card-header content-event" id="headingOne">
                 <div class="row align-items-center justify-content-center">
                   <div class="col-2" style="margin-right: 16px;">
@@ -306,7 +308,7 @@
                     <h3 class="loc-event">Bandung Jabar</h3>
                   </div>
                   <div class="col-3 p-2">
-                    <h3 class="name-event">Kejurnas Rally Time 2021 top lah pokoknya</h3>
+                    <h3 class="name-event">Event Roda 2</h3>
                   </div>
                   <div class="col-1">
                     <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
@@ -334,8 +336,10 @@
                 </div>
               </div>
             </div>
-            <div style="cursor: pointer;" class="card item_event" data-toggle="collapse" data-target="#collapseTwo"
-              aria-expanded="true" aria-controls="collapseTwo">
+
+
+            <div style="cursor: pointer;" class="card item_event" categories="roda-dua" data-toggle="collapse"
+              data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
               <div class="card-header content-event" id="headingTwo">
                 <div class="row align-items-center justify-content-center">
                   <div class="col-2" style="margin-right: 16px;">
@@ -346,7 +350,7 @@
                     <h3 class="loc-event">Bandung Jabar</h3>
                   </div>
                   <div class="col-3 p-2">
-                    <h3 class="name-event">Kejurnas Rally Time 2021 test test</h3>
+                    <h3 class="name-event">Event Roda 2 - 2</h3>
                   </div>
                   <div class="col-1">
                     <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
@@ -354,6 +358,92 @@
                 </div>
               </div>
               <div id="collapseTwo" class="collapse " aria-labelledby="headingTwo" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="col">
+                    <h3 class="title-event">
+                      Cabang Olahraga
+                    </h3>
+                    <p class="detail-event">
+                      Slalom A | Drifting | Sprint Rally | Drag Race | Balap Mobil ITCC | Time Rally
+                    </p>
+                  </div>
+                  <div class="col">
+                    <h3 class="title-event">
+                      Info Pendaftaran
+                    </h3>
+                    <p class="detail-event">
+                      Robert Alfonso: 0857-XXXX-XXXX atau<br>Link: bit.ly/kejurnas2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div style="cursor: pointer;" class="card item_event" categories="roda-dua,roda-empat"
+              data-toggle="collapse" data-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+              <div class="card-header content-event" id="headingThree">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-2" style="margin-right: 16px;">
+                    <h3 class="tgl-event">25</h3>
+                  </div>
+                  <div style="border-right: 1px solid #5996EC;" class="col-5 p-0">
+                    <p class="month-event m-0">Januari 2022</p>
+                    <h3 class="loc-event">Bandung Jabar</h3>
+                  </div>
+                  <div class="col-3 p-2">
+                    <h3 class="name-event">Event Roda dua dan empat</h3>
+                  </div>
+                  <div class="col-1">
+                    <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="collapseThree" class="collapse " aria-labelledby="headingThree" data-parent="#accordionExample">
+                <div class="card-body">
+                  <div class="col">
+                    <h3 class="title-event">
+                      Cabang Olahraga
+                    </h3>
+                    <p class="detail-event">
+                      Slalom A | Drifting | Sprint Rally | Drag Race | Balap Mobil ITCC | Time Rally
+                    </p>
+                  </div>
+                  <div class="col">
+                    <h3 class="title-event">
+                      Info Pendaftaran
+                    </h3>
+                    <p class="detail-event">
+                      Robert Alfonso: 0857-XXXX-XXXX atau<br>Link: bit.ly/kejurnas2022
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+            <div style="cursor: pointer;" class="card item_event" categories="roda-empat" data-toggle="collapse"
+              data-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+              <div class="card-header content-event" id="headingFour">
+                <div class="row align-items-center justify-content-center">
+                  <div class="col-2" style="margin-right: 16px;">
+                    <h3 class="tgl-event">25</h3>
+                  </div>
+                  <div style="border-right: 1px solid #5996EC;" class="col-5 p-0">
+                    <p class="month-event m-0">Januari 2022</p>
+                    <h3 class="loc-event">Bandung Jabar</h3>
+                  </div>
+                  <div class="col-3 p-2">
+                    <h3 class="name-event">Event Roda Empat</h3>
+                  </div>
+                  <div class="col-1">
+                    <img src="./assets/img/icon-arrow-down.svg" alt="icon arrow">
+                  </div>
+                </div>
+              </div>
+              <div id="collapseFour" class="collapse " aria-labelledby="headingFour" data-parent="#accordionExample">
                 <div class="card-body">
                   <div class="col">
                     <h3 class="title-event">

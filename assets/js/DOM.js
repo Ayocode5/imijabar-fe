@@ -55,8 +55,6 @@ $('.carousel_cabor_detail_event').owlCarousel({
 const navbarListsElement = document.querySelectorAll('.nav-link');
 const buttonChangeLanguage = document.querySelector('.checkbox_switch_language');
 
-console.log(buttonChangeLanguage)
-console.log(navbarListsElement)
 
 buttonChangeLanguage.addEventListener('click', () => {
     if (buttonChangeLanguage.checked) {
@@ -103,51 +101,39 @@ function getAPI() {
 }
 
 
-// $('#recipeCarousel').carousel({
-//     interval: 2000
-// })
-
-// $('.carousel .carousel-item').each(function () {
-//     var next = $(this).next();
-//     if (!next.length) {
-//         next = $(this).siblings(':first');
-//     }
-//     next.children(':first-child').clone().appendTo($(this));
-
-//     for (var i = 0; i < 2; i++) {
-//         next = next.next();
-//         if (!next.length) {
-//             next = $(this).siblings(':first');
-//         }
-
-//         next.children(':first-child').clone().appendTo($(this));
-//     }
-// });
-
-
+// Filter Events by it's category
 $(function () {
+    function filterEvents(events, listFilter) {
+        const filteredEvents = [];
+        events.forEach(event => {
+            const categories = event.getAttribute('categories').split(",")
+
+            categories.forEach(category => {
+                if (listFilter.includes(category)) {
+                    if (!filteredEvents.includes(event)) {
+                        filteredEvents.push(event)
+                    }
+                }
+            });
+        });
+
+        return filteredEvents;
+    }
+
+    const wrapEvents = document.querySelector('.events_wrapper')
+    const events = document.querySelectorAll(".item_event");
+
     $(".event-category .list-dropdown .dropdown-item").click(function () {
         $(".select_category:first-child").text($(this).text());
         $(".select_category:first-child").val($(this).text());
 
+        wrapEvents.innerHTML = '';
+        filterEvents(events, this.getAttribute('filters').split(',')).forEach((event) => {
+            wrapEvents.append(event);
+        })
     });
+})
 
-});
-
-// $('.multi-item-carousel').on('slide.bs.carousel', function (e) {
-//     let $e = $(e.relatedTarget),
-//         itemsPerSlide = 5,
-//         totalItems = $('.carousel-item', this).length,
-//         $itemsContainer = $('.carousel-inner', this),
-//         it = itemsPerSlide - (totalItems - $e.index());
-//     if (it > 0) {
-//         for (var i = 0; i < it; i++) {
-//             $('.carousel-item', this).eq(e.direction == "left" ? i : 0).
-//             // append slides to the end/beginning
-//             appendTo($itemsContainer);
-//         }
-//     }
-// });
 
 
 var typed = new Typed("#typed", {
@@ -162,10 +148,3 @@ var typed = new Typed("#typed", {
     startDelay: 120,
     loop: true
 });
-
-// var demo = document.getElementById('demo');
-
-// var typewriter = new Typewriter(demo, {
-//     strings: ['Selamat Datang', 'To', 'Type'],
-//     autosStart: true,
-// });
