@@ -45,6 +45,12 @@ body {
     width: 100%;
 }
 
+.jumbotron_carousel .carousel-inner .carousel-item .carousel-caption h2 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 .jumbotron_carousel .carousel-inner .carousel-item img {
     height: 300px;
     object-fit: cover;

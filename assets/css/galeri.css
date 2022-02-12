@@ -51,15 +51,12 @@ body {
 /* Head Galeri */
 
 #main_content_galeri {
+  padding: 50px 0;
   margin: 0 auto;
-}
-
-/* Content List Berita */
-
-#main_content_galeri {
   background-color: #f8f8f8;
 }
 
+/* Content List Berita */
 .galery-date {
   font-size: 24px;
   font-weight: medium;
@@ -79,7 +76,7 @@ body {
   color: #000;
 }
 
-.show > .btn-secondary.btn_switch_gallery_event {
+.show>.btn-secondary.btn_switch_gallery_event {
   background-color: #f8f8f8;
   border: 1px solid #5996ec;
   color: #000;
@@ -88,19 +85,23 @@ body {
 /* Content List Berita */
 
 .gallery-image {
-  width: 272px;
-  height: 323px;
+  object-fit: cover;
+  width: 100%;
+  height: 309px;
 }
 
 .gallery-overlay {
   position: absolute;
-  display: flex;
-  justify-content: center;
+  bottom: 0;
   height: 100%;
-  width: 272px;
+  width: 100%;
   opacity: 0;
   transition: 0.3s ease;
   background-color: #263840;
+}
+
+.box-image {
+  position: relative;
 }
 
 .gallery-icon-hover {
@@ -113,15 +114,6 @@ body {
   transform: translate(-50%, -50%);
 }
 
-.box-image {
-  position: relative;
-  width: 100%;
-  padding: 0px;
-  margin-bottom: 30px;
-  display: flex;
-  justify-content: center;
-}
-
 .box-image:hover .gallery-overlay {
   opacity: 0.7;
 }
@@ -129,6 +121,7 @@ body {
 /* End Content List Berita */
 
 @media screen and (min-width: 768px) {
+
   /* Head List Berita */
   .head_galeri {
     padding: 40px 0 20px 0;
@@ -157,6 +150,7 @@ body {
 }
 
 @media screen and (min-width: 992px) {
+
   /* Head List Berita */
   .head_galeri {
     padding: 99px 0 40px 0;
