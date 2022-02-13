@@ -2,9 +2,7 @@ $('.carousel_kepengurusan').owlCarousel({
     loop: true,
     margin: 20,
     dots: false,
-    // navText: ["<div class='nav-button owl-prev'>‹</div>", "<div class='nav-button owl-next'>›</div>"],
     navText: ["<img src='./assets/img/arrow-left-carousel.svg'>", "<img src='./assets/img/arrow-right-carousel.svg'>"],
-
     responsive: {
         0: {
             items: 1,
