@@ -19,7 +19,7 @@
 <body>
     <!-- START NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="margin: -9px 0;" class="container-fluid mx-lg-5">
+        <div style="margin: -9px 0;" class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
             </a>
@@ -186,22 +186,38 @@
     <main id="main_content_list_events">
         <section id="content_list_events">
             <div class="wrap_content_list_events row row-cols-1 row-cols-md-2 pt-2 pb-2 pt-md-5 pb-md-5">
-                <div class="col">
+                <div class="col mb-4 order-2 order-md-1">
                     <div class="d-flex justify-content-around">
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">All</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Dua</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Empat</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Wisata</a>
+                        <div
+                            class="position-relative row row-cols-1 row-cols-md-2 border-0 wrap_select_category_events">
+                            <select onchange="location = this.value;" class="col" name="filterCategoryEvents"
+                                id="filterCategoryEvents">
+                                <option value="Semua">Semua</option>
+                                <option value="Roda Dua">Roda Dua</option>
+                                <option value="Roda Dua">Roda Empat</option>
+                            </select>
+
+
+                            <select onchange="location = this.value;" class="col" name="filterSports" id="filterSports">
+
+                                <option value="semua">Drag</option>
+                                <option value="roda dua">Sprint - Roda Dua</option>
+                                <option value="roda empat">Racing - Roda Empat</option>
+
+                            </select>
+                        </div>
                     </div>
                 </div>
-                <div class="col">
-                    <div class="wrap_search_events">
+                <div class="col mb-4 order-1 order-md-2">
+                    <div class="wrap_search_events w-100">
                         <div class="input-group">
-                            <input style="background-color: transparent;" type="search"
-                                class="form-control rounded border-0" placeholder="Search" aria-label="Search"
-                                aria-describedby="search-addon" />
-                            <button type="button" class="btn"><img src="./assets/img/search-icon.svg"
-                                    alt="search icon"></button>
+                            <form class="d-flex w-100 justify-content-end" action="#" method="GET">
+                                <input name="q" style="background-color: transparent;" type="text"
+                                    class="form-control rounded border-0" placeholder="Search" aria-label="Search"
+                                    aria-describedby="search-addon" />
+                                <button type="submit" class="btn"><img src="./assets/img/search-icon.svg"
+                                        alt="search icon"></button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -214,47 +230,86 @@
 
                     <div class="col mb-4">
                         <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
                             <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
+                                <div class="header_card_image shadow">
                                     <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
                                         <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
                                         </div>
-
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
                                     </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body shadow">
                                     <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
+                                        <h3>
+                                            Event Nasional 1
                                         </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
                                         </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="col mb-4">
+                        <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
+                            <div class="card">
+                                <div class="header_card_image shadow">
+                                    <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
+                                        <div class="ribbon_wrapper">
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body shadow">
+                                    <div class="card-title">
+                                        <h3>
+                                            Event Nasional 1
+                                        </h3>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
+                                    </div>
+                                    <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
+                                        </div>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -264,47 +319,41 @@
                     </div>
                     <div class="col mb-4">
                         <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
                             <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
+                                <div class="header_card_image shadow">
                                     <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
                                         <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
                                         </div>
-
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
                                     </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body shadow">
                                     <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
+                                        <h3>
+                                            Event Nasional 1
                                         </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
                                         </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -314,47 +363,41 @@
                     </div>
                     <div class="col mb-4">
                         <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
                             <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
+                                <div class="header_card_image shadow">
                                     <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
                                         <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
                                         </div>
-
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
                                     </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body shadow">
                                     <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
+                                        <h3>
+                                            Event Nasional 1
                                         </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
                                         </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -364,47 +407,41 @@
                     </div>
                     <div class="col mb-4">
                         <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
                             <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
+                                <div class="header_card_image shadow">
                                     <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
                                         <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
                                         </div>
-
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
                                     </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body shadow">
                                     <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
+                                        <h3>
+                                            Event Nasional 1
                                         </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
                                         </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -414,47 +451,41 @@
                     </div>
                     <div class="col mb-4">
                         <a class="text-decoration-none text-dark" href="detail-event.html">
+                            <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
                             <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
+                                <div class="header_card_image shadow">
                                     <div class="feature_image_event_list">
+
+                                        <img src="./assets/img/photo_event_detail.png"
+                                            class="card-img-top image_feature_event" alt="featured image">
+
                                         <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
+                                            <div class="ribbon_category_event text-white">Roda Dua</div>
+                                            <div class="ribbon_category_event text-white">Roda Empat</div>
                                         </div>
-
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
                                     </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
                                 </div>
-                                <div class="card-body">
+                                <div class="card-body shadow">
                                     <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
+                                        <h3>
+                                            Event Nasional 1
                                         </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
+                                        <p class="presented_events">Presented By : IMI Jabar</p>
+
                                     </div>
                                     <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
+                                        <div class="col-12 col-md-5 pt-3 location_events_list">
+                                            Sentul International Circuit, Bogor, Jawa Barat
                                         </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
+                                        <div class="col-12 col-md-7 pt-3 date_events_list pl-0 align-self-center">
+                                            <div class="d-flex justify-content-center">
+                                                <p class="ml-2">
+                                                    Kamis - Jumat,
+                                                    <br />
+                                                    <span>
+                                                        16 - 17 September 2022
+                                                    </span>
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -462,56 +493,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="detail-event.html">
-                            <div class="card">
-                                <img class="calender_pin" src="./assets/img/calender_pin.svg" alt="calender pin image">
-                                <div class="header_card_image">
-                                    <div class="feature_image_event_list">
-                                        <div class="ribbon_wrapper">
-                                            <div class="ribbon_category_event">Roda Dua</div>
-                                            <div class="ribbon_category_event">Roda Empat</div>
-                                        </div>
 
-                                        <img src="./assets/img/event_featured_photo.png" class="card-img-top"
-                                            alt="featured image">
-                                    </div>
-                                    <!-- <div
-                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_events">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
-                                    </div> -->
-
-                                </div>
-                                <div class="card-body">
-                                    <div class="card-title">
-                                        <h3>Indo MotoSport Grand Prix 2022 Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Praesentium eaque tempore natus. Nobis repellendus
-                                            consequuntur quod sunt quos quam nostrum quaerat amet corrupti reprehenderit
-                                            ut, quo cupiditate ipsum maiores eaque?
-                                        </h3>
-                                        <p class="presented_events">Presented by
-                                            INDOMOTOSPORT</p>
-                                    </div>
-                                    <div class="d-flex flex-wrap justify-content-between  card_events_list_detail">
-                                        <div class="col-12 col-md-5 location_events_list">
-                                            Sentul International
-                                            Circuit, Bogor, Jawa Barat Lorem ipsum dolor sit amet consectetur
-                                            adipisicing elit. Quae,Lorem ipsum dolor sit amet consectetur adipisicing
-                                            elit. Necessitatibus sit dolorem quia rem minus id totam iste! Accusantium
-                                            deleniti fugiat corporis dicta tempora assumenda repellat. Dicta reiciendis
-                                            quaerat sequi eaque!
-                                        </div>
-                                        <div class="col-12 col-md-7 date_events_list pl-0">
-                                            <div class="mx-md-4">
-                                                <p>Kamis - Jumat, <br /> <span> 16 - 17 September 2022</span></p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </a>
-                    </div>
                 </div>
             </div>
             <button class="btn_load_more_list_events mx-auto d-block">

@@ -150,6 +150,30 @@ body {
     margin: 0 auto;
 }
 
+.wrap_select_category_news {
+    width: 100%;
+    background-color: #f1f4f5;
+    height: 50px;
+    vertical-align: middle;
+    display: inline-block;
+    overflow: hidden;
+}
+
+.wrap_select_category_news select {
+    padding: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    border: none;
+    box-shadow: none;
+    height: 50px;
+    outline: none;
+}
+
+.wrap_select_category_news select:focus {
+    border: none;
+    box-shadow: none;
+}
+
 /* Content List Berita */
 
 #main_content_list_berita {
@@ -160,11 +184,6 @@ body {
     margin: 0 0;
 }
 
-.wrap_content_list_berita .col a {
-    text-decoration: none;
-    color: rgba(38, 56, 64, 0.5);
-}
-
 .wrap_content_list_berita .col a:nth-child(1) {
     text-decoration: none;
     color: #5996EC;
@@ -172,16 +191,13 @@ body {
     font-size: 1em;
 }
 
-.wrap_search_berita {
-    margin-top: 16px;
-    margin-right: 0px;
-}
 
 .wrap_list_berita {
     margin: 0 14px;
 }
 
 .wrap_list_berita .card {
+    color: #263840;
     border: none;
     background-color: transparent;
 }
@@ -198,21 +214,22 @@ body {
     border-radius: 5px 5px 0 0;
 }
 
+.wrap_list_berita .card .header_card_image .label_header_card_image:nth-child(2) {
+    background-color: #263840;
+    color: #F4F4F9;
+    border-radius: 0 0 0 0;
+}
+
 .wrap_list_berita .card .header_card_image .label_header_card_image {
     background-color: #FFCE51;
     border-radius: 0 0 5px 5px;
 }
 
-.wrap_list_berita .card .card-body a {
-    color: #111111;
-    text-decoration: none;
-}
 
 .wrap_list_berita .card .card-body .card-title {
     font-family: 'Tinos', serif;
     font-weight: 700;
     font-size: 18px;
-
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
@@ -302,6 +319,7 @@ body {
 
     /* Head List Berita */
 
+
     /* Content List Berita */
     .wrap_content_list_berita {
         margin: 0 2rem;
@@ -311,10 +329,6 @@ body {
         font-size: 1.2em;
     }
 
-    .wrap_search_berita {
-        margin-top: 0;
-        margin-left: 2em;
-    }
 
     .wrap_list_berita {
         margin: 0 50px;
@@ -373,20 +387,20 @@ body {
 
     /* Head List Berita */
 
+    .wrap_select_category_news {
+        width: 50%;
+    }
 
     /* Content List Berita */
     .wrap_content_list_berita {
-        margin: 0 2.5rem;
+        margin: 0 5.5rem;
     }
 
     .wrap_content_list_berita .col a:nth-child(1) {
         font-size: 24px;
     }
 
-    .wrap_search_berita {
-        margin-right: 50px;
-        margin-left: 5em;
-    }
+
 
     .wrap_list_berita {
         margin: 0 100px;

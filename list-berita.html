@@ -19,7 +19,7 @@
 <body>
     <!-- START NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="margin: -9px 0;" class="container-fluid mx-lg-5">
+        <div style="margin: -9px 0;" class="container-fluid">
             <a class="navbar-brand" href="index.html">
                 <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
             </a>
@@ -186,22 +186,35 @@
     <main id="main_content_list_berita">
         <section id="content_list_berita">
             <div class="wrap_content_list_berita row row-cols-1 row-cols-md-2 pt-2 pb-2 pt-md-5 pb-md-5">
-                <div class="col">
-                    <div class="d-flex justify-content-around">
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">All</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Dua</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Empat</a>
-                        <a style="height: 44px;" class="d-flex align-items-center px-3" href="#">Roda Wisata</a>
+                <div class="col mb-4 order-2 order-md-1">
+
+                    <div class="d-flex justify-content-start">
+
+                        <div class="position-relative border-0 wrap_select_category_news">
+                            <select onchange="location = this.value;" style="background-color: transparent;"
+                                class="w-100" name="filterCategoryNews" id="filterCategoryNews">
+
+                                <option value="?page=1">Semua</option>
+
+                                <option value="Roda Dua">Roda Dua</option>
+
+                            </select>
+                        </div>
+
                     </div>
+
                 </div>
-                <div class="col">
-                    <div class="wrap_search_berita">
+                <div class="col mb-4 order-1 order-md-2">
+                    <div class="wrap_search_berita w-100">
                         <div class="input-group">
-                            <input style="background-color: transparent;" type="search"
-                                class="form-control rounded border-0" placeholder="Search" aria-label="Search"
-                                aria-describedby="search-addon" />
-                            <button type="button" class="btn"><img src="./assets/img/search-icon.svg"
-                                    alt="search icon"></button>
+                            <form class="d-flex w-100 justify-content-end" action="#" method="GET">
+                                <input style="background-color: transparent;" type="text" name="q"
+                                    class="form-control rounded border-0" placeholder="Search" aria-label="Search"
+                                    aria-describedby="search-addon" />
+                                <button type="submit" class="btn"><img src="./assets/img/search-icon.svg"
+                                        alt="search icon">
+                                </button>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -212,179 +225,289 @@
             <div class="wrap_list_berita">
                 <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3">
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus modi
-                                            officiis voluptate consequuntur fugit, corrupti quia ipsa nemo ducimus harum
-                                            veritatis quis doloremque laborum dolor asperiores earum accusantium?
-                                            Laboriosam, minus.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>
                     </div>
                     <div class="col mb-4">
-                        <a class="text-decoration-none text-dark" href="./detail-berita.html">
+                        <a href="./detail-berita.html" class="text-decoration-none">
                             <div class="card">
                                 <div class="header_card_image">
-                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="...">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
                                     <div
                                         class="label_header_card_image d-flex justify-content-between align-items-center px-3">
-                                        <p style="height: 8px;" class="category_berita">Roda Empat</p>
-                                        <p style="height: 8px;" class="realease_date">5 menit lalu</p>
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
                                     </div>
-
                                 </div>
                                 <div class="card-body">
-                                    <a href="/detail-berita.html">
-                                        <h3 class="card-title">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                                        </h3>
-                                    </a>
-                                    <p class="author_date_list_berita">Admin | <span>30 Januari 2022</span></p>
-                                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Hac
-                                        dui
-                                        dui nam augue. Mattis mi auctor nunc sed facilisis facilisis sem. Fames
-                                        fermentum at
-                                        libero, nunc non. Ipsum, aliquam tellus suscipit ullamcorper vitae etiam
-                                        integer.
-                                        <span>→</span></p>
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-4">
+                        <a href="./detail-berita.html" class="text-decoration-none">
+                            <div class="card">
+                                <div class="header_card_image">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
+                                    <div
+                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-4">
+                        <a href="./detail-berita.html" class="text-decoration-none">
+                            <div class="card">
+                                <div class="header_card_image">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
+                                    <div
+                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col mb-4">
+                        <a href="./detail-berita.html" class="text-decoration-none">
+                            <div class="card">
+                                <div class="header_card_image">
+                                    <img src="./assets/img/jumbotron-img.png" class="card-img-top" alt="foto1">
+                                    <div
+                                        class="label_header_card_image d-flex justify-content-between align-items-center px-3">
+                                        <p style="height: 8px;" class="category_berita">
+                                            Roda Dua
+                                        </p>
+                                        <p style="height: 8px;" class="realease_date">
+                                            5 menit lalu
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h3 class="card-title">
+                                        Berita HOT Terbaru
+                                    </h3>
+                                    <p class="author_date_list_berita">Admin &nbsp; | &nbsp;
+                                        <span>13 Februari 2022</span>
+                                    </p>
+                                    <p class="card-text">
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+                                        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
+                                        nostrud
+                                        <span>→</span>
+                                    </p>
                                 </div>
                             </div>
                         </a>

@@ -147,6 +147,24 @@ body {
 
 /* Head List Berita */
 
+.wrap_select_category_events {
+    width: 100%;
+    height: 116px;
+    vertical-align: middle;
+    gap: 16px;
+}
+
+.wrap_select_category_events select {
+    background-color: #f1f4f5;
+    font-weight: 500;
+    outline: none;
+    border: none;
+}
+
+.wrap_select_category_events select:focus {
+    border: none;
+    box-shadow: none;
+}
 
 /* Content List Berita */
 
@@ -160,6 +178,7 @@ body {
 }
 
 .calender_pin {
+    display: block;
     width: 80%;
     margin: 0 auto;
 }
@@ -167,9 +186,12 @@ body {
 .presented_events {
     font-size: 16px;
     font-weight: 400;
+    margin-bottom: 0;
+    font-family: 'Tinos', serif;
 }
 
 .location_events_list {
+    font-size: 1em;
     display: -webkit-box;
     max-width: 100%;
     -webkit-line-clamp: 2;
@@ -179,11 +201,6 @@ body {
     padding-left: 0;
 }
 
-.wrap_content_list_events .col a {
-    text-decoration: none;
-    color: rgba(38, 56, 64, 0.5);
-}
-
 .wrap_content_list_events .col a:nth-child(1) {
     text-decoration: none;
     color: #5996EC;
@@ -191,13 +208,9 @@ body {
     font-size: 1em;
 }
 
-.wrap_search_events {
-    margin-top: 16px;
-    margin-right: 0px;
-}
-
 .wrap_list_events {
     margin: 0 14px;
+    color: #263840;
 }
 
 .wrap_list_events .card {
@@ -206,55 +219,47 @@ body {
 }
 
 .wrap_list_events .card:hover {
-    border: 1px solid #5996EC;
+    border: 2px solid #FFCE51;
+    border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
-
 }
 
-.wrap_list_events .card .header_card_image img {
-    object-fit: cover;
-    max-height: 200px;
-    min-height: 130px;
-    border-radius: 5px 5px 0 0;
+.wrap_list_events .card:hover .header_card_image .feature_image_event_list .image_feature_event {
+    filter: none;
+    transform: scale(1.1);
 }
-
-/* .wrap_list_events .card .header_card_image .label_header_card_image {
-    background-color: #FFCE51;
-    border-radius: 0 0 5px 5px;
-} */
 
 .wrap_list_events .card .card-body {
     padding: 0;
+    border-radius: 0 0 10px 10px;
 }
 
 .wrap_list_events .card .card-body .card-title {
     margin: auto;
+    line-height: 16px;
     font-family: 'Tinos', serif;
     padding: 1rem 1.25rem;
 }
 
 .wrap_list_events .card .card-body .card-title h3 {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 20px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;
     overflow: hidden;
 }
 
-
-.wrap_list_events .card .card-body a {
-    color: #111111;
-    text-decoration: none;
-}
-
-
 .card_events_list_detail {
-    font-family: 'Tinos', serif;
+    font-family: 'Barlow', sans-serif;
     font-weight: 500;
     text-align: center;
     border-top: 1px solid rgba(38, 56, 64, 0.5);
-    padding: 20px;
+    padding: 0 10px 10px 10px;
+}
+
+.date_events_list {
+    font-size: 16px;
 }
 
 .wrap_list_events .card .card-body .author_date_list_events {
@@ -289,8 +294,18 @@ body {
 
 /* End Content List Berita */
 .feature_image_event_list {
+    border-radius: 10px 10px 0 0;
     position: relative;
+    overflow: hidden;
     z-index: 90;
+}
+
+.image_feature_event {
+    transition: all 0.5s ease-in-out;
+    object-fit: cover;
+    filter: saturate(0);
+    width: 100%;
+    height: 100%;
 }
 
 .ribbon_wrapper {
@@ -301,8 +316,6 @@ body {
     top: 0px;
     left: -1.5px;
 }
-
-
 
 .ribbon_wrapper .ribbon_category_event {
     margin-bottom: 10px;
@@ -386,6 +399,16 @@ body {
 
     /* Head List Berita */
 
+    .wrap_select_category_events {
+        height: 50px;
+        gap: 16px;
+    }
+
+    .wrap_select_category_events select {
+        width: 100%;
+        max-width: 30%;
+    }
+
     /* Content List Berita */
     .wrap_content_list_events {
         margin: 0 2rem;
@@ -395,26 +418,27 @@ body {
         font-size: 1.2em;
     }
 
-    .wrap_search_events {
-        margin-top: 0;
-        margin-left: 2em;
-    }
-
     .wrap_list_events {
         margin: 0 50px;
     }
 
     .card_events_list_detail {
         text-align: left;
+        padding: 0 20px 20px 20px;
+    }
+
+    .date_events_list {
+        font-size: 1.25em;
     }
 
     .wrap_list_events .card .card-body .card-title h3 {
-        font-size: 20px;
+        font-size: 24px;
     }
+
 
     .location_events_list {
         border-bottom: none;
-        -webkit-line-clamp: 4;
+        -webkit-line-clamp: 5;
         border-right: 1px solid rgba(38, 56, 64, 0.5);
     }
 
@@ -473,17 +497,13 @@ body {
 
     /* Content List Berita */
     .wrap_content_list_events {
-        margin: 0 2.5rem;
+        margin: 0 5.5rem;
     }
 
     .wrap_content_list_events .col a:nth-child(1) {
         font-size: 24px;
     }
 
-    .wrap_search_events {
-        margin-right: 50px;
-        margin-left: 5em;
-    }
 
     .wrap_list_events {
         margin: 0 100px;
@@ -493,8 +513,12 @@ body {
         font-size: 32px;
     }
 
-    /* Content List Berita */
 
+    .date_events_list {
+        font-size: 24px;
+    }
+
+    /* Content List Berita */
 }
 
 @media screen and (min-width: 2300px) {
