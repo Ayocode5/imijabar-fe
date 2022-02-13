@@ -24,6 +24,7 @@ nav {
 
 .switch_language {
     margin-top: 0;
+    margin-left: 10px;
 }
 
 .flags {
@@ -99,5 +100,6 @@ nav {
 @media screen and (min-width: 992px) {
     .switch_language {
         margin-top: 5px;
+        margin-left: 0;
     }
 }
