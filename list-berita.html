@@ -185,26 +185,15 @@
 
     <main id="main_content_list_berita">
         <section id="content_list_berita">
-            <div class="wrap_content_list_berita row row-cols-1 row-cols-md-2 pt-2 pb-2 pt-md-5 pb-md-5">
-                <div class="col mb-4 order-2 order-md-1">
-
-                    <div class="d-flex justify-content-start">
-
-                        <div class="position-relative border-0 wrap_select_category_news">
-                            <select onchange="location = this.value;" style="background-color: transparent;"
-                                class="w-100" name="filterCategoryNews" id="filterCategoryNews">
-
-                                <option value="?page=1">Semua</option>
-
-                                <option value="Roda Dua">Roda Dua</option>
-
-                            </select>
-                        </div>
-
-                    </div>
-
+            <div class="wrap_content_list_berita row py-2 py-md-5">
+                <div class="col-12 col-md-6 mb-4 order-2 order-md-1 filter_news_page">
+                    <select onchange="location = this.value;" style="background-color: transparent;"
+                        name="filterCategoryNews" id="filterCategoryNews">
+                        <option value="?page=1">Semua</option>
+                        <option value="Roda Dua">Roda Dua</option>
+                    </select>
                 </div>
-                <div class="col mb-4 order-1 order-md-2">
+                <div class="col-12 col-md-6 mb-4 order-1 order-md-2">
                     <div class="wrap_search_berita w-100">
                         <div class="input-group">
                             <form class="d-flex w-100 justify-content-end" action="#" method="GET">

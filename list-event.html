@@ -185,30 +185,23 @@
 
     <main id="main_content_list_events">
         <section id="content_list_events">
-            <div class="wrap_content_list_events row row-cols-1 row-cols-md-2 pt-2 pb-2 pt-md-5 pb-md-5">
-                <div class="col mb-4 order-2 order-md-1">
-                    <div class="d-flex justify-content-around">
-                        <div
-                            class="position-relative row row-cols-1 row-cols-md-2 border-0 wrap_select_category_events">
-                            <select onchange="location = this.value;" class="col" name="filterCategoryEvents"
-                                id="filterCategoryEvents">
-                                <option value="Semua">Semua</option>
-                                <option value="Roda Dua">Roda Dua</option>
-                                <option value="Roda Dua">Roda Empat</option>
-                            </select>
-
-
-                            <select onchange="location = this.value;" class="col" name="filterSports" id="filterSports">
-
-                                <option value="semua">Drag</option>
-                                <option value="roda dua">Sprint - Roda Dua</option>
-                                <option value="roda empat">Racing - Roda Empat</option>
-
-                            </select>
-                        </div>
-                    </div>
+            <div class="wrap_content_list_events row py-2 py-md-5">
+                <div class="filter_parent_category_events my-auto col-12 col-md-6 col-lg-3 mb-4 order-2">
+                    <select onchange="location = this.value;" class="col" name="filterCategoryEvents"
+                        id="filterCategoryEvents">
+                        <option value="semua">Semua</option>
+                        <option value="roda-dua">Roda Dua</option>
+                        <option value="roda-empat">Roda Empat</option>
+                    </select>
                 </div>
-                <div class="col mb-4 order-1 order-md-2">
+                <div class="filter_sports_events my-auto col-12 col-md-6 col-lg-5 mb-4 order-3 order-md-2">
+                    <select onchange="location = this.value;" class="col" name="filterSports" id="filterSports">
+                        <option value="semua">Drag</option>
+                        <option value="sprint-roda-dua">Sprint - Roda Dua</option>
+                        <option value="racing-roda-empat">Racing - Roda Empat</option>
+                    </select>
+                </div>
+                <div class="col-12 col-lg-4 my-auto mb-4 order-1 order-lg-3">
                     <div class="wrap_search_events w-100">
                         <div class="input-group">
                             <form class="d-flex w-100 justify-content-end" action="#" method="GET">
@@ -224,7 +217,7 @@
             </div>
         </section>
 
-        <section class="pb-5 mt-4" id="list_card_events">
+        <section class="pb-5 mt-2" id="list_card_events">
             <div class="wrap_list_events">
                 <div class="row row-cols-1 row-cols-md-2">
 
