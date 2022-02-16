@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url(./reusable-css/navbar.css);
+@import url(./reusable-css/breadcumb.css);
+@import url(./reusable-css/footer.css);
+/* 
+    font-family: 'Barlow', sans-serif;  
+    font-family: 'Tinos', serif;
+    font-family: 'Zeyada', cursive;
+*/
+
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content-404{
+    margin-top: 100px;
+}
+
+.title-404{
+    font-family: 'Tinos', serif;
+    font-size: 64px;
+    font-weight: bold;
+}
+
+.subtitle-404{
+    font-size: 24px;
+    font-weight: medium;
+    max-width: 536px;
+}
+
+.img-404{
+    width: 300px;
+    height: 199px;
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+@media screen and (min-width: 768px) {
+    .img-404{
+        width: 450px;
+        height: 299px;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .img-404{
+        width: 650px;
+        height: 430px;
+    }
+}
+
+@media screen and (min-width: 2300px) {
+    .img-404{
+        width: 860px;
+        height: 570px;
+    }
+}
