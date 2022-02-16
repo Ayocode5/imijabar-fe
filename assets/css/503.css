@@ -15,23 +15,23 @@ body {
   padding: 0;
 }
 
-#content-404 {
+#content-503 {
   margin-top: 100px;
 }
 
-.title-404 {
+.title-503 {
   font-family: "Tinos", serif;
   font-size: 64px;
   font-weight: bold;
 }
 
-.subtitle-404 {
+.subtitle-503 {
   font-size: 24px;
   font-weight: medium;
   max-width: 536px;
 }
 
-.img-404 {
+.img-503 {
   width: 300px;
   height: 199px;
   margin-top: 50px;
@@ -39,21 +39,21 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .img-404 {
+  .img-503 {
     width: 450px;
     height: 299px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .img-404 {
+  .img-503 {
     width: 860px;
-    height: 5700px;
+    height: 570px;
   }
 }
 
 @media screen and (min-width: 2300px) {
-  .img-404 {
+  .img-503 {
     width: 980px;
     height: 650px;
   }
