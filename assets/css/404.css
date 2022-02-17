@@ -38,6 +38,33 @@ body {
   margin-bottom: 100px;
 }
 
+.btn_back_home_404 {
+  background-color: transparent;
+  border: 1px solid #263840;
+  padding: 8px 24px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.btn_back_home_404 a,
+.btn_back_home_404 a:hover,
+.btn_back_home_404 a:focus,
+.btn_back_home_404 a:active{
+  text-decoration: none;
+  color: #263840;
+}
+
+.btn_back_home_404:active,
+.btn_back_home_404:hover,
+.btn_back_home_404:focus {
+  background-color: #ffce51;
+  border: none;
+  outline: none;
+  transform: translate(0, -10px);
+}
+
 @media screen and (min-width: 768px) {
   .img-404 {
     width: 450px;
