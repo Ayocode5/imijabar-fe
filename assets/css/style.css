@@ -18,136 +18,68 @@ body {
 /* 
     Start Jumbotron 
 */
+.wrap_jumbotron_logo {
+    height: 340px;
+}
+
 .jumbotron_logo {
-    width: 100px;
-    margin: auto;
-    top: 0;
     left: 0;
-    bottom: 0;
     right: 0;
-    text-align: center;
-}
-
-
-.jumbotron_batik {
-    height: 200px;
-    width: 100%;
-}
-
-.wrap_welcome-text {
-    background-color: #F4F4F9;
-    border-top: 1px solid rgba(38, 56, 64, 0.5);
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-    ;
-}
-
-.jumbotron_carousel {
-    width: 100%;
-}
-
-.jumbotron_carousel .carousel-inner .carousel-item .carousel-caption h2 {
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.jumbotron_carousel .carousel-inner .carousel-item img {
-    height: 300px;
-    object-fit: cover;
-}
-
-.jumbotron_carousel .carousel-item .carousel-caption {
-    text-align: left;
-    margin-bottom: 32px;
-}
-
-.jumbotron_carousel .carousel-item .carousel-caption h2 {
-    text-decoration: underline;
-    font-family: 'Tinos', serif;
-    font-size: 1.3em;
-    font-weight: 700;
-}
-
-
-.jumbotron_carousel .carousel-item .carousel-caption p {
-    font-family: 'Tinos', serif;
-    font-weight: 400;
-    font-size: 1em;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-}
-
-.jumbotron_carousel .carousel-item .carousel-caption .date_author {
-    font-weight: 500;
-}
-
-.jumbotron_carousel .carousel-item .carousel-caption .btn_show_jumbotron {
-    font-weight: 500;
+    margin: auto;
+    width: 100px;
+    top: 0;
+    bottom: 0;
 }
 
 .welcome_text {
     text-align: center;
-    padding: 20% 5%;
+    height: 260px;
 }
 
+
 .welcome_text h1 {
+    font-weight: 700;
     font-size: 1.5em;
 }
 
-.carousel-fade .carousel-item {
-    opacity: 0;
-    transition-duration: .6s;
-    transition-property: opacity;
+.welcome_text p {
+    font-weight: 500;
+    font-size: 16px;
 }
 
-.carousel-fade .carousel-item.active,
-.carousel-fade .carousel-item-next.carousel-item-left,
-.carousel-fade .carousel-item-prev.carousel-item-right {
-    opacity: 1;
-}
-
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-right {
-    opacity: 0;
-}
-
-.carousel-fade .carousel-item-next,
-.carousel-fade .carousel-item-prev,
-.carousel-fade .carousel-item.active,
-.carousel-fade .active.carousel-item-left,
-.carousel-fade .active.carousel-item-prev {
-    transform: translateX(0);
-    transform: translate3d(0, 0, 0);
+.carousel_jumbotron .carousel-item img {
+    height: 300px;
+    object-fit: cover;
 }
 
 
-.carousel-fade .carousel-item .carousel-caption button {
-    opacity: 0;
-    transform: translate(-100px, 0);
-    transition-duration: .6s;
-    transition-property: all;
-}
 
-.carousel-fade .carousel-item.active .carousel-caption button {
-    opacity: 1;
-    transform: translate(0, 0);
-    transition-duration: .6s;
-    transition-property: all;
-}
-
-.overlay_jumbotron {
-    position: absolute;
-    background: rgba(38, 56, 64, 0.5);
-    opacity: 0.5;
-    width: 100%;
+.carousel_jumbotron .carousel-item .overlay_carousel_jumbotron {
     height: 100%;
+    width: 100%;
+    margin: auto;
+    background-color: rgba(38, 56, 64, 0.5);
+    padding: 0 5%;
+    color: white;
+    font-family: 'Tinos', serif;
 }
 
-.carousel-indicators .active {
-    width: 137px;
-    transition: all 0.3s ease-in-out;
-    background-color: #0078C1 !important;
+.carousel_jumbotron .carousel-item .overlay_carousel_jumbotron .content_overlay_carousel_jumbotron h2 {
+    font-size: 24px;
+    max-width: 24rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.carousel_jumbotron .carousel-item .overlay_carousel_jumbotron .content_overlay_carousel_jumbotron p {
+    font-size: 16px;
+    max-width: 24rem;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
 
 /* 
@@ -484,46 +416,50 @@ main {
     /* 
         Start Jumbotron style
     */
-    .jumbotron-img {
-        height: 456px;
-    }
-
-    .jumbotron_carousel .carousel-inner .carousel-item img {
-        height: 400px;
-    }
-
-    .jumbotron_batik {
-        height: 250px;
+    .wrap_section_1 {
+        height: 100%;
+        overflow: hidden;
     }
 
     .jumbotron_logo {
-        width: 120px;
+        left: 95px;
+        margin: 0;
+        width: 164px;
+        top: 74px;
+        bottom: 0;
     }
 
     .welcome_text {
-        padding: 15% 5%;
         text-align: left;
+        width: 100%;
+        padding: 0 16px;
     }
-
 
     .welcome_text h1 {
-        font-size: 40px;
+        font-size: 32px;
     }
 
-    .jumbotron_carousel .carousel-item .carousel-caption {
-        text-align: left;
-        margin-bottom: 32px;
-        margin-left: -20px;
-        margin-right: 0;
+    .welcome_text p {
+        font-size: 20px;
     }
 
+    .carousel_jumbotron .carousel-item .overlay_carousel_jumbotron {
+        padding: 0 100px 0 76px;
+    }
 
+    .carousel_jumbotron .carousel-item img {
+        height: 601px;
+        object-fit: cover;
+    }
 
-    .jumbotron_carousel .carousel-item .carousel-caption p {
-        font-size: 1em;
-        white-space: unset;
-        overflow: visible;
-        text-overflow: unset;
+    .carousel_jumbotron .carousel-item .overlay_carousel_jumbotron .content_overlay_carousel_jumbotron h2 {
+        font-size: 32px;
+        max-width: 50rem;
+    }
+
+    .carousel_jumbotron .carousel-item .overlay_carousel_jumbotron .content_overlay_carousel_jumbotron p {
+        max-width: 50rem;
+        -webkit-line-clamp: 4;
     }
 
     /* 
@@ -626,43 +562,17 @@ main {
     /* 
         Start Jumbotron Style
     */
-    .jumbotron_logo {
-        width: 164px;
-        margin-left: 97px;
-    }
-
-    .jumbotron_batik {
-        height: 340px;
-    }
 
     .welcome_text {
-        padding: 80px 0 0px 100px;
-        height: 259px;
-        max-height: 260px;
+        padding: 0 0 0 100px;
     }
 
     .welcome_text h1 {
         font-size: 48px;
     }
 
-    .jumbotron_carousel .carousel-item .carousel-caption {
-        text-align: left;
-        margin-bottom: 130px;
-        margin-left: -20px;
-        margin-right: 0px;
-    }
-
-    .jumbotron_carousel .carousel-inner .carousel-item img {
-        height: 601px;
-    }
-
-    .jumbotron_carousel .carousel-item .carousel-caption h2 {
-        font-size: 36px;
-        font-weight: bold;
-    }
-
-    .jumbotron_carousel .carousel-item .carousel-caption p {
-        font-size: 1em;
+    .welcome_text p {
+        font-size: 24px;
     }
 
     /* 
