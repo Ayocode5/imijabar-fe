@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
+@import url(./reusable-css/navbar.css);
+@import url(./reusable-css/breadcumb.css);
+@import url(./reusable-css/footer.css);
+/* 
+    font-family: 'Barlow', sans-serif;  
+    font-family: 'Tinos', serif;
+    font-family: 'Zeyada', cursive;
+*/
+
+body {
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#content-email-verif {
+  margin-top: 100px;
+}
+
+.title-email-verif {
+  font-family: "Tinos", serif;
+  font-size: 64px;
+  font-weight: bold;
+}
+
+.subtitle-email-verif {
+  font-size: 24px;
+  font-weight: medium;
+  max-width: 550px;
+}
+
+.img-email-verif {
+  width: 300px;
+  height: 199px;
+  margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.btn_back_home_email_verif {
+  background-color: transparent;
+  border: 1px solid #263840;
+  padding: 8px 24px;
+  transition: transform 0.5s ease-in-out;
+  border-radius: 5px;
+  font-weight: 500;
+  margin-bottom: 100px;
+}
+
+.btn_back_home_email_verif a,
+.btn_back_home_email_verif a:hover,
+.btn_back_home_email_verif a:focus,
+.btn_back_home_email_verif a:active {
+  text-decoration: none;
+  color: #263840;
+}
+
+.btn_back_home_email_verif:active,
+.btn_back_home_email_verif:hover,
+.btn_back_home_email_verif:focus {
+  background-color: #ffce51;
+  border: none;
+  outline: none;
+  transform: translate(0, -10px);
+}
+
+@media screen and (min-width: 768px) {
+  .img-email-verif {
+    width: 450px;
+    height: 299px;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .img-email-verif {
+    width: 860px;
+    height: 570px;
+  }
+}
+
+@media screen and (min-width: 2300px) {
+  .img-email-verif {
+    width: 980px;
+    height: 650px;
+  }
+}
