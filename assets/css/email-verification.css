@@ -15,30 +15,30 @@ body {
   padding: 0;
 }
 
-#content-404 {
+#content-email-verif {
   margin-top: 100px;
 }
 
-.title-404 {
+.title-email-verif {
   font-family: "Tinos", serif;
   font-size: 64px;
   font-weight: bold;
 }
 
-.subtitle-404 {
+.subtitle-email-verif {
   font-size: 24px;
   font-weight: medium;
-  max-width: 536px;
+  max-width: 550px;
 }
 
-.img-404 {
+.img-email-verif {
   width: 300px;
   height: 199px;
   margin-top: 50px;
   margin-bottom: 100px;
 }
 
-.btn_back_home_404 {
+.btn_back_home_email_verif {
   background-color: transparent;
   border: 1px solid #263840;
   padding: 8px 24px;
@@ -48,17 +48,17 @@ body {
   margin-bottom: 100px;
 }
 
-.btn_back_home_404 a,
-.btn_back_home_404 a:hover,
-.btn_back_home_404 a:focus,
-.btn_back_home_404 a:active{
+.btn_back_home_email_verif a,
+.btn_back_home_email_verif a:hover,
+.btn_back_home_email_verif a:focus,
+.btn_back_home_email_verif a:active {
   text-decoration: none;
   color: #263840;
 }
 
-.btn_back_home_404:active,
-.btn_back_home_404:hover,
-.btn_back_home_404:focus {
+.btn_back_home_email_verif:active,
+.btn_back_home_email_verif:hover,
+.btn_back_home_email_verif:focus {
   background-color: #ffce51;
   border: none;
   outline: none;
@@ -66,21 +66,21 @@ body {
 }
 
 @media screen and (min-width: 768px) {
-  .img-404 {
+  .img-email-verif {
     width: 450px;
     height: 299px;
   }
 }
 
 @media screen and (min-width: 992px) {
-  .img-404 {
+  .img-email-verif {
     width: 860px;
     height: 570px;
   }
 }
 
 @media screen and (min-width: 2300px) {
-  .img-404 {
+  .img-email-verif {
     width: 980px;
     height: 650px;
   }
