@@ -51,18 +51,39 @@ body {
 }
 
 /* Main content page committee */
-.wrap_content_page_commiittee {
+.wrap_content_page_commiittee .scroll_content_page {
     padding: 0 1rem;
     overflow: scroll;
     max-width: 1165px;
     margin: 50px auto;
     max-height: 840px;
+    height: 100%;
+    /* cursor: grab; */
+    -ms-overflow-style: none;
+    /* for Internet Explorer, Edge */
+    scrollbar-width: none;
+    /* for Firefox */
+}
+
+.wrap_content_page_commiittee .scroll_content_page::-webkit-scrollbar {
+    display: none;
+    /* for Chrome, Safari, and Opera */
+}
+
+.selectDisable {
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
 }
 
 .wrap_commite_image img {
     max-width: 375px;
     max-height: 300px;
     border-radius: 10px;
+    object-fit: cover;
 }
 
 .wrap_button_show_more_committee {
