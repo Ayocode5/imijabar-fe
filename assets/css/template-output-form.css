@@ -1,0 +1,16 @@
+.margin_template_output_form {
+    margin: 0 200px;
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    border-right: 2px solid black;
+    border-bottom: 2px solid black;
+}
+
+.form_output_kis,
+td {
+    vertical-align: top;
+}
+
+.form_output_kis {
+    font-size: 16px;
+}
