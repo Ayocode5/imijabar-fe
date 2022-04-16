@@ -1,0 +1,45 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.size_a4 {
+    width: 21cm;
+    height: 29.7cm;
+    border: 2px solid black;
+}
+
+.form_output_registrasi_club {
+    margin: 0 24px;
+    font-size: 12px;
+}
+
+.comittee_core_table,
+.comittee_core_table th,
+.comittee_core_table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.team_core_table,
+.team_core_table th,
+.team_core_table td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+.blank_row {
+    height: 20px !important;
+    background-color: #ffffff;
+}
+
+.middle_text_on_table {
+    vertical-align: middle;
+    text-align: center;
+}
+
+.category_registered_klub {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
