@@ -1,16 +1,80 @@
+.column_layout{
+  flex-basis: 0;
+  flex-grow: 1;
+  max-width: 100%;
+}
+
+.row_layout{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.content_center_layout{
+  justify-content: center!important;
+}
+
+.row_header{
+  align-items: flex-end !important;
+}
+
+.logo_header{
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+  justify-content: flex-end!important;
+}
+
+.logo_img{
+  max-width: 100%;
+  height: auto;
+}
+
+.content_header{
+  justify-content: center!important;
+  flex: 0 0 83.333333%;
+  max-width: 83.333333%;
+}
+
+.content_header_top{
+  align-items: flex-end!important;
+  justify-content: flex-end!important;
+}
+
+.text_content_header_top{
+  color: #fff;
+  padding: 0.5rem;
+  margin: 0;
+}
+
+.content_header_center{
+  align-items: flex-start!important;
+  justify-content: flex-end!important;
+}
+
+.content_header_bottom{
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
 .margin_template_output_form {
-    margin: 0 200px;
-    border-top: 2px solid black;
-    border-left: 2px solid black;
-    border-right: 2px solid black;
-    border-bottom: 2px solid black;
+  margin: 0 200px;
+  border-top: 2px solid black;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.signature_form_content{
+  align-items: center!important;
+  justify-content: center!important;
 }
 
 .form_output_kis,
 td {
-    vertical-align: top;
+  vertical-align: top;
 }
 
 .form_output_kis {
-    font-size: 16px;
+  font-size: 16px;
 }
