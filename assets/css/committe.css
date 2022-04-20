@@ -58,7 +58,8 @@ body {
     margin: 50px auto;
     max-height: 840px;
     height: 100%;
-    /* cursor: grab; */
+
+    cursor: grab;
     -ms-overflow-style: none;
     /* for Internet Explorer, Edge */
     scrollbar-width: none;
@@ -70,6 +71,142 @@ body {
     /* for Chrome, Safari, and Opera */
 }
 
+.wrap_committe_image {
+    /* border-radius: 16px; */
+    margin: 0 auto;
+    width: 100%;
+    height: 300px;
+    /* background: url(https://picsum.photos/360/360?image=0); */
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 5px 50px rgba(#000, .85);
+}
+
+.wrap_committe_image::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(#000, .92);
+}
+
+.wrap_animation_img_overlay_committe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.photo_committe {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+
+    /* max-width: 375px; */
+    max-height: 300px;
+    /* filter: contrast(0);
+    filter: brightness(0.3); */
+}
+
+.wrap_animation_img_overlay_committe span {
+    width: 25%;
+    height: 100%;
+    background-color: black;
+    opacity: 0.5;
+    transform: translateY(100%);
+    transition: .5s;
+}
+
+.wrap_animation_img_overlay_committe span:nth-child(1) {
+    transition-delay: 0;
+}
+
+.wrap_animation_img_overlay_committe span:nth-child(2) {
+    transition-delay: .1s;
+}
+
+.wrap_animation_img_overlay_committe span:nth-child(3) {
+    transition-delay: .2s;
+}
+
+.wrap_animation_img_overlay_committe span:nth-child(4) {
+    transition-delay: .3s;
+}
+
+
+.content_overlay_committes {
+    /* background-color: #000;
+    opacity: 0.5; */
+    position: absolute;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 20px 20px;
+    width: 100%;
+    height: 100%;
+    transform: translateY(100%);
+
+}
+
+.wrap_committe_image:hover .wrap_animation_img_overlay_committe span {
+    transform: translateY(0);
+}
+
+.wrap_committe_image:hover .content_overlay_committes {
+    top: 0;
+    transform: translateY(0%);
+    transition: 1s;
+    transition-delay: .1s;
+}
+
+
+.content_overlay_committes .name_committe {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.position_committee {
+    margin-top: 50px;
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.ribbon_committee {
+    z-index: 9;
+    position: absolute;
+    width: 158px;
+    column-gap: 16px;
+    bottom: 16px;
+    left: 8px;
+    color: #F8F8F8;
+    font-size: 8px;
+    font-weight: 700;
+}
+
+.ribbon_committee p {
+    margin-bottom: 0;
+    margin-left: -22px;
+}
+
+.sparator img {
+    height: 80%;
+}
+
+.sosial_media_committe p {
+    display: flex;
+    font-size: 32px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 16px;
+}
+
+
 .selectDisable {
     user-drag: none;
     -webkit-user-drag: none;
@@ -77,6 +214,20 @@ body {
     -moz-user-select: none;
     -webkit-user-select: none;
     -ms-user-select: none;
+
+    -webkit-touch-callout: none;
+    /* iOS Safari */
+    -webkit-user-select: none;
+    /* Safari */
+    -khtml-user-select: none;
+    /* Konqueror HTML */
+    -moz-user-select: none;
+    /* Old versions of Firefox */
+    -ms-user-select: none;
+    /* Internet Explorer/Edge */
+    user-select: none;
+    /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .wrap_button_show_more_committee {
@@ -130,120 +281,6 @@ body {
     background-color: #263840;
     border: 1px solid #ffffff;
     color: #ffffff;
-}
-
-.wrap_committe_image {
-    /* border-radius: 16px; */
-    margin: 0 auto;
-    width: 100%;
-    height: 300px;
-    /* background: url(https://picsum.photos/360/360?image=0); */
-    position: relative;
-    overflow: hidden;
-    box-shadow: 0 5px 50px rgba(#000, .85);
-}
-
-.wrap_animation_img_overlay_committe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-}
-
-.photo_committe {
-    object-fit: cover;
-    height: 100%;
-    width: 100%;
-
-    /* max-width: 375px; */
-    max-height: 300px;
-    filter: contrast(0);
-    filter: brightness(0.3);
-}
-
-.wrap_animation_img_overlay_committe {
-    width: 100%;
-}
-
-.wrap_animation_img_overlay_committe img {
-    width: 100%;
-    height: 100%;
-    /* background: url(https://picsum.photos/360/360?image=0); */
-    /* background-color: yellow; */
-    /* opacity: 0.7; */
-    transition: .5s;
-}
-
-.wrap_animation_img_overlay_committe .section_1_photo_committe {
-    background-position: 0;
-    transition-delay: 0;
-    object-fit: none;
-    width: 25%;
-    object-position: 0;
-}
-
-.wrap_animation_img_overlay_committe .section_2_photo_committe {
-    background-position: 33.33333%;
-    width: 25%;
-    object-fit: none;
-    object-position: 33.33333%;
-    transition-delay: .1s;
-}
-
-.wrap_animation_img_overlay_committe .section_3_photo_committe {
-    background-position: 66.66666%;
-    object-fit: none;
-    object-position: 66.66666%;
-    width: 25%;
-
-    transition-delay: .2s;
-}
-
-.wrap_animation_img_overlay_committe .section_4_photo_committe {
-    background-position: 100%;
-    object-fit: none;
-    object-position: 100%;
-    transition-delay: .3s;
-    width: 25%;
-}
-
-.wrap_committe_image:hover .wrap_animation_img_overlay_committe>img {
-    transform: translateY(-100%);
-}
-
-
-.content_overlay_committes {
-    position: absolute;
-    box-sizing: border-box;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    color: white;
-    padding: 20px 20px;
-    width: 100%;
-    height: 100%;
-    transform: translateY(100%);
-
-}
-
-.wrap_committe_image:hover .content_overlay_committes {
-    top: 0;
-    transform: translateY(0%);
-    transition: 1s;
-    transition-delay: .1s;
-}
-
-
-.content_overlay_committes .name_committe {
-    font-size: 24px;
-    font-weight: 700;
-}
-
-.sosial_media_committe p {
-    font-size: 44px;
 }
 
 @media screen and (min-width: 768px) {
