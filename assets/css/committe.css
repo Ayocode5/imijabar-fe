@@ -178,7 +178,7 @@ body {
 }
 
 .ribbon_committee {
-    z-index: 9;
+    /* z-index: 2; */
     position: absolute;
     width: 158px;
     column-gap: 16px;
@@ -204,6 +204,11 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     gap: 16px;
+}
+
+.sosial_media_committe p a {
+    color: #F4F4F9;
+
 }
 
 
@@ -233,6 +238,7 @@ body {
 .wrap_button_show_more_committee {
     padding: 50px;
     width: 100%;
+    z-index: 999;
     background: linear-gradient(180deg, rgba(248, 248, 248, 0.6) -1.44%, #F8F8F8 43.15%);
     transform: translate(0, -180px);
 }
@@ -243,6 +249,7 @@ body {
     padding: 8px 24px;
     transition: transform 0.5s ease-in-out;
     border-radius: 5px;
+    z-index: 99999;
     font-weight: 500;
 }
 
@@ -259,8 +266,9 @@ body {
 .download_structure_committee {
     padding: 0 1rem;
     font-weight: 500;
-    max-width: 1165px;
+    max-width: 1300px;
     margin: 0 auto;
+    margin-bottom: 100px;
 }
 
 .download_structure_committee a::before {
@@ -281,6 +289,7 @@ body {
     background-color: #263840;
     border: 1px solid #ffffff;
     color: #ffffff;
+    text-decoration: none;
 }
 
 @media screen and (min-width: 768px) {
