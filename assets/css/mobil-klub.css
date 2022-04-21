@@ -11,14 +11,13 @@ body {
     margin: 0;
     padding: 0;
     background-color: #f8f8f8;
-
 }
 
 #page_klub_mobil {
     border-left: 1px solid rgba(38, 56, 64, 0.5);
     border-right: 1px solid rgba(38, 56, 64, 0.5);
-    margin: 0 50px;
-    padding: 0 50px;
+    margin: 0 3%;
+    padding: 0 3%;
 }
 
 /* Header page klub mobil */
@@ -59,7 +58,7 @@ body {
 }
 
 .image_card_klub_mobil {
-    height: 100%;
+    min-height: 300px;
 }
 
 .overlay_car_community {
@@ -74,8 +73,6 @@ body {
     box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.37);
 }
 
-
-
 .overlay_collaps {
     transform: translate(0, 60%);
 }
@@ -89,16 +86,19 @@ body {
     transition: all 0.5s ease-in-out;
 }
 
-/* 
-.overlay_car_community:hover {
-    transform: translate(0, 0);
-} */
-
 .overlay_car_community h5 {
     font-weight: 700;
     color: #F4F4F9;
-    font-size: 24px;
+    font-size: 16px;
     margin-bottom: 0;
+}
+
+.subtittle_card>p {
+    font-size: 0.8em;
+}
+
+.content_overlay_collaps p {
+    font-size: 0.8em;
 }
 
 .content_overlay_collaps>p {
@@ -149,6 +149,24 @@ body {
     margin-left: 0;
 }
 
+.btn_load_more {
+    background-color: transparent;
+    border: 1px solid #263840;
+    padding: 8px 24px;
+    transition: transform 0.5s ease-in-out;
+    border-radius: 5px;
+    font-weight: 500;
+}
+
+
+.btn_load_more:active,
+.btn_load_more:hover,
+.btn_load_more:focus {
+    background-color: #FFCE51;
+    border: none;
+    outline: none;
+    transform: translate(0, -10px);
+}
 
 @media screen and (min-width: 768px) {
 
@@ -173,6 +191,22 @@ body {
     }
 
     /* Head Klub Mobil */
+
+    .overlay_collaps {
+        transform: translate(0, 55%);
+    }
+
+    .overlay_car_community h5 {
+        font-size: 24px;
+    }
+
+    .subtittle_card>p {
+        font-size: 16px;
+    }
+
+    .content_overlay_collaps p {
+        font-size: 16px;
+    }
 }
 
 @media screen and (min-width: 992px) {
