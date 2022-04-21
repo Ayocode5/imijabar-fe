@@ -1,3 +1,10 @@
+.size_a4 {
+  width: 25cm;
+  height: 29.7cm;
+  /* border: 2px solid black; */
+
+}
+
 .column_layout {
   flex-basis: 0;
   flex-grow: 1;
@@ -68,13 +75,13 @@
   margin-left: -15px;
 }
 
-.margin_template_output_form {
+/* .margin_template_output_form {
   margin: 0 200px;
   border-top: 2px solid black;
   border-left: 2px solid black;
   border-right: 2px solid black;
   border-bottom: 2px solid black;
-}
+} */
 
 .signature_form_content {
   align-items: center !important;
