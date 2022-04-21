@@ -84,6 +84,11 @@ body {
     transform: translate(0, 0);
 }
 
+.opacity_object {
+    opacity: 0;
+    transition: all 0.5s ease-in-out;
+}
+
 /* 
 .overlay_car_community:hover {
     transform: translate(0, 0);
@@ -117,16 +122,27 @@ body {
 }
 
 .sosial_media_klub_mobil {
-    color: #F4F4F9;
-    opacity: 0.8;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
 }
 
 .sosial_media_klub_mobil p {
     font-size: 24px;
+    display: block;
+    margin: auto 0;
+}
+
+.sosial_media_klub_mobil p a {
+    color: #F4F4F9;
+    opacity: 0.8;
+    text-decoration: none;
 }
 
 .sosial_media_klub_mobil p i {
     margin: 0 10px;
+
 }
 
 .sosial_media_klub_mobil p i:nth-child(1) {
