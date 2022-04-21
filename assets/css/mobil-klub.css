@@ -1,0 +1,175 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+/* 
+    font-family: 'Barlow', sans-serif;  
+    font-family: 'Tinos', serif;
+    font-family: 'Zeyada', cursive;
+*/
+
+body {
+    font-family: 'Barlow', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f8f8;
+
+}
+
+#page_klub_mobil {
+    border-left: 1px solid rgba(38, 56, 64, 0.5);
+    border-right: 1px solid rgba(38, 56, 64, 0.5);
+    margin: 0 50px;
+    padding: 0 50px;
+}
+
+/* Header page klub mobil */
+#header_page_klub_mobil {
+    margin: 0 auto;
+    background-color: #f8f8f8;
+}
+
+.head_klub_mobil {
+    padding: 40px 0 10px 0;
+    margin: 0 1rem;
+    text-align: center;
+}
+
+.head_klub_mobil h1 {
+    font-family: "Tinos", serif;
+    font-size: 24px;
+    font-weight: 700;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    text-decoration-color: hsl(215, 79%, 64%);
+}
+
+
+.head_klub_mobil p {
+    text-align: center;
+    margin: 0 0;
+    font-size: 1em;
+}
+
+/* End Header page klub mobil */
+
+
+.wrap_card_community {
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.image_card_klub_mobil {
+    height: 100%;
+}
+
+.overlay_car_community {
+    padding: 20px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(163.89deg, #263840 -2.61%, #5996EC 88.8%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    transform: translateY(0);
+    box-shadow: 0px -5px 4px rgba(0, 0, 0, 0.37);
+}
+
+
+
+.overlay_collaps {
+    transform: translate(0, 60%);
+}
+
+.overlay_show {
+    transform: translate(0, 0);
+}
+
+/* 
+.overlay_car_community:hover {
+    transform: translate(0, 0);
+} */
+
+.overlay_car_community h5 {
+    font-weight: 700;
+    color: #F4F4F9;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+
+.content_overlay_collaps>p {
+    font-weight: 700;
+    color: #F4F4F9;
+}
+
+.content_overlay_collaps .leader_name {
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+
+.content_overlay_collaps .leader_name p:nth-child(1) {
+    color: #F4F4F9;
+    font-weight: 700;
+}
+
+.content_overlay_collaps .leader_name p:nth-child(2) {
+    color: #F4F4F9;
+    opacity: 0.8;
+}
+
+.sosial_media_klub_mobil {
+    color: #F4F4F9;
+    opacity: 0.8;
+}
+
+.sosial_media_klub_mobil p {
+    font-size: 24px;
+}
+
+.sosial_media_klub_mobil p i {
+    margin: 0 10px;
+}
+
+.sosial_media_klub_mobil p i:nth-child(1) {
+    margin-left: 0;
+}
+
+
+@media screen and (min-width: 768px) {
+
+    /* Head List Klub Mobil */
+    #header_page_klub_mobil {
+        padding: 0 0;
+    }
+
+    .head_klub_mobil {
+        padding: 40px 0 40px 0;
+    }
+
+    .head_klub_mobil p {
+        max-width: 400px;
+        margin: 0 auto;
+        word-wrap: break-word;
+        font-size: 1.2em;
+    }
+
+    .head_klub_mobil h1 {
+        font-size: 48px;
+    }
+
+    /* Head Klub Mobil */
+}
+
+@media screen and (min-width: 992px) {
+
+    /* Head Klub Mobil */
+    .head_klub_mobil {
+        padding: 100px 0 100px 0;
+    }
+
+    .head_klub_mobil p {
+        max-width: 500px;
+        font-size: 24px;
+    }
+
+    /* Head Klub Mobil */
+}
