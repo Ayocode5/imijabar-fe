@@ -59,8 +59,9 @@
 
 .text_content_header_top {
   color: #fff;
-  padding: 0.5rem;
+  padding: 0.2rem;
   margin: 0;
+  text-align: center;
 }
 
 .content_header_center {
