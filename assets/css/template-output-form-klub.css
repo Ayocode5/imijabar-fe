@@ -38,8 +38,18 @@ body {
     text-align: center;
 }
 
-.category_registered_klub {
+
+.row_layout {
+    display: -webkit-box;
+    /* wkhtmltopdf uses this one */
     display: flex;
-    /* grid-template-columns: 1fr 1fr 1fr; */
-    /* grid-template-rows: 1fr 1fr 1fr; */
+}
+
+.col_layout {
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%;
 }

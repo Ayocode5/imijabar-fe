@@ -2,14 +2,21 @@
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+
 }
 
 .row_layout {
+  display: -webkit-box;
+  /* wkhtmltopdf uses this one */
   display: flex;
   flex-wrap: wrap;
 }
 
 .content_center_layout {
+  -webkit-box-pack: center;
+  /* wkhtmltopdf uses this one */
   justify-content: center !important;
 }
 
