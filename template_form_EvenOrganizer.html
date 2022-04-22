@@ -41,6 +41,31 @@
             border: 1px solid black;
             border-collapse: collapse;
         }
+
+
+        @media screen {
+            footer {
+                display: none;
+            }
+
+            header {
+                display: none;
+            }
+        }
+
+        @media print {
+            header {
+                position: fixed;
+                width: 100%;
+                top: 0;
+            }
+
+            footer {
+                position: fixed;
+                width: 100%;
+                bottom: 0;
+            }
+        }
     </style>
 
 </head>
@@ -63,7 +88,7 @@
             </div>
         </header>
 
-        <main style="margin: 0 24px;">
+        <main style="margin: 0 24px; margin-top: 130px;">
             <h2 style="font-size: 18px; text-align: center; text-decoration: underline;">PERNYATAAN PERMOHONAN IJIN
                 KEGIATAN</h2>
             <p>Kami yang bertandatangan dibawah ini mengajukan pernyataan permohonan ijin Kegiatan Wilayah Provinsi Jawa
@@ -288,11 +313,11 @@
 
             <div style="justify-content: space-between;" class="flex_row">
                 <table>
-                <tr>
-                    <th></th>
-                    <th></th>
-                    <td style="text-align: center;"><br>KELAS YANG DILOMBAKAN</td>
-                </tr>
+                    <tr>
+                        <th></th>
+                        <th></th>
+                        <td style="text-align: center;"><br>KELAS YANG DILOMBAKAN</td>
+                    </tr>
                     <tr>
                         <th></th>
                         <th>1. </th>
@@ -323,8 +348,12 @@
                 </table>
             </div>
 
-            <p>
-                <br><br><br><br><br><br>
+
+            <p style="page-break-after: always;">&nbsp;</p>
+            <p style="page-break-before: always;">&nbsp;</p>
+
+            <p style="margin-top: 130px;">
+
                 Demikian pernyataan permohonan ini kami isi dengan data yang sesungguhnya, dan kami bersedia tunduk dan
                 mematuhi segenap kode sportifitas serta peraturan-peraturan yang dikeluarkan oleh PP. IMI / IMI - JAWA
                 BARAT yang berlaku.</p>
