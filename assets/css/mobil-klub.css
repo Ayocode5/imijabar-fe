@@ -59,6 +59,7 @@ body {
 
 .image_card_klub_mobil {
     min-height: 300px;
+    object-fit: cover;
 }
 
 .overlay_car_community {
