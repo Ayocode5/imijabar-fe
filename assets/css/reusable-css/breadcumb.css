@@ -4,6 +4,28 @@
     border-bottom: 1px solid rgba(38, 56, 64, 0.5);
 }
 
+.breadcrumb {
+    background-color: #F4F4F9;
+    margin-bottom: 0px;
+    padding: 0.5rem 0 !important;
+
+}
+
+.breadcrumb-item+.breadcrumb-item::before {
+    content: "»";
+    vertical-align: bottom;
+}
+
+
+.breadcrumb li a {
+    max-width: 90%;
+    display: inline-block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: middle;
+}
+
 @media screen and (min-width: 992px) {
 
     /* Start breadcumb style */
