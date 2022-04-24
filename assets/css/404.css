@@ -20,19 +20,26 @@ body {
 }
 
 .title-404 {
-  font-family: "Tinos", serif;
-  font-size: 64px;
-  font-weight: bold;
+  margin: 0;
+  line-height: 38px;
+  font-family: 'Tinos', serif;
+  font-size: 24px;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 16px;
+  text-decoration-color: hsl(215, 79%, 64%);
 }
 
 .subtitle-404 {
-  font-size: 24px;
+  font-size: 1em;
+  margin: 1rem 0 0 0;
   font-weight: medium;
   max-width: 536px;
 }
 
 .img-404 {
-  width: 300px;
+  width: 100%;
   height: 199px;
   margin-top: 50px;
   margin-bottom: 100px;
@@ -51,7 +58,7 @@ body {
 .btn_back_home_404 a,
 .btn_back_home_404 a:hover,
 .btn_back_home_404 a:focus,
-.btn_back_home_404 a:active{
+.btn_back_home_404 a:active {
   text-decoration: none;
   color: #263840;
 }
@@ -67,17 +74,35 @@ body {
 
 @media screen and (min-width: 768px) {
   .img-404 {
-    width: 450px;
     height: 299px;
   }
+
+  .title-404 {
+    font-size: 48px;
+
+  }
+
+  .subtitle-404 {
+    font-size: 1.2em;
+  }
+
 }
 
 @media screen and (min-width: 992px) {
   .img-404 {
-    width: 860px;
-    height: 570px;
+    height: 100%;
+
+  }
+
+  .title-404 {
+    font-size: 64px;
+  }
+
+  .subtitle-404 {
+    font-size: 24px;
   }
 }
+
 
 @media screen and (min-width: 2300px) {
   .img-404 {

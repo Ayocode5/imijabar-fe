@@ -30,21 +30,20 @@ body {
 }
 
 .head_list_berita h1 {
+    margin: 0;
+    line-height: 38px;
     font-family: 'Tinos', serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-}
-
-.border_head_title {
-    border-bottom: 3px solid hsl(215, 79%, 64%);
-    width: 200px;
-    margin: 0 auto;
-    margin-top: -4px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    text-decoration-color: hsl(215, 79%, 64%);
 }
 
 .head_list_berita p {
     text-align: center;
-    margin: 0 0;
+    margin: 1em 0 0 0;
     font-size: 1em;
 }
 
@@ -275,17 +274,13 @@ body {
 
     .head_list_berita p {
         max-width: 400px;
-        margin: 0 auto;
+        margin: 1em auto;
         word-wrap: break-word;
         font-size: 1.2em;
     }
 
     .head_list_berita h1 {
         font-size: 32px;
-    }
-
-    .border_head_title {
-        width: 230px;
     }
 
     .carousel_head_list_berita {
@@ -349,10 +344,6 @@ body {
 
     .head_list_berita h1 {
         font-size: 64px;
-    }
-
-    .border_head_title {
-        width: 460px;
     }
 
     .carousel_head_list_berita {
