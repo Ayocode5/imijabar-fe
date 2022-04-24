@@ -63,10 +63,10 @@ const navbarTemplate = (page) => {
                         <a class="nav-link ${page === "berita" ? 'active' : ''}" href="/list-berita.html">Berita</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link ${page === "acara" ? 'active' : ''}" href="/event">Acara</a>
+                        <a class="nav-link ${page === "acara" ? 'active' : ''}" href="/list-event.html">Acara</a>
                     </li>
                     <li class="nav-item mx-lg-2">
-                        <a class="nav-link ${page === "gallery" ? 'active' : ''}" href="/galeri">Galleri</a>
+                        <a class="nav-link ${page === "gallery" ? 'active' : ''}" href="/galeri.html">Galleri</a>
                     </li>
                     <li class="nav-item mx-lg-2 dropdown">
                         <a class="nav-link dropdown-toggle ${page === "pendaftaran" ? 'active' : ''}" href="#" id="navbarDropdown" role="button"
