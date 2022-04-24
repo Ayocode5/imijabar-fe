@@ -24,69 +24,72 @@
 
 <body>
     <!-- START NAVBAR -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div style="margin: -9px 0;" class="container-fluid">
-            <a class="navbar-brand" href="index.html">
-                <img src="./assets/img/logoIMIJabar.svg" alt="Logo IMI Jabar">
+    <nav class="my_nav navbar sticky-top navbar-expand-lg navbar-light bg-light border-bottom py-2">
+        <div class="container-fluid wrap_navbar">
+
+            <a style="font-size: 16px;" class="navbar-brand" href="/">
+                <img style="height: 50px; width: 42px" src="./assets/img/logoSmall.svg" alt="Logo IMI Jabar">
+                <p style="margin: 0; padding:0; display:inline-block; vertical-align: middle; width: 100%; max-width: 160px;white-space:normal; font-size: 12px; font-weight: 700"
+                    class="navbar-text">Ikatan Motor Indonesia (IMI) Provinsi Jawa Barat</p>
             </a>
             <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#navbarText"
                 aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarText">
-                <ul class="navbar-nav mr-auto navbar_list">
-                    <li class="nav-item mr-lg-3">
-                        <a class="nav-link" href="about.html">Tentang IMI<span class="sr-only">(current)</span></a>
+                <ul class="navbar-nav mx-auto navbar_list">
+
+
+                    <li class="nav-item mx-lg-2 dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Tentang IMI
+                        </a>
+                        <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/about">Organisasi</a>
+                            <a class=" dropdown-item" href="/car">Mobil</a>
+                            <a class="dropdown-item" href="/motor">Motor</a>
+                            <a class="dropdown-item" href="/mobility">Mobility</a>
+                        </div>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-lg-3" href="list-berita.html">Berita</a>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link" href="/news">Berita</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-lg-3" href="galeri.html">Galeri</a>
+                    <li class="nav-item mx-lg-2">
+
+                        <a class="nav-link @if (in_array('event', $url)) active @endif" href="/event">Acara</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link mr-lg-3" href="./list-event.html">Acara</a>
+                    <li class="nav-item mx-lg-2">
+                        <a class="nav-link active" href="/galeri">Galleri</a>
                     </li>
-                    <li class="nav-item dropdown mr-lg-3">
+                    <li class="nav-item mx-lg-2 dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Pendaftaran
                         </a>
                         <div class="dropdown-menu mb-3" aria-labelledby="navbarDropdown">
-                            <a class="dropdown-item" href="./registrasi-kis-individu.html">KIS</a>
-                            <a class="dropdown-item" href="./registrasi-kta.html">KTA</a>
-                            <div class="dropdown-divider"></div>
-                            <a class="dropdown-item" href="./registrasi-klub.html">Klub</a>
+                            <a class="dropdown-item" href="/registration/kis">KIS</a>
+
+                            <a class="dropdown-item" href="/registration/kta">KTA</a>
+
+                            <a class="dropdown-item" href="/registration/club">Klub</a>
+
+                            <a class="dropdown-item" href="./registrasi-event.html">Event</a>
                         </div>
                     </li>
                 </ul>
                 <ul class="navbar-nav ml-auto navbar_list">
                     <li class="nav-item mr-lg-3">
-                        <!-- <input class="btn_change_language" type="checkbox" checked data-toggle="toggle" data-on="IND" data-off="ENG"
-                data-style="ios" data-onstyle="primary" data-offstyle="danger"> -->
                         <div class="switch_language">
                             <input type="checkbox" class="checkbox_switch_language" id="chk" />
                             <label class="label_switch_language" for="chk">
                                 <div class="ball"></div>
                                 <div class="flags">
                                     <img class="ball_us flag" src="./assets/img/flag-us.svg" alt="us flag">
-                                    <img class="ball_id flag" src="./assets/img/flag-indonesia.svg" alt="is flag">
+                                    <img class="ball_id flag" src="./assets/img/flag-indonesia.svg" alt="id flag">
                                 </div>
-                                <!-- <div class="ball"></div> -->
                             </label>
                         </div>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link mr-lg-3">
-                            <img class="mb-1 mr-2" src="./assets/img/Telephone-Icon.svg" alt="contact">
-                            0857-XXXX-XXXX
-                        </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#" class="nav-link mr-lg-3">
-                            <img class="mb-1" src="./assets/img/Email-Icon.svg" alt="contact email">
-
-                        </a>
                     </li>
                 </ul>
 
@@ -106,7 +109,8 @@
                 </a>
                 <a class="mr-2" href="index.html" style="color: #000; text-decoration: none;">Home
                 </a>
-                <a href="/registrasi-klub.html" style="color: #000; text-decoration: none; font-weight: 700;">/ Pendaftaran / Klub
+                <a href="/registrasi-klub.html" style="color: #000; text-decoration: none; font-weight: 700;">/
+                    Pendaftaran / Klub
                 </a>
             </div>
         </div>
@@ -116,15 +120,24 @@
     <section id="header_page_pendaftaran_klub">
         <div class="head_pendaftaran_klub">
             <h1>Klub</h1>
-            <div class="border_head_title"></div>
-            <p>Berkas Persyarata Dan Tata Cara Pendaftaran Kartu Tanda Anggota Di IMI Jawa Barat.</p>
+            <p>Berkas Persyaratan Dan Tata Cara Pendaftaran Klub/Komunitas Resmi Di IMI Jawa Barat.</p>
         </div>
-        <div class="feature_image_pendaftaran_klub">
-            <img class="d-block mx-auto" src="./assets/img/fetarure_registrasi_kis.svg" alt="image pendaftaran klub">
+        <div class="wrap_header_event_klub">
+            <div class="card border-0">
+                <img class="img-fluid card-img featured_image_event_klub" src="./assets/img/banner-reg-event.png"
+                    alt="featured image event">
+
+                <div class="card-img-overlay overlay_image_event_klub d-flex">
+                    <div class="my-auto mx-auto text-center content_overlay_image_event_klub">
+                        <h4 class="card-title">Daftarkan Klub mu, dan Jadilah Bagian Resmi Dari IMI Jawa Barat</h4>
+
+                        <a href="{{ $section1->link }}">
+                            <button class="btn_daftar_event">Daftar Disini</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
         </div>
-        <p class="fitur_pengembangan_regis_klub">Saat ini fitur pendaftaran Klub di website ini masih dalam tahap
-            pengembangan, Untuk sementara anda bisa mendaftar melalui google form yang ada dibawah ini. Terima Kasih
-            Atas Pengertiannya.</p>
     </section>
 
     <main id="main_content_registrasi_klub">

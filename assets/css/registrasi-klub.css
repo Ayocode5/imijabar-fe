@@ -31,15 +31,12 @@ body {
 
 .head_pendaftaran_klub h1 {
     font-family: 'Tinos', serif;
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 700;
-}
-
-.border_head_title {
-    border-bottom: 3px solid hsl(215, 79%, 64%);
-    width: 60px;
-    margin: 0 auto;
-    margin-top: -8px;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 8px;
+    text-decoration-color: hsl(215, 79%, 64%);
 }
 
 .head_pendaftaran_klub p {
@@ -48,36 +45,60 @@ body {
     font-size: 1em;
 }
 
-.feature_image_pendaftaran_klub img {
-    width: 60%;
-}
+/*  */
 
-.fitur_pengembangan_regis_klub {
-    margin-top: 16px;
-    text-align: center;
+.wrap_header_event_klub {
     padding: 0 8%;
-    font-weight: 500;
 }
 
-.daftar_klub_individu button {
+.overlay_image_event_klub {
+    background: rgba(38, 56, 64, 0.5);
+    /* border-radius: 0px 0px 10px 10px; */
+}
+
+.content_overlay_image_event_klub,
+.content_overlay_image_event_klub>.card-title {
+    font-family: 'Tinos', serif;
+    text-align: center;
+    font-weight: 700 !important;
+    color: #fff;
+}
+
+.content_overlay_image_event_klub>.card-title {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.featured_image_event_klub {
+    min-height: 250px;
+    object-fit: cover;
+}
+
+.btn_daftar_event {
+    color: #f8f8f8;
     background-color: transparent;
-    border: 2px solid #263840;
-    margin: 0 auto;
-    display: block;
-    padding: 8px 16px;
-    border-radius: 5px;
-    font-weight: 500;
     outline: none;
-    transition: all 0.6s ease-in-out;
+    border: 3px solid #F4F4F9;
+    transform: translate(0, 0);
+    transition: all 0.8s ease-in-out;
+    padding: 4px 16px;
+    border-radius: 5px;
 }
 
-.daftar_klub_individu button:hover,
-.daftar_klub_individu button:focus,
-.daftar_klub_individu button:active {
-    background-color: #FFCE51;
-    transform: translate(0, -10px);
+.btn_daftar_event:hover,
+.btn_daftar_event:active,
+.btn_daftar_event:focus {
+    outline: none;
     border: none;
+    transform: translate(0, -5px);
+    background-color: #FFCE51;
+    color: #111111;
 }
+
+/*  */
+
+
+
 
 /* end Head List Berita */
 
@@ -143,18 +164,21 @@ body {
         font-size: 38px;
     }
 
-    .border_head_title {
-        width: 80px;
+
+    /*  */
+    .wrap_header_event_klub {
+        padding: 0 50px;
     }
 
-    .feature_image_pendaftaran_klub img {
-        width: 50%;
+    .featured_image_event_klub {
+        min-height: 370px;
     }
 
-    .fitur_pengembangan_regis_klub {
-        margin-top: 24px;
-        padding: 0 16%;
+    .content_overlay_image_event_klub>.card-title {
+        font-size: 32px;
     }
+
+    /*  */
 
     /* end Head List Berita */
 
@@ -188,13 +212,18 @@ body {
         font-size: 64px;
     }
 
-    .border_head_title {
-        width: 140px;
+    /*  */
+
+    .wrap_header_event_klub {
+        padding: 0 100px;
     }
 
-    .feature_image_pendaftaran_klub img {
-        width: 30%;
+    .content_overlay_image_event_klub>.card-title {
+        font-size: 48px;
+
     }
+
+    /*  */
 
     .fitur_pengembangan_regis_klub {
         margin-top: 32px;

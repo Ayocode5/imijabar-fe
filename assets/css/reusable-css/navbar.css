@@ -1,25 +1,45 @@
 /* 
     Start Navbar
 */
-nav {
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-
+.goog-logo-link {
+    display: none !important;
 }
 
-.toggle.ios,
-.toggle-on.ios,
-.toggle-off.ios {
-    border-radius: 20rem;
+.goog-te-gadget {
+    color: transparent !important;
 }
 
-.toggle.ios .toggle-handle {
-    border-radius: 20rem;
+.goog-te-banner-frame.skiptranslate {
+    display: none !important;
+}
+
+.my_nav {
+    border-bottom: 1px solid rgba(38, 56, 64, 0.5)
+}
+
+.wrap_navbar {
+    margin: 0 0;
+}
+
+.my_nav .navbar-brand img {
+    max-width: 60px;
+    max-height: 90px;
 }
 
 .nav-item {
     font-family: 'Barlow', sans-serif;
     font-weight: 600;
     font-size: 1em;
+}
+
+.nav-item a:hover {
+    transition: all 0.5s ease-in-out;
+    text-decoration: underline;
+    text-underline-offset: 8px;
+    border-radius: 5px;
+    text-decoration-thickness: 3px;
+    text-decoration-color: hsl(215, 79%, 64%);
+
 }
 
 .switch_language {
@@ -98,6 +118,10 @@ nav {
 
 
 @media screen and (min-width: 992px) {
+    .wrap_navbar {
+        margin: 0 50px;
+    }
+
     .switch_language {
         margin-top: 5px;
         margin-left: 0;
