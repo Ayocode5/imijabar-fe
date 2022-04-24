@@ -1,5 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Zeyada&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700&family=Tinos:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Zeyada&display=swap");
 @import url(./reusable-css/navbar.css);
 @import url(./reusable-css/breadcumb.css);
 @import url(./reusable-css/kepengurusan.css);
@@ -11,260 +11,304 @@
 */
 
 body {
-    font-family: 'Barlow', sans-serif;
-    margin: 0;
-    padding: 0;
+  font-family: "Barlow", sans-serif;
+  margin: 0;
+  padding: 0;
 }
-
 
 /* Start Visi Misi */
 #visi_misi {
-    background-color: #F8F8F8;
-    padding: 0 8px;
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+  background-color: #f8f8f8;
+  padding: 0 8px;
+  border-bottom: 1px solid rgba(38, 56, 64, 0.5);
 }
 
 .wrap_visi_misi {
-    width: 100%;
-    margin: 0 auto;
-    border-left: 1px solid rgba(38, 56, 64, 0.5);
-    border-right: 1px solid rgba(38, 56, 64, 0.5);
-    padding: 50px 8px;
+  width: 100%;
+  margin: 0 auto;
+  border-left: 1px solid rgba(38, 56, 64, 0.5);
+  border-right: 1px solid rgba(38, 56, 64, 0.5);
+  padding: 50px 8px;
 }
 
 .misi_section {
-    margin-top: 50px;
+  margin-top: 50px;
 }
 
 .visimisi-content {
-    margin: 0px 100px;
+  margin: 0px 100px;
 }
 
 .visimisi-title {
-    font-family: 'Barlow', sans-serif;
-    font-size: 24px;
-    font-weight: bold;
-    color: #263840;
+  font-family: "Barlow", sans-serif;
+  font-size: 24px;
+  font-weight: bold;
+  color: #263840;
 }
 
 .visimisi-outline {
-    font-family: 'Barlow', sans-serif;
-    font-size: 32px;
-    font-weight: bold;
-    -webkit-text-stroke: 1px #263840;
-    -webkit-text-fill-color: white;
-    margin-top: 30px;
+  font-family: "Barlow", sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  -webkit-text-stroke: 1px #263840;
+  -webkit-text-fill-color: white;
+  margin-top: 30px;
 }
 
 .visimisi-jabar {
-    font-family: 'Barlow', sans-serif;
-    font-size: 20px;
-    font-weight: bold;
-    color: #263840;
-    padding-bottom: 0px;
-    -webkit-text-stroke: 0px #263840;
-    -webkit-text-fill-color: #263840;
-
+  font-family: "Barlow", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #263840;
+  padding-bottom: 0px;
+  -webkit-text-stroke: 0px #263840;
+  -webkit-text-fill-color: #263840;
 }
 
 .visimisi-arrow {
-    width: 80px;
-    height: 16px;
-    margin: 0px 20px;
+  width: 80px;
+  height: 16px;
+  margin: 0px 20px;
 }
 
 .visimisi-img {
-    height: 400px;
+  height: 400px;
 }
 
 .visimisi-detail {
-    font-family: 'Barlow', sans-serif;
-    font-size: 16px;
-    font-weight: medium;
-    color: #263840;
-    margin-bottom: 10px;
-    /* margin-left: 25px; */
-    line-height: 16px;
+  font-family: "Barlow", sans-serif;
+  font-size: 16px;
+  font-weight: medium;
+  color: #263840;
+  margin-bottom: 10px;
+  /* margin-left: 25px; */
+  line-height: 16px;
 }
 
 .border_visi {
-    position: absolute;
-    background-color: #5996ec;
-    padding: 0px;
-    margin-bottom: 30px;
-    width: 0px;
-    left: 400px;
-    top: 140px;
+  position: absolute;
+  background-color: #5996ec;
+  padding: 0px;
+  margin-bottom: 30px;
+  width: 0px;
+  left: 400px;
+  top: 140px;
 }
 
 /* End Visi Misi */
 
 /* Start sejarah imi style */
 #sejarah {
-    background-color: #FBFBFB;
-    padding: 0 8px;
+  background-color: #fbfbfb;
+  padding: 0 8px;
 }
 
 .wrap_sejarah_imi {
-    margin: 0 auto;
-    width: 100%;
-    border-left: 1px solid rgba(38, 56, 64, 0.5);
-    border-right: 1px solid rgba(38, 56, 64, 0.5);
-    padding: 50px 8px;
+  margin: 0 auto;
+  width: 100%;
+  border-left: 1px solid rgba(38, 56, 64, 0.5);
+  border-right: 1px solid rgba(38, 56, 64, 0.5);
+  padding: 50px 8px;
 }
 
 .sejarah-title {
-    font-family: 'Barlow', sans-serif;
-    font-weight: bolder;
-    font-size: 24px;
-    font-style: italic;
-    margin-top: 50px;
-    margin-bottom: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: bolder;
+  font-size: 24px;
+  font-style: italic;
+  margin-top: 50px;
+  margin-bottom: 16px;
 }
 
 .sejarah-text {
-    font-family: 'Barlow', sans-serif;
-    font-weight: medium;
-    font-size: 1em;
-    text-align: justify
+  font-family: "Barlow", sans-serif;
+  font-weight: medium;
+  font-size: 1em;
+  text-align: justify;
+  position: relative;
 }
 
 .sejarah-text-bold {
-    font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    font-size: 1.1em;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-size: 1.1em;
+  position: relative;
 }
 
 .sejarah-img {
-    width: 100%;
+  width: 100%;
 }
 
 .sejarah-arrow {
-    display: block;
-    width: 28px;
-    height: 28px;
-    margin: 16px auto;
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 16px auto;
 }
 
 .sejarah-arrow2 {
-    display: block;
-    transform: rotate(90deg);
-    width: 28px;
-    height: 28px;
-    margin: 16px auto;
+  display: block;
+  transform: rotate(90deg);
+  width: 28px;
+  height: 28px;
+  margin: 16px auto;
 }
 
 .sejarah-arrow4 {
-    display: block;
-    width: 28px;
-    height: 28px;
-    margin: 16px auto;
-    transform: rotate(90deg);
+  display: block;
+  width: 28px;
+  height: 28px;
+  margin: 16px auto;
+  transform: rotate(90deg);
+}
+
+.img-hover-1, .img-hover-2, .img-hover-3{
+  display: none;
+  position: absolute;
+  background-color: #5996ec;
+  border-radius: 10px;
+  z-index: 99;
+}
+
+.img-hover-1.show {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  margin: auto;
+}
+.img-hover-2.show {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  margin: auto;
+}
+.img-hover-3.show {
+  display: block;
+  position: absolute;
+  z-index: 99;
+  margin: auto;
+}
+
+.img-sejarah{
+    width: 150px;
+    height: 150px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.img-text-1, .img-text-2{
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+}
+.img-text-3{
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
 }
 
 .wrap_background_imi {
-    margin: 0 auto;
-    width: 100%;
-    background-color: #fbfbfbfb;
-    border-top: 1px solid rgba(38, 56, 64, 0.5);
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+  margin: 0 auto;
+  width: 100%;
+  background-color: #fbfbfbfb;
+  border-top: 1px solid rgba(38, 56, 64, 0.5);
+  border-bottom: 1px solid rgba(38, 56, 64, 0.5);
 }
 
 .image_border_right {
-    border-right: 1px solid rgba(38, 56, 64, 0.5);
-    ;
+  border-right: 1px solid rgba(38, 56, 64, 0.5);
 }
 
 .image_border_left {
-    border-left: 1px solid rgba(38, 56, 64, 0.5);
+  border-left: 1px solid rgba(38, 56, 64, 0.5);
 }
 
-
 .showmore_history {
-    color: #263840;
-    font-family: 'Barlow', sans-serif;
-    font-weight: medium;
-    font-size: 16px;
+  color: #263840;
+  font-family: "Barlow", sans-serif;
+  font-weight: medium;
+  font-size: 16px;
 }
 
 .showmore-btn .collapsing {
-    -webkit-transition-duration: 1s;
-    transition-duration: 1s;
-    -webkit-transition-timing-function: ease-in-out;
-    transition-timing-function: ease-in-out;
+  -webkit-transition-duration: 1s;
+  transition-duration: 1s;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .showmore_history:hover {
-    color: #263840;
-    text-decoration: none;
+  color: #263840;
+  text-decoration: none;
 }
 
 .showmore_history:active {
-    color: #263840;
-    text-decoration: none;
+  color: #263840;
+  text-decoration: none;
 }
 
 .show_more_tentang_imi {
-    opacity: 0;
-    cursor: pointer;
-    margin: 0 auto;
-    position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  margin: 0 auto;
+  position: absolute;
 }
 
 .label_show_more_history .text_show_more_tentang_imi {
-    text-align: center;
+  text-align: center;
 }
 
 .label_show_more_history .text_show_more_tentang_imi::before {
-    content: "Tampilkan Lebih Banyak";
-    transition: all 1s ease-in-out;
-    font-size: 16px;
+  content: "Tampilkan Lebih Banyak";
+  transition: all 1s ease-in-out;
+  font-size: 16px;
 }
 
 .label_show_more_history {
-    gap: 4px;
-    cursor: pointer;
-    padding: 16px 16px;
+  gap: 4px;
+  cursor: pointer;
+  padding: 16px 16px;
 }
 
-.show_more_tentang_imi:checked+.label_show_more_history .text_show_more_tentang_imi::before {
-    content: "Tampilkan Lebih Sedikit";
+.show_more_tentang_imi:checked
+  + .label_show_more_history
+  .text_show_more_tentang_imi::before {
+  content: "Tampilkan Lebih Sedikit";
 }
 
 .showmore-icon {
-    transition: all 1s ease-in-out;
-    width: 16px;
-    height: 16px;
-    margin-left: 20px;
+  transition: all 1s ease-in-out;
+  width: 16px;
+  height: 16px;
+  margin-left: 20px;
 }
 
-.show_more_tentang_imi:checked+.label_show_more_history .showmore-icon {
-    transform: rotate(180deg);
+.show_more_tentang_imi:checked + .label_show_more_history .showmore-icon {
+  transform: rotate(180deg);
 }
 
 /* End sejarah imi style */
-
 
 /* 
     Start Style Struktur Pengurus
 */
 .wrap_struktur_pengurus {
-    width: 100%;
-    margin: 0 auto;
-    padding-top: 32px;
-    padding-bottom: 32px;
+  width: 100%;
+  margin: 0 auto;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .struktur-download-content {
-    margin: 0 6% !important;
-    padding-top: 50px;
-    padding-bottom: 30px;
+  margin: 0 6% !important;
+  padding-top: 50px;
+  padding-bottom: 30px;
 }
 
 .struktur-download-title {
-    font-family: 'Barlow', sans-serif;
-    font-weight: medium;
-    font-size: 16px;
+  font-family: "Barlow", sans-serif;
+  font-weight: medium;
+  font-size: 16px;
 }
 
 /* 
@@ -273,158 +317,154 @@ body {
 
 /* Start Style Anggaran */
 .wrap_anggaran {
-    width: 100%;
-    margin: 0 auto;
+  width: 100%;
+  margin: 0 auto;
 }
 
 .my_card {
-    background-color: #fff;
-    border: none;
+  background-color: #fff;
+  border: none;
 }
 
 .art_imi {
-    border-bottom: 1px solid rgba(38, 56, 64, 0.5);
-    padding: 16px 7% !important;
+  border-bottom: 1px solid rgba(38, 56, 64, 0.5);
+  padding: 16px 7% !important;
 }
 
 .ad_imi {
-    padding: 16px 7% !important;
+  padding: 16px 7% !important;
 }
 
 .card-title {
-    text-align: center;
-    font-family: 'Barlow', sans-serif;
-    font-weight: bold;
-    font-size: 16px;
-    color: #000;
+  text-align: center;
+  font-family: "Barlow", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  color: #000;
 }
 
 .card-title:hover,
 .card-title:focus {
-    color: #000;
-    text-decoration: none !important;
+  color: #000;
+  text-decoration: none !important;
 }
 
 /* End Style Anggaran */
 
 @media screen and (min-width: 768px) {
-    .sejarah-img {
-        width: 100%;
-    }
+  .sejarah-img {
+    width: 100%;
+  }
 
-    .card-title {
-        text-align: left;
-        font-size: 26px;
-    }
-
+  .card-title {
+    text-align: left;
+    font-size: 26px;
+  }
 }
 
 @media screen and (min-width: 992px) {
+  #visi_misi {
+    padding: 0 3.5%;
+  }
 
-    #visi_misi {
-        padding: 0 3.5%;
-    }
+  .wrap_visi_misi {
+    padding: 50px 4%;
+  }
 
-    .wrap_visi_misi {
-        padding: 50px 4%;
-    }
+  .visimisi-outline {
+    font-size: 72px;
+    -webkit-text-stroke: 2px #263840;
+  }
 
-    .visimisi-outline {
-        font-size: 72px;
-        -webkit-text-stroke: 2px #263840;
-    }
+  .visimisi-jabar {
+    font-size: 32px;
+    padding-bottom: 7px;
+  }
 
-    .visimisi-jabar {
-        font-size: 32px;
-        padding-bottom: 7px;
-    }
+  .border_visi {
+    padding: 1px;
+    width: 100%;
+  }
 
-    .border_visi {
-        padding: 1px;
-        width: 100%;
-    }
+  .visimisi-detail {
+    margin-left: 60px;
+    font-size: 20px;
+    margin-top: 20px;
+  }
 
-    .visimisi-detail {
-        margin-left: 60px;
-        font-size: 20px;
-        margin-top: 20px;
-    }
+  /* Start sejarah style */
+  #sejarah {
+    padding: 0 3.5%;
+  }
 
-    /* Start sejarah style */
-    #sejarah {
-        padding: 0 3.5%;
-    }
+  .wrap_sejarah_imi {
+    padding: 50px 4%;
+  }
 
-    .wrap_sejarah_imi {
-        padding: 50px 4%;
+  .sejarah-title {
+    margin-top: 0;
 
-    }
+    font-size: 48px;
+    margin-bottom: 50px;
+  }
 
-    .sejarah-title {
-        margin-top: 0;
+  .sejarah-img {
+    width: 100%;
+  }
 
-        font-size: 48px;
-        margin-bottom: 50px;
-    }
+  .sejarah-text-bold {
+    font-size: 24px;
+    position: relative;
+  }
 
-    .sejarah-img {
-        width: 100%;
-    }
+  .sejarah-arrow {
+    width: 38px;
+    height: 38px;
+    margin: 50px 0px;
+  }
 
-    .sejarah-text-bold {
-        font-size: 24px;
-    }
+  .sejarah-arrow2 {
+    width: 38px;
+    height: 38px;
+    margin: 50px 0px;
+    transform: rotate(0deg);
+  }
 
-    .sejarah-arrow {
-        width: 38px;
-        height: 38px;
-        margin: 50px 0px;
-    }
+  .sejarah-arrow4 {
+    width: 38px;
+    height: 38px;
+    transform: rotate(180deg);
+  }
 
-    .sejarah-arrow2 {
-        width: 38px;
-        height: 38px;
-        margin: 50px 0px;
-        transform: rotate(0deg);
-    }
+  .showmore-text {
+    font-size: 24px;
+  }
 
-    .sejarah-arrow4 {
-        width: 38px;
-        height: 38px;
-        transform: rotate(180deg);
-    }
-
-    .showmore-text {
-        font-size: 24px;
-    }
-
-
-    /* End Sejarah */
-    .wrap_struktur_pengurus {
-        padding-top: 100px;
-        padding-bottom: 100px;
-    }
-
+  /* End Sejarah */
+  .wrap_struktur_pengurus {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
 }
 
 @media screen and (min-width: 2300px) {
-    .wrap_background_imi {
-        max-width: 2300px;
-    }
+  .wrap_background_imi {
+    max-width: 2300px;
+  }
 
-    .wrap_visi_misi {
-        max-width: 2300px;
-    }
+  .wrap_visi_misi {
+    max-width: 2300px;
+  }
 
-    .wrap_sejarah_imi {
-        max-width: 2300px;
-    }
+  .wrap_sejarah_imi {
+    max-width: 2300px;
+  }
 
-    #strukturPengurus {
-        max-width: 2300px;
-    }
+  #strukturPengurus {
+    max-width: 2300px;
+  }
 
-    .wrap_anggaran {
-        max-width: 2300px;
-    }
+  .wrap_anggaran {
+    max-width: 2300px;
+  }
 }
